@@ -21,6 +21,10 @@ export PS1="\[\033[1;97m\]\u:\[\033[0m\] \[\033[1;94m\]\w\[\033[0m\] \[\033[1;97
 alias l='ls -FG'
 alias la='ls -FGal'
 
+alias ~='cd ~'
+alias ..='cd ..'
+alias ....='cd ../../'
+
 alias gl='git log --oneline'
 alias gla='git log'
 
