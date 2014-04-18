@@ -1,28 +1,15 @@
 #!/usr/bin/ruby
+
+## Psycho's .irbrc
+## ================
+
+# Get Current Path
+irbrc_dir = File.expand_path File.dirname(File.symlink?(__FILE__) ? File.readlink(__FILE__) : __FILE__)
+
+
+# Load Gems & IRB Settings
 require 'irb/completion'
 require 'irb/ext/save-history'
-
-IRB.conf[:SAVE_HISTORY] = 1000
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
-
-# IRB.conf[:PROMPT_MODE] = :SIMPLE
-
-module CustomPrompt
-  def self.apply!
-    IRB.conf[:PROMPT][:PSYCHO] = {
-      :PROMPT_I => "\033[0;94mruby >> \033[0;97m",
-      :PROMPT_C => "\033[0;94mruby >> \033[0;97m",
-      :PROMPT_S => "\033[0;94mruby ?> \033[0;97m",
-      :RETURN   => "\033[1;97m=>\033[0m %.2048s\n"   
-    }
-
-    IRB.conf[:PROMPT_MODE] = :PSYCHO
-  end
-end
-
-CustomPrompt.apply!
-
-
 
 %w[rubygems looksee/shortcuts wirble awesome_print].each do |gem|
   begin
@@ -31,38 +18,12 @@ CustomPrompt.apply!
   end
 end
 
-class Object
-  def search_methods(param)
-    methods = []
-    self.methods.each { |m| methods << m if m.to_s.include? param }
-    return methods
-  end
 
-  def local_methods(obj = self)
-    (obj.methods - obj.class.superclass.instance_methods).sort
-  end
+# Load Other Ruby Scripts
+%w[
+  _irb_styles.rb
+  _class_overrides.rb
+  _custom_methods.rb
+]
+.each { |file| eval File.read "#{irbrc_dir}/#{file}" }
 
-  def ri(method = nil)
-    unless method && method =~ /^[A-Z]/ # if class isn't specified
-      klass = self.kind_of?(Class) ? name : self.class.name
-      method = [klass, method].compact.join('#')
-    end
-    system 'ri', method.to_s
-  end
-end
-
-def copy(str)
-  IO.popen('pbcopy', 'w') { |f| f << str.to_s }
-end
-
-def copy_history
-  history = Readline::HISTORY.entries
-  index = history.rindex("exit") || -1
-  content = history[(index+1)..-2].join("\n")
-  puts content
-  copy content
-end
-
-def paste
-  `pbpaste`
-end
