@@ -5,3 +5,4 @@ BASH_DOTFILES="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source $BASH_DOTFILES/_bash_styles.sh
 source $BASH_DOTFILES/_bash_aliases.sh
+source $BASH_DOTFILES/_bash_functions.sh
