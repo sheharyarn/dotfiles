@@ -1,6 +1,13 @@
 # FUNCTIONS
 # =========
 
+# List all of current user's processes
+myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
+
+# Find CPU Hogs
+cpuhogs() { ps wwaxr -o pid,stat,%cpu,time,command | head -10 ;}
+
+
 # Extract all archives with a single command
 extract () {
   if [ -f $1 ] ; then
