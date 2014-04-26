@@ -7,6 +7,7 @@ alias la='ls -FGal'
 
 # CD
 alias ~='cd ~'
+alias .='cd .'
 alias ..='cd ..'
 alias ....='cd ../../'
 
