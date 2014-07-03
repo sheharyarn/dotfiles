@@ -21,6 +21,9 @@ alias gac='git add -A && git commit -m'
 alias gla='git log'
 alias gpull='git pull origin'
 
+# iA Writer
+alias md='open -a "iA Writer"'
+
 # Sublime
 alias subl='sublime'
 alias edit='sublime'
