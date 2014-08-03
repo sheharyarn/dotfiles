@@ -20,6 +20,7 @@ alias gl='git log --oneline'
 alias gac='git add -A && git commit -m'
 alias gla='git log'
 alias gpull='git pull origin'
+alias gitcount='git rev-list HEAD --count'
 
 # iA Writer
 alias md='open -a "iA Writer"'
