@@ -33,6 +33,6 @@ alias edit='sublime'
 alias rs='rails s'
 alias rc='rails c'
 
-
 # Random
 alias myip="ifconfig en0 inet | grep inet"
+alias refresh="source ~/.bash_profile"
