@@ -14,8 +14,6 @@
 107.170.111.64	filesdroid
 192.241.251.130 outy
 
-# ------------------------------
-
 # System Stuff
 255.255.255.255	broadcasthost
 ::1             localhost 
