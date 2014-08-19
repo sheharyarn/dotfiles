@@ -25,6 +25,15 @@ class Object
   end
 end
 
+class Array
+  # Quick Display of a field in an List of Documents 
+  def put_field field
+    self.each do |d|
+      puts d[field]
+    end
+    nil
+  end
+end
 
 class String
   # Colorization
