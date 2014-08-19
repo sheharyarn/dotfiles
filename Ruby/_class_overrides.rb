@@ -25,7 +25,7 @@ class Object
   end
 end
 
-class Array
+class Mongoid::Criteria
   # Quick Display of a field in an List of Documents 
   def put_field field
     self.each do |d|
