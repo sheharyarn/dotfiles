@@ -9,10 +9,11 @@
 192.168.1.1	router
 
 # Servers
+192.241.251.130 outy
 128.199.242.246	bluewave
 107.170.111.64	devfiles
 107.170.111.64	filesdroid
-192.241.251.130 outy
+23.253.149.35	crewcade
 
 # System Stuff
 255.255.255.255	broadcasthost
