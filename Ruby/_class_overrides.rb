@@ -25,12 +25,20 @@ class Object
   end
 end
 
-class Mongoid::Criteria
-  # Quick Display of a field in an List of Documents 
-  def put_field field
-    self.each do |d|
-      puts d[field]
+class Array
+  # Quick Display of fields in an List of Documents
+  # Prefer `map` for single fields
+
+  def select_fields(*fields)
+    fields.flatten!
+
+    self.map do |i|
+      fields.map { |f| i.send f }
     end
+  end
+
+  def put_fields(*fields)
+    self.select_fields(fields).map { |o| puts o.join(', ') }
     nil
   end
 end

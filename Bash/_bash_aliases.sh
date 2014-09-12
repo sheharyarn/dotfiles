@@ -35,5 +35,7 @@ alias rs='rails s'
 alias rc='rails c'
 
 # Random
-alias myip="ifconfig en0 inet | grep inet"
 alias refresh="source ~/.bash_profile"
+alias myip="ifconfig en0 inet | grep inet"
+alias fsize='du -hs'
+alias dsize='du -h --max-depth=1'
