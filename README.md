@@ -7,7 +7,7 @@ Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holfman's
 
 ### To Install:
 
-```
+```bash
 git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
 
 echo "source ~/.dotfiles/Bash/bash_profile" >> ~/.bash_profile
@@ -18,7 +18,7 @@ ln -s ~/.dotfiles/Ruby/gemrc ~/.gemrc
 
 ### To Uninstall:
 
-```
+```bash
 # Unlink ruby dotfiles
 unlink ~/.irbrc
 unlink ~/.gemrc
