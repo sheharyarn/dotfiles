@@ -18,11 +18,15 @@ ln -s ~/.dotfiles/Ruby/gemrc ~/.gemrc
 
 ### To Uninstall:
 
-Remove the 'source' line from your bash_profile, and unlink the files
-
 ```
+# Unlink ruby dotfiles
 unlink ~/.irbrc
 unlink ~/.gemrc
 
+# Remove reference to the .bash_profile
+grep -v "~/.dotfiles/Bash/bash_profile" ~/.bash_profile > bashtemp
+mv bashtemp ~/.bash_profile
+
+# Delete the dotfiles
 rm -rf ~/.dotfiles
 ```

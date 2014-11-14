@@ -41,6 +41,9 @@ class Array
     self.select_fields(fields).map { |o| puts o.join(', ') }
     nil
   end
+
+  alias_method :put_field,    :put_fields
+  alias_method :select_field, :select_fields
 end
 
 class String
