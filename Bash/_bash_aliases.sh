@@ -40,4 +40,4 @@ alias rg='rails g'
 alias refresh="source ~/.bash_profile"
 alias myip="ifconfig en0 inet | grep inet"
 alias fsize='du -hs'
-alias dsize='du -h --max-depth=1'
+alias dsize='du -h -d 1'
