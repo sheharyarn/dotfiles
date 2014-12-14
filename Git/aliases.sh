@@ -13,6 +13,7 @@ alias       gl='git log --oneline'
 alias       ga='git add -A'
 alias       gc='git commit -m'
 alias      gac='git add -A && git commit -m'
+alias      guc='git add -u && git commit -m'
 
 # Pushing, Pulling and Deploying
 alias       gp='git push'
