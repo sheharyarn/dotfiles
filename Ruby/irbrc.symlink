@@ -20,7 +20,10 @@ end
 
 
 # Load Other Ruby Scripts
-%w( irb_styles.rb class_overrides.rb custom_methods.rb ).each do |file|
+%w(      irb_styles.rb 
+	 custom_methods.rb
+	class_overrides.rb	 
+).each do |file|
 	eval File.read "#{irbrc_dir}/#{file}"
 end
 
