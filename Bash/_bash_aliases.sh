@@ -18,11 +18,6 @@ alias md='open -a "iA Writer Pro"'
 alias subl='sublime'
 alias edit='sublime'
 
-# Ruby / Rails
-alias rs='rails s'
-alias rc='rails c'
-alias rg='rails g'
-
 # Random
 alias refresh="source ~/.bash_profile"
 alias myip="ifconfig en0 inet | grep inet"
