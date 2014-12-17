@@ -3,6 +3,7 @@
 # Paths and whatnot
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/.dotfiles
+export PATH=/usr/local/bin:$PATH
 
 
 # Language fix

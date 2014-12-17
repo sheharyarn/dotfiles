@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Loading only those that I use
+# -----------------------------
+
+include "~/.dotfiles/Nano/syntax_files/makefile.nanorc"
+include "~/.dotfiles/Nano/syntax_files/man.nanorc"
+include "~/.dotfiles/Nano/syntax_files/git.nanorc"
+
+include "~/.dotfiles/Nano/syntax_files/inputrc.nanorc"
+include "~/.dotfiles/Nano/syntax_files/nanorc.nanorc"
+
+include "~/.dotfiles/Nano/syntax_files/html.nanorc"
+include "~/.dotfiles/Nano/syntax_files/css.nanorc"
+include "~/.dotfiles/Nano/syntax_files/js.nanorc"
+
+include "~/.dotfiles/Nano/syntax_files/ruby.nanorc"
+include "~/.dotfiles/Nano/syntax_files/erb.nanorc"
+include "~/.dotfiles/Nano/syntax_files/haml.nanorc"
+include "~/.dotfiles/Nano/syntax_files/coffeescript.nanorc"
+
+include "~/.dotfiles/Nano/syntax_files/json.nanorc" 
+include "~/.dotfiles/Nano/syntax_files/xml.nanorc" 
+include "~/.dotfiles/Nano/syntax_files/yaml.nanorc" 
+include "~/.dotfiles/Nano/syntax_files/markdown.nanorc" 
+
+include "~/.dotfiles/Nano/syntax_files/php.nanorc"
+include "~/.dotfiles/Nano/syntax_files/python.nanorc"
+include "~/.dotfiles/Nano/syntax_files/c.nanorc"
+include "~/.dotfiles/Nano/syntax_files/java.nanorc"
+include "~/.dotfiles/Nano/syntax_files/nginx.nanorc"
+
+# Issue with repo :(
+# include "~/.dotfiles/Nano/syntax_files/sh.nanorc"
+# include "~/.dotfiles/Nano/syntax_files/zsh.nanorc"
+include /usr/local/share/nano/sh.nanorc
+include /usr/local/share/nano/objc.nanorc

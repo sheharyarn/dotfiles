@@ -1,0 +1,3 @@
+[submodule "Nano/syntax_files"]
+	path = Nano/syntax_files
+	url = git@github.com:scopatz/nanorc.git
