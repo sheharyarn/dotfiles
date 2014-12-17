@@ -1,6 +1,7 @@
+#!/bin/bash
+
 # FUNCTIONS
 # =========
-
 
 # List all of current user's processes
 myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
