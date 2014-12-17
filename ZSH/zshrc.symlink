@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # Paths and whatnot
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/.dotfiles
