@@ -20,6 +20,9 @@
 ::1             localhost 
 fe80::1%lo0	localhost
 
+# Youtube Fix
+127.0.0.1	youtube.com
+
 # Block List :P
 127.0.0.1 192.150.14.69
 127.0.0.1 192.150.18.101
