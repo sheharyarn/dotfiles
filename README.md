@@ -5,30 +5,7 @@ Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holfman's
 
 I've now jumped ship to [OH MY ZSH!](http://ohmyz.sh/), my old Bash configurations are in [this branch](https://github.com/sheharyarn/dotfiles/tree/bash).
 
-![Screenshot](http://i.imgur.com/b6v3e8g.png)
-
-### To Install:
-
-```bash
-git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
-
-echo "source ~/.dotfiles/Bash/bash_profile" >> ~/.bash_profile
-
-ln -s ~/.dotfiles/Ruby/irbrc ~/.irbrc 
-ln -s ~/.dotfiles/Ruby/gemrc ~/.gemrc 
+```
+// TODO: Write instructions for new Zsh Dotfiles
 ```
 
-### To Uninstall:
-
-```bash
-# Unlink ruby dotfiles
-unlink ~/.irbrc
-unlink ~/.gemrc
-
-# Remove reference to the .bash_profile
-grep -v "~/.dotfiles/Bash/bash_profile" ~/.bash_profile > bashtemp
-mv bashtemp ~/.bash_profile
-
-# Delete the dotfiles
-rm -rf ~/.dotfiles
-```
