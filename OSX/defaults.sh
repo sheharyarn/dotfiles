@@ -3,8 +3,31 @@
 # OSX Defaults
 # ============
 
+# Set shit the way I like it.
+# Some of it copied from the .dotfiles of:
+#     @holman
+#     @pburtchaell
+#     @mathiasbynens
+
+
+
+
+# Always show Hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Hide Icons on Desktop
-defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+defaults write com.apple.finder CreateDesktop -bool false
+
+# Set Sidebar Icon size to small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Hide Safari's bookmark bar.
 defaults write com.apple.Safari ShowFavoritesBar -bool false
@@ -15,3 +38,35 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+
+# Restart Finder
+killall Finder
+
+
+# Ask the User to Reboot 
+sleep 1
+
+echo "Success! All OS X defaults are set." 
+echo 
+echo "Some changes will not take effect until you reboot your machine."
+
+function reboot() {
+  read -p "Do you want to reboot your machine now (yes/no)? " choice
+  case "$choice" in 
+    y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
+    n | No | no) echo "No"; exit;; # If n | no, exit
+    * ) echo "Invalid answer!" && return;;
+  esac
+}
+
+if [[ "Yes" == $(reboot) ]]
+then
+    echo "Rebooting."
+    sudo reboot
+    exit 0
+else
+    echo "No reboot. </3 Exiting..."
+    exit 1
+fi
+
