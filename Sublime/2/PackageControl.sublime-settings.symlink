@@ -1,0 +1,24 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
+	"installed_packages":
+	[
+		"Codeivate",
+		"CoffeeScript",
+		"Dotfiles Syntax Highlighting",
+		"GitGutter",
+		"GrowlNotifier",
+		"Jade",
+		"nginx",
+		"Package Control",
+		"SFTP",
+		"sublimelint",
+		"WakaTime"
+	]
+}

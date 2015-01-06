@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_size": 14.0,
+	"ignored_packages":
+	[
+		"Vintage",
+		"sublimelint"
+	],
+	"scroll_past_end": true
+}
