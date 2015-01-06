@@ -4,3 +4,6 @@
 [submodule "Sublime/2/gpacalc"]
 	path = Sublime/2/gpacalc
 	url = git@bitbucket.org:sheharyar/gpacalc.git
+[submodule "Sublime/2/sftp_servers"]
+	path = Sublime/2/sftp_servers
+	url = git@bitbucket.org:sheharyar/sublimesftpmodules.git
