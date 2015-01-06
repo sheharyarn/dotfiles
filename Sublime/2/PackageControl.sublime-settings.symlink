@@ -9,8 +9,10 @@
 	],
 	"installed_packages":
 	[
+		"Better Completion",
 		"Codeivate",
 		"CoffeeScript",
+		"ColorPicker",
 		"Dotfiles Syntax Highlighting",
 		"GitGutter",
 		"GrowlNotifier",
