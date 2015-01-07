@@ -10,10 +10,6 @@ alias la='ls -FGal'
 # iA Writer
 alias md='open -a "iA Writer Pro"'
 
-# Sublime
-alias subl='sublime'
-alias edit='sublime'
-
 # Random
 alias reload!='source ~/.zshrc'
 alias refresh="source ~/.bash_profile"
