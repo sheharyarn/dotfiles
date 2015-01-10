@@ -13,6 +13,7 @@ call vundle#begin()
 	Plugin 'tpope/vim-fugitive'
 	Plugin 'airblade/vim-gitgutter'
 	Plugin 'bling/vim-airline'
+	Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 
