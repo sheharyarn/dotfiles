@@ -10,7 +10,11 @@ sheharyarn's dotfiles
 
 ## Getting Started
 
-There isn't going to be a script/installer that sets up everything for you. Instead you should go through each section below and copy the files that you think might make your lives a bit easier.
+There isn't going to be a script/installer that sets up everything for you. Instead you should clone my dotfiles and go through each section and file and keep only those you find important or useful.
+
+```bash
+git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
+```
 
 I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) if you haven't already made the switch. To get started, read the [Zsh Section](https://github.com/sheharyarn/dotfiles/tree/master/ZSH).
 
