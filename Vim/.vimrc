@@ -58,6 +58,16 @@ set smartindent 								" be smart about it
 set tabstop=4									" 4 is awesome, 2 is stupid, 8 is stupid, 6 is very very stupid
 
 
+
+" Backups
+"
+set nobackup 									" do not keep backups after close
+set backupdir=$HOME/.vim/backups 				" store backups under ~/.vim/backup
+set backupcopy=yes 								" keep attributes of original file
+set directory=~/.vim/swap,~/tmp,. 				" keep swp files under ~/.vim/swap
+												" make sure that `swap` and `backups` dirs exist in ~/.vim
+
+
 " Other
 "
 set backspace=indent,eol,start					" Fix `Delete Key` issue on OSX with Vim 7.4+
