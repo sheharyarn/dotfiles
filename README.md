@@ -38,7 +38,7 @@ I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) 
 
 ## History
 
-I discovered the concept of dotfiles when I came across this post: [Dotfiles are meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/). A bit of googling lead me to [Github Does Dotfiles](http://dotfiles.github.io/) where I discovered some awesome sets of dotfiles. Being a new Rubyist at the time, I started by copying most of [Ryan Bates'](https://github.com/ryanb/dotfiles) but they were too much and I had to go through each file and keep only what I found useful. 
+I discovered the concept of dotfiles when I came across this post: [Dotfiles are meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/). A bit of googling lead me to [Github Does Dotfiles](http://dotfiles.github.io/) where I discovered some awesome collections. Being a new Rubyist at the time, I started by copying most of [Ryan Bates'](https://github.com/ryanb/dotfiles) but they were too much and I had to go through each file and keep only what I found useful. 
 
 Initially I worked with only a few `Bash` aliases and `.irbrc` customizations, but since I jumped ship to [Oh My Zsh!](http://ohmyz.sh/), I've heavily modifed a lot of stuff and tried to keep everything symlinked to my Dotfiles. My old Bash configurations are in [this branch](https://github.com/sheharyarn/dotfiles/tree/bash).
 

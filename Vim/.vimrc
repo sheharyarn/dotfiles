@@ -33,8 +33,8 @@ set noshowcmd 					" don't display incomplete commands
 set nostartofline 				" don't jump to the start of line when scrolling
 set report=0 					" tell us about changes
 set number 					" line numbers
-set ttimeoutlen=50
-set laststatus=2
+set ttimeoutlen=50				" recommended by airline
+set laststatus=2				" needed for airline to be visible
 
 let g:airline_theme           = 'bubblegum'	" Set my theme for Airline
 let g:airline_powerline_fonts = 1		" Use the sexy fonts used in Powerline
