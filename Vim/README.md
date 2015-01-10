@@ -1,5 +1,7 @@
-VIM - sheharyar's dotfiles
-==========================
+VIM - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
+====================================================================
+
+![Vim Configuration Screenshot](http://i.imgur.com/WSkHxAz.png)
 
 I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and I recommend that you do the same.
 
