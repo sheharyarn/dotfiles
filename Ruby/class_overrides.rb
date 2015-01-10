@@ -4,10 +4,8 @@
 
 class Object
   # Search methods of a Ruby Object
-  def search_methods(param)
-    methods = []
-    self.methods.each { |m| methods << m if m.to_s.include? param }
-    return methods
+  def search_methods(qry)
+    self.methods & self.methods.select { |m| m.to_s.include? qry }
   end
 
   # Get Local Methods of a Ruby Object
