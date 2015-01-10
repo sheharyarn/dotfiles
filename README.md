@@ -19,13 +19,13 @@ I seriously recommend that you install `Zsh` and `Oh My Zsh` if you haven't alre
 # TODO: Write instructions for each Section
 ```
 
-### [Zsh](https://github.com/sheharyarn/dotfiles/tree/master/ZSH)
-### [Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)
-### [OSX](https://github.com/sheharyarn/dotfiles/tree/master/OSX)
-### [Vim](https://github.com/sheharyarn/dotfiles/tree/master/Vim)
-### [Ruby](https://github.com/sheharyarn/dotfiles/tree/master/Ruby)
-### [Nano](https://github.com/sheharyarn/dotfiles/tree/master/Nano)
-### [Sublime](https://github.com/sheharyarn/dotfiles/tree/master/Sublime)
+- *[Zsh](https://github.com/sheharyarn/dotfiles/tree/master/ZSH)*
+- *[Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)*
+- *[OSX](https://github.com/sheharyarn/dotfiles/tree/master/OSX)*
+- *[Vim](https://github.com/sheharyarn/dotfiles/tree/master/Vim)*
+- *[Ruby](https://github.com/sheharyarn/dotfiles/tree/master/Ruby)*
+- *[Nano](https://github.com/sheharyarn/dotfiles/tree/master/Nano)*
+- *[Sublime](https://github.com/sheharyarn/dotfiles/tree/master/Sublime)*
 
 
 ## History
