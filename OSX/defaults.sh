@@ -24,6 +24,9 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+# Disable the OSX Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -40,8 +43,9 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 
-# Restart Finder
+# Restart Finder and other Services
 killall Finder
+killall Dock
 
 
 # Ask the User to Reboot 
