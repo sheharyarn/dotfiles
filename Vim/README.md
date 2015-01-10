@@ -37,6 +37,6 @@ If you don't find your desired font patched with the Powerline Icons, [you'll ha
 
 > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.
 
-YCM is a plugin that has a compiled component as well. You'll need to set it up for it to work properly. [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
+YCM requires Vim v7.3.584 or greater; [On OSX, You can do this](http://stackoverflow.com/a/14511970/1533054). It has a compiled component as well. You'll need to set it up for it to work properly. [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
 
 
