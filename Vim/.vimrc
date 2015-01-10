@@ -30,6 +30,7 @@ set autoread 					" reload files (no local changes only)
 "
 set ruler 					" show the cursor position all the time
 set noshowcmd 					" don't display incomplete commands
+set cursorline					" underline the line i'm currently on
 set nostartofline 				" don't jump to the start of line when scrolling
 set report=0 					" tell us about changes
 set number 					" line numbers
