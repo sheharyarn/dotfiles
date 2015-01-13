@@ -23,20 +23,44 @@ class Object
   end
 end
 
+module ActiveModel::Model
+  # Select / put selected fields of a Active/Mongoid Model 
+  def select_fields(*fields)
+    fields.flatten!
+    fields.map { |f| self.send f }
+  end
+
+  def put_fields(*fields)
+    puts select_fields(fields).join(", ")
+    nil
+  end
+
+  def self.select_fields(*fields)
+    self.all.select_fields(*fields)
+  end
+
+  def self.put_fields(*fields)
+    self.all.put_fields(fields)
+  end
+
+  alias_method :put_field,    :put_fields
+  alias_method :select_field, :select_fields
+end
+
 class Array
-  # Quick Display of fields in an List of Documents
+  # Quick Display of fields in a List of Documents
   # Prefer `map` for single fields
 
   def select_fields(*fields)
-    fields.flatten!
-
-    self.map do |i|
-      fields.map { |f| i.send f }
+    self.map do |obj|
+      obj.select_fields(fields)
     end
   end
 
   def put_fields(*fields)
-    self.select_fields(fields).map { |o| puts o.join(', ') }
+    self.map do |obj|
+      obj.put_fields(fields)
+    end
     nil
   end
 
