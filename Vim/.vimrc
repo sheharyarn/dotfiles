@@ -4,19 +4,11 @@
 " ------------------
 
 
-" Load Vundle Plugins
+" Load my Vundle Plugins from my vundles.vim
 "
-filetype off
-set nocompatible
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'
-    Plugin 'tpope/vim-fugitive'
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'bling/vim-airline'
-    Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
+if filereadable(expand("~/.dotfiles/Vim/vundles.vim"))
+    source ~/.dotfiles/Vim/vundles.vim 
+endif
 
 
 
@@ -72,5 +64,6 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
 " Other
 "
 set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
+set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 
 
