@@ -5,12 +5,19 @@
 
 # More of my shit
 # @ for Command, $ for Shift, ~ for Alt and ^ for Ctrl
+# http://hints.macworld.com/article.php?story=20131123074223584
 
 
 # Terminal at Folder option in Context Menu 
 defaults write pbs NSServicesStatus \
 	-dict-add "com.apple.Terminal - New Terminal at Folder - newTerminalAtFolder" \
 	'{ "enabled_context_menu" = 1; "enabled_services_menu" = 1; "key_equivalent" = "^t";}'
+
+
+# uTorrent Shortcuts
+defaults write com.bittorrent.utorrent NSUserKeyEquivalents -dict-add "Show Details Pane" -string "@d"
+defaults write com.bittorrent.utorrent NSUserKeyEquivalents -dict-add "Hide Details Pane" -string "@d"
+
 
 # GPG Tools Shortcuts
 # defaults write pbs NSServicesStatus \
