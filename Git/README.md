@@ -13,7 +13,7 @@ I haven't made any major customizations except for my easy-to-use [git aliases](
 
 __Aliases Installation Script:__
 
-This are simple bash commands I use to set up my aliases on any system I'm working on temporarily.
+These are simple bash commands I use to set up my aliases on any system I'm working on temporarily.
 
 ```bash
 curl https://raw.githubusercontent.com/sheharyarn/dotfiles/master/Git/aliases.sh > ~/.git.aliases.sh
