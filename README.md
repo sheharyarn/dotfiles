@@ -29,6 +29,7 @@ I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) 
 - **[Zsh](https://github.com/sheharyarn/dotfiles/tree/master/ZSH)**
 - **[Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)**
 - **[OSX](https://github.com/sheharyarn/dotfiles/tree/master/OSX)**
+- **[Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew)**
 - **[Vim](https://github.com/sheharyarn/dotfiles/tree/master/Vim)**
 - **[Ruby](https://github.com/sheharyarn/dotfiles/tree/master/Ruby)**
 - **[Nano](https://github.com/sheharyarn/dotfiles/tree/master/Nano)**
