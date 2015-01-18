@@ -16,7 +16,7 @@ There isn't going to be a script/installer that sets up everything for you. Inst
 git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
 ```
 
-I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) if you haven't already made the switch. To get started, read the [Zsh Section](https://github.com/sheharyarn/dotfiles/tree/master/ZSH).
+I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) if you haven't already made the switch. To get started, read the [Zsh Section](https://github.com/sheharyarn/dotfiles/tree/master/Zsh).
 
 
 
@@ -26,7 +26,7 @@ I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) 
 # TODO: Write instructions for each Section
 ```
 
-- **[Zsh](https://github.com/sheharyarn/dotfiles/tree/master/ZSH)**
+- **[Zsh](https://github.com/sheharyarn/dotfiles/tree/master/Zsh)**
 - **[Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)**
 - **[OSX](https://github.com/sheharyarn/dotfiles/tree/master/OSX)**
 - **[Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew)**
