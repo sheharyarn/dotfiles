@@ -13,7 +13,7 @@ export LC_ALL=en_US.UTF-8
 
 
 # Zsh Settings
-plugins=(git sublime)
+plugins=(git sublime brew zsh-syntax-highlighting)
 ZSH_THEME="blinks"
 COMPLETION_WAITING_DOTS="true"
 
