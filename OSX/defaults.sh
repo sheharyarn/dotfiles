@@ -18,6 +18,9 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Hide Icons on Desktop
 defaults write com.apple.finder CreateDesktop -bool false
 
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Set Sidebar Icon size to small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
