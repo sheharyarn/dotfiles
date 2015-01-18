@@ -2527,7 +2527,7 @@ macosx-appleremote=0
 [auhal] # HAL AudioUnit output
 
 # Audio volume (integer)
-auhal-volume=512
+auhal-volume=307
 
 # Last audio device (string)
 auhal-audio-device=0
