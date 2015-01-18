@@ -7,6 +7,8 @@
 # Uncomment this if you don't have Homebrew installed
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# If you haven't already install zsh, then you need to die
+# brew install zsh - see dotfiles/zsh
 
 
 # Set up important taps
