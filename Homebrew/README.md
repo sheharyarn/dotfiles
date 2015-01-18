@@ -15,7 +15,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ### Brew that shit up
 
 ```bash
-source ~./dotfiles/Homebrew/brew.sh
+source ~/.dotfiles/Homebrew/brew.sh
 ```
 
 
