@@ -16,7 +16,7 @@ ln -s ~/.dotfiles/Others/VLC/vlcrc ~/Library/Preferences/org.videolan.vlc/vlcrc
 For others, [see this](http://superuser.com/a/599305/214953).
 
 
-## Important Note
+### Important Note
 
 When updating preferences, VLC doesn't modify the existing `vlcrc`, instead it deletes the last and creates a new one. So our symlinked `vlcrc` is of no use. You'll have to manually move the updates preferences config to your dotfiles:
 
