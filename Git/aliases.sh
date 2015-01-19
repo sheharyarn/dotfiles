@@ -4,6 +4,7 @@
 # ===========
 
 # Status and Information
+alias        gb='git branch'
 alias        gs='git status'
 alias       gss='git status -s'
 
@@ -39,4 +40,6 @@ alias   gitroot='cd $(git rev-parse --show-toplevel || echo ".")'
 alias  gitcount='git rev-list HEAD --count'
 alias   gsearch='gitsearch'
 alias gitsearch='gla -p -S'
+alias gitconfig='less -P "(END)" $(git rev-parse --show-toplevel)/.git/config'
+
 
