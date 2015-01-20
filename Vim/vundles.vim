@@ -1,5 +1,3 @@
-#!/bin/vim
-
 
 " Load my Vundle Plugins
 
@@ -13,6 +11,7 @@ call vundle#begin()
     Plugin 'airblade/vim-gitgutter'
     Plugin 'bling/vim-airline'
     Plugin 'Valloric/YouCompleteMe'
+    Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 
 
