@@ -45,6 +45,7 @@ brew cask install mpv                       # : dotfiles/osx/mpv
 brew cask install utorrent
 brew cask install skype
 brew cask install jumpshare                 # fuck dropbox
+brew cask install teamviewer
 brew cask install android-file-transfer
 
 #> Dev Apps
@@ -54,7 +55,6 @@ brew cask install android-studio            # point it to your huge sdk folder
 brew cask install testflight
 
 #> Not that important
-brew cask install teamviewer
 brew cask install lastfm
 brew cask install couleurs                  # i'm conflicted, i love this app
 brew cask install chromecast
