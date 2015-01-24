@@ -21,3 +21,12 @@ echo "source ~/.git.aliases.sh" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
+### .gitignore
+
+I use the awesome command-line utility [`joe`](https://github.com/karan/joe) to generate `.gitignore` files for me. But for OSX and Sublime temp files that I've to add to my `.gitignore` everytime, a better option is to use a Global Gitignore:
+
+```bash
+git config --global core.excludesfile ~/.dotfiles/Git/.gitignore.global
+```
+
+
