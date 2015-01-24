@@ -18,7 +18,6 @@ brew tap caskroom/cask
 brew tap homebrew/dupes
 
 
-
 # Install binaries
 # ----------------
 
@@ -32,6 +31,8 @@ brew install brew-cask
 brew install tor
 brew install torsocks
 
+#> External Binaries
+brew install karan/karan/gitignore
 
 
 # Install Apps
