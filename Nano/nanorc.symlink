@@ -3,7 +3,7 @@
 
 set autoindent              # Auto-indent new lines
 set tabsize 4               # 4 is awesome
-
+set tabstospaces            # yes, i know :P
 
 # Loading syntax files that I need
 
