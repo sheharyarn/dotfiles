@@ -20,6 +20,8 @@ COMPLETION_WAITING_DOTS="true"
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
+# Load 'z'
+source `brew --prefix`/etc/profile.d/z.sh
 
 # RVM Configs
 export PATH="/Users/Psycho/.rvm/gems/ruby-2.1.0/bin:/Users/Psycho/.rvm/gems/ruby-2.1.0@global/bin:/Users/Psycho/.rvm/rubies/ruby-2.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/Psycho/.rvm/bin:/Users/Psycho/.rvm/bin:/Users/Psycho/.rvm/bin:/Users/Psycho/.rvm/bin"
