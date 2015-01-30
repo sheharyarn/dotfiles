@@ -12,6 +12,12 @@ cpuhogs() { ps wwaxr -o pid,stat,%cpu,time,command | head -10 ;}
 memhogs() { ps wwaxm -o pid,stat,vsize,rss,time,command | head -10; }
 
 
+# Search for matching files and directories in the current dir
+search() {
+    find . -iname "*$1*" -d | sed 's/^..//' | grep -i --color "$1"
+}
+
+
 # Extract all archives with a single command
 extract () {
   if [ -f $1 ] ; then
