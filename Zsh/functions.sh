@@ -19,7 +19,10 @@ search() {
         echo "usage: search string [string2 string3 ...]"
         echo ""
     else
-        find . -iname "*$1*" -d | sed 's/^..//' | grep -i --color "$1"
+        for i in "$@"; do
+            find . -iname "*$i*" -d | sed 's/^..//' | grep -i --color "$i"
+            echo ""
+        done
     fi
 }
 
