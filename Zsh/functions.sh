@@ -14,7 +14,13 @@ memhogs() { ps wwaxm -o pid,stat,vsize,rss,time,command | head -10; }
 
 # Search for matching files and directories in the current dir
 search() {
-    find . -iname "*$1*" -d | sed 's/^..//' | grep -i --color "$1"
+    if [[ $# -eq 0 ]] ; then
+        echo "no arguments provided"
+        echo "usage: search string [string2 string3 ...]"
+        echo ""
+    else
+        find . -iname "*$1*" -d | sed 's/^..//' | grep -i --color "$1"
+    fi
 }
 
 
