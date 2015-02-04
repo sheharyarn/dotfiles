@@ -2,8 +2,6 @@
 Android Studio
 ==============
 
-## Installation
-
 Install it using [Homebrew Cask](http://github.com/sheharyarn/dotfiles/tree/master/Homebrew):
 
 ```bash
