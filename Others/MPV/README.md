@@ -2,7 +2,7 @@
 YOU DA REAL MPV!
 ================
 
-_(Get it?)_
+_Get it?_ Sigh, I know, lame...
 
 ## Installation
 
