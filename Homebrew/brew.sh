@@ -14,8 +14,9 @@
 # Set up important taps
 # ---------------------
 
-brew tap caskroom/cask
 brew tap homebrew/dupes
+brew tap caskroom/cask
+brew tap caskroom/fonts
 
 
 # Install binaries
