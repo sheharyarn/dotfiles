@@ -23,28 +23,30 @@ class Object
   end
 end
 
-module ActiveModel::Model
-  # Select / put selected fields of a Active/Mongoid Model 
-  def select_fields(*fields)
-    fields.flatten!
-    fields.map { |f| self.send f }
-  end
+module ActiveModel
+  module Model
+    # Select / put selected fields of a Active/Mongoid Model 
+    def select_fields(*fields)
+      fields.flatten!
+      fields.map { |f| self.send f }
+    end
 
-  def put_fields(*fields)
-    puts select_fields(fields).join(", ")
-    nil
-  end
+    def put_fields(*fields)
+      puts select_fields(fields).join(", ")
+      nil
+    end
 
-  def self.select_fields(*fields)
-    self.all.select_fields(*fields)
-  end
+    def self.select_fields(*fields)
+      self.all.select_fields(*fields)
+    end
 
-  def self.put_fields(*fields)
-    self.all.put_fields(fields)
-  end
+    def self.put_fields(*fields)
+      self.all.put_fields(fields)
+    end
 
-  alias_method :put_field,    :put_fields
-  alias_method :select_field, :select_fields
+    alias_method :put_field,    :put_fields
+    alias_method :select_field, :select_fields
+  end
 end
 
 class Array
