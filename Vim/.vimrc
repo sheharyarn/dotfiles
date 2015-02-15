@@ -50,7 +50,21 @@ set smartindent                                 " be smart about it
 set tabstop=4                                   " 4 is awesome, 2 is stupid, 8 is stupid, 6 is very very stupid
 set expandtab                                   " expand tabs to spaces
 
-
+" Fix Clipboard paste on OSX
+"
+if &term =~ "xterm.*"
+    let &t_ti = &t_ti . "\e[?2004h"
+    let &t_te = "\e[?2004l" . &t_te
+    function XTermPasteBegin(ret)
+        set pastetoggle=<Esc>[201~
+        set paste
+        return a:ret
+    endfunction
+    map <expr> <Esc>[200~ XTermPasteBegin("i")
+    imap <expr> <Esc>[200~ XTermPasteBegin("")
+    cmap <Esc>[200~ <nop>
+    cmap <Esc>[201~ <nop>
+endif
 
 " Backups
 "
