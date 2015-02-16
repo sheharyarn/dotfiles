@@ -8,7 +8,7 @@ alias l='ls -FG'
 alias la='ls -FGal'
 
 # Brew Binaries
-alias rmtrash='trash'
+alias trash='rmtrash'
 
 # Random
 alias reload!='source ~/.zshrc'
