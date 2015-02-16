@@ -7,6 +7,9 @@
 alias l='ls -FG'
 alias la='ls -FGal'
 
+# Brew Binaries
+alias rmtrash='trash'
+
 # Random
 alias reload!='source ~/.zshrc'
 alias myip="ifconfig en0 inet | grep inet"
