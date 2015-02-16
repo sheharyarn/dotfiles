@@ -31,6 +31,8 @@ brew install heroku-toolbelt
 brew install brew-cask
 brew install tor
 brew install torsocks
+brew install safe-rm
+brew install rmtrash
 
 #> External Binaries
 brew install karan/karan/gitignore
