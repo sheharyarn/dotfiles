@@ -31,7 +31,9 @@ alias       guc='git add -u && git commit -m'
 alias        gp='git push'
 alias     gpull='git pull origin'
 alias     gpdep='gpdeploy'
+alias     gpher='gpheroku'
 alias  gpdeploy='gp && cap production deploy'
+alias  gpheroku='gp && gp heroku master'
 
 
 # Others
