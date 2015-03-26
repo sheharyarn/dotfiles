@@ -45,3 +45,5 @@ alias gitsearch='gla -p -S'
 alias gitconfig='less -P "(END)" $(git rev-parse --show-toplevel)/.git/config'
 alias   gchkout='gcheckout'
 alias gcheckout='git checkout'
+
+
