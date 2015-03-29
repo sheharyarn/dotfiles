@@ -3,7 +3,22 @@ VIM - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
 
 ![Vim Configuration Screenshot](http://i.imgur.com/WSkHxAz.png)
 
-## Getting Started
+## Upgrade Vim
+
+The default `vim` by Apple sucks balls, so we're going to upgrade to the latest Vim. 
+First, switch over to the system `ruby` if you're using `rvm`:
+
+```bash
+rvm use system
+```
+
+Use Homebrew to install `vim`:
+
+```bash
+brew install vim --override-system-vim
+```
+
+## Setting up Plugins
 
 I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and I recommend that you do the same.
 
