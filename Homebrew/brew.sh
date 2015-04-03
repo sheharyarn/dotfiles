@@ -33,6 +33,7 @@ brew install tor
 brew install torsocks
 brew install safe-rm
 brew install rmtrash
+brew install tree
 
 #> External Binaries
 brew install karan/karan/gitignore
