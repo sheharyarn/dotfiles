@@ -4,9 +4,14 @@
 ## (Found in /etc/hosts)
 
 
-127.0.0.1	localhost
+# Localhost variations
 127.0.0.1	psycho
+127.0.0.1	localhost
+127.0.0.1   kholopk.local
+127.0.0.1   mobilepk.local
+
 192.168.1.1	router
+
 
 # Servers
 192.241.251.130 outy
@@ -18,10 +23,12 @@
 188.166.44.216  kholopk
 128.199.247.227 mobilepk
 
+
 # System Stuff
 255.255.255.255	broadcasthost
 ::1             localhost 
 fe80::1%lo0	localhost
+
 
 # Youtube Fix
 127.0.0.1	youtube.com
