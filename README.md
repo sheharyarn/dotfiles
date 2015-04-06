@@ -45,7 +45,7 @@ Initially I worked with only a few `Bash` aliases and `.irbrc` customizations, b
 
 Over time, I've copied and used dotfiles of:
 
-- [Zach Holfman](https://github.com/holman/dotfiles)
+- [Zach Holman](https://github.com/holman/dotfiles)
 - [Ryan Bates](https://github.com/ryanb/dotfiles) 
 - [Ryan Tomayko](https://github.com/rtomayko/dotfiles)
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
