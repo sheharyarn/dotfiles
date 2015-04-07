@@ -67,6 +67,6 @@ brew cask install couleurs                  # i'm conflicted, i love this app
 brew cask install chromecast
 brew cask install ps3-media-server
 brew cask install tunnelbear
-brew cask install groovesquid
+brew cask install shiny-groove
 
 
