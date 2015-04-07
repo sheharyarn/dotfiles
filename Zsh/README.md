@@ -12,7 +12,7 @@ Zsh
 brew install zsh
 
 # Install `oh-my-zsh` (http://ohmyz.sh/)
-curl -L http://install.ohmyz.sh | sh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Symlink `.zshrc`
 ln -s ~/.dotfiles/Zsh/zshrc.symlink ~/.zshrc
