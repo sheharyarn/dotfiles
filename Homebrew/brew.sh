@@ -58,15 +58,15 @@ brew cask install nosleep
 brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
 brew cask install android-studio            # point it to your huge sdk folder
-brew cask install testflight
 brew cask install java
 
 #> Not that important
 brew cask install lastfm
 brew cask install couleurs                  # i'm conflicted, i love this app
-brew cask install chromecast
-brew cask install ps3-media-server
 brew cask install tunnelbear
 brew cask install shiny-groove
 
+#> Maybe
+# brew cask install chromecast
+# brew cask install ps3-media-server
 
