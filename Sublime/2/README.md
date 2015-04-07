@@ -12,3 +12,4 @@ $ ln -s "$HOME/.dotfiles/Sublime/2/Preferences.sublime-settings.symlink" "Prefer
 $ ln -s "$HOME/.dotfiles/Sublime/2/sftp_servers" "sftp_servers"
 ```
 
+Open Sublime, if it isn't open already. Press `⌘+Shift+P` and select 'Package Control: Updgrade all Packages'. Now restart sublime.
