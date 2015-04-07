@@ -26,7 +26,7 @@ brew install git                            # : dotfiles/git
 brew install wget
 brew install node
 brew install nano                           # : dotfiles/nano
-brew install vim                            # : dotfiles/vim
+brew install vim --override-system-vim      # : dotfiles/vim
 brew install heroku-toolbelt
 brew install brew-cask
 brew install tor
@@ -52,12 +52,14 @@ brew cask install skype
 brew cask install jumpshare                 # fuck dropbox
 brew cask install teamviewer
 brew cask install android-file-transfer
+brew cask install nosleep
 
 #> Dev Apps
 brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
 brew cask install android-studio            # point it to your huge sdk folder
 brew cask install testflight
+brew cask install java
 
 #> Not that important
 brew cask install lastfm
