@@ -7,6 +7,8 @@
 # Localhost variations
 127.0.0.1	psycho
 127.0.0.1	localhost
+127.0.0.1   MBP
+127.0.0.1   Air
 127.0.0.1   kholopk.local
 127.0.0.1   mobilepk.local
 
