@@ -9,9 +9,9 @@
 127.0.0.1	localhost
 127.0.0.1   MBP
 127.0.0.1   Air
+
 127.0.0.1   kholopk.local
 127.0.0.1   mobilepk.local
-
 127.0.0.1   caremerge.loc
 127.0.0.1   api.caremerge.loc
 
@@ -25,6 +25,7 @@
 107.170.111.64	filesdroid
 104.130.8.61	crewcade
 104.130.2.40    veeto
+45.55.170.47    sites
 188.166.44.216  kholopk
 128.199.247.227 mobilepk
 
