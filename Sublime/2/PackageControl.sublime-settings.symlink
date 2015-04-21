@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"AngularJS",
 		"Better Completion",
 		"Codeivate",
 		"CoffeeScript",
