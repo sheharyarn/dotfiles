@@ -27,3 +27,8 @@ end
 	eval File.read "#{irbrc_dir}/#{file}"
 end
 
+# Load Stupid Scripts
+Dir["#{irbrc_dir}/scripts/*.rb"].each do |script|
+    eval File.read(script)
+end
+
