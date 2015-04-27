@@ -20,5 +20,8 @@ def normalize_episode_names
 end
 
 # The.Flash.2014.118.720p.HDTV.X264-DIMENSION.mkv
+# The.Flash.S01E18.720p.HDTV.X264-DIMENSION.mkv
+# the.big.bang.theory.1819.hdtv-lol.mp4
 # should be this
 # (.*\.)(\d{4}\.)?(\d{1,2})(\d{2})(.*\.)(mp4|avi|mkv)$
+# ^(.*\.)(\d{4}\.)?(\d{1,2})(\d{2})(\.\d{3,4}p)?(\..*\.)(mp4|avi|mkv)$
