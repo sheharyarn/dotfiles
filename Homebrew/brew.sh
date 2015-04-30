@@ -34,6 +34,7 @@ brew install torsocks
 brew install safe-rm
 brew install rmtrash
 brew install tree
+brew install unrar
 
 #> External Binaries
 brew install karan/karan/gitignore
