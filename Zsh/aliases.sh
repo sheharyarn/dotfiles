@@ -17,3 +17,6 @@ alias myip="ifconfig en0 inet | grep inet"
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
 
+# Applications
+alias vsc='open -a "Visual Studio Code"'
+
