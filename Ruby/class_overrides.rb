@@ -5,7 +5,7 @@
 class Object
   # Search methods of a Ruby Object
   def search_methods(qry)
-    self.methods & self.methods.select { |m| m.to_s.include? qry }
+    self.methods & self.methods.select { |m| m.to_s.include? qry.to_s }
   end
 
   # Get Local Methods of a Ruby Object
