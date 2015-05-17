@@ -26,6 +26,16 @@ search() {
     fi
 }
 
+# Use $ as a function
+function $ {
+    local cm=""
+    for i in "$@"; do
+        cm="$cm $i"
+    done
+
+    eval "$cm"
+}
+
 
 # Extract all archives with a single command
 extract () {
