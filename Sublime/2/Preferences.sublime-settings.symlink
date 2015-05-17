@@ -4,7 +4,8 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"sublimelint"
+		"sublimelint",
+		"Markdown Extended"
 	],
 	"scroll_past_end": true,
 	"theme": "Soda Dark.sublime-theme"
