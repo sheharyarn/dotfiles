@@ -11,6 +11,11 @@ alias la='ls -FGal'
 alias trash='rmtrash'
 alias   del='rmtrash'
 
+# Directories
+alias dotfiles="cd ~/.dotfiles"
+alias     code="cd ~/code"
+alias     crap="cd ~/crap"
+
 # Random
 alias reload!='source ~/.zshrc'
 alias myip="ifconfig en0 inet | grep inet"
