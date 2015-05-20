@@ -6,6 +6,9 @@ export DOTFILES=$HOME/.dotfiles
 export PATH=/usr/local/bin:$PATH
 
 
+# Default Editor
+export EDITOR='sublime'
+
 # Language fix
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8

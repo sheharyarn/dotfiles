@@ -26,6 +26,15 @@ search() {
     fi
 }
 
+# Do cool stuff with the edit command
+edit() {
+    if [[ $# -eq 0 ]] ; then
+        eval "$EDITOR ."
+    else
+        eval "$EDITOR $1"
+    fi
+}
+
 # Use $ as a function
 function $ {
     local cm=""

@@ -5,7 +5,6 @@
 
 alias    st='sublime'
 alias  subl='sublime'
-alias  edit='sublime'
 
 alias cdst2='cd ~/Library/Application\ Support/Sublime\ Text\ 2/'
 alias cdst3='cd ~/Library/Application\ Support/Sublime\ Text\ 3/'
