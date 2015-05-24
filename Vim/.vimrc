@@ -48,7 +48,9 @@ hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number co
 set autoindent                                  " automatic indent new lines
 set smartindent                                 " be smart about it
 set tabstop=4                                   " 4 is awesome
+set shiftwidth=4                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
+
 
 " Fix Clipboard paste on OSX
 "
@@ -66,6 +68,8 @@ if &term =~ "xterm.*"
     cmap <Esc>[201~ <nop>
 endif
 
+
+
 " Backups
 "
 set nobackup                                    " do not keep backups after close
@@ -81,10 +85,13 @@ set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX 
 set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 
 
+
 " MacVim Specific Settings
 "
 if has("gui_running")
-    colorscheme slate                    
-    set guifont=Menlo\ for\ Powerline:h13
+    colorscheme slate                           " Use the Slate colorscheme
+    set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
+    set nofu                                    " Don't start MacVim in Fullscreen Mode
+    set lines=34 columns=110                    " Set inital window size
 endif
 
