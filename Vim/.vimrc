@@ -47,7 +47,7 @@ hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number co
 "
 set autoindent                                  " automatic indent new lines
 set smartindent                                 " be smart about it
-set tabstop=4                                   " 4 is awesome, 2 is stupid, 8 is stupid, 6 is very very stupid
+set tabstop=4                                   " 4 is awesome
 set expandtab                                   " expand tabs to spaces
 
 " Fix Clipboard paste on OSX
@@ -80,4 +80,11 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
 set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
 set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 
+
+" MacVim Specific Settings
+"
+if has("gui_running")
+    colorscheme slate                    
+    set guifont=Menlo\ for\ Powerline:h13
+endif
 
