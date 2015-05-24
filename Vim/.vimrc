@@ -1,4 +1,4 @@
-#!/bin/vim
+#!/usr/bin/vim
 
 " sheharyar's .vimrc
 " ------------------
@@ -91,7 +91,7 @@ set scrolloff=8                                 " Start scrolling when we're 8 l
 if has("gui_running")
     colorscheme slate                           " Use the Slate colorscheme
     set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
-    set nofu                                    " Don't start MacVim in Fullscreen Mode
+    set fu                                      " Start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
     set nocursorline                            " Don't highlight current line in gvim
 endif
