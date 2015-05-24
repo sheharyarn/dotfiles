@@ -93,5 +93,6 @@ if has("gui_running")
     set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
     set nofu                                    " Don't start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
+    set nocursorline                            " Don't highlight current line in gvim
 endif
 
