@@ -18,6 +18,13 @@ Use Homebrew to install `vim`:
 brew install vim --override-system-vim
 ```
 
+or if you prefer macvim:
+
+```bash
+brew cask install macvim
+```
+
+
 ## Setting up Plugins
 
 I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and I recommend that you do the same.
@@ -31,7 +38,8 @@ I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and 
 2. Set up your `.vimrc` or start by symlinking mine:
 
     ```bash
-    ln -s ~/.dotfiles/Vim/.vimrc ~/.vimrc
+    ln -s ~/.dotfiles/Vim/.vimrc  ~/.vimrc
+    ln -s ~/.dotfiles/Vim/.gvimrc ~/.gvimrc     # For MacVim
     ```
 
 3. Install plugins using `vundle`:
@@ -44,7 +52,10 @@ I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and 
 
 #### [Airline](https://github.com/bling/vim-airline/)
 
-If you are using `vim-airline`, it's better if you use [Powerline Patched Fonts](https://github.com/powerline/fonts/) for your terminal theme since they look so much better. I've placed some OSX Terminal Themes with the Patched Fonts [here](https://github.com/sheharyarn/dotfiles/tree/master/OSX/Terminal).
+If you are using `vim-airline`, you need to use fonts that have been patched for powerline in your terminal. Here are a few patched fonts that I use in my OSX [Terminal Themes](https://github.com/sheharyarn/dotfiles/tree/master/OSX/Terminal):
+
+  - [Powerline Patched Font-Pack](https://github.com/powerline/fonts/)
+  - [Menlo for Powerline](https://github.com/abertsch/Menlo-for-Powerline)
 
 If you don't find your desired font patched with the Powerline Icons, [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
 
