@@ -3,5 +3,6 @@
 # Vim Aliases
 # ===========
 
-alias  v='vim'
-alias vi='vim'
+alias vi='mvim'   # Choose which vim to use
+alias  v='vi'
+
