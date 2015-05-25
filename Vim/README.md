@@ -39,7 +39,6 @@ I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and 
 
     ```bash
     ln -s ~/.dotfiles/Vim/.vimrc  ~/.vimrc
-    ln -s ~/.dotfiles/Vim/.gvimrc ~/.gvimrc     # For MacVim
     ```
 
 3. Install plugins using `vundle`:
