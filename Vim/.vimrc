@@ -45,6 +45,17 @@ hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number co
 
 
 
+" Splits
+"
+set splitbelow                                  " Open Splits to the bottom
+set splitright                                  " and right sides
+
+nnoremap <C-J> <C-W><C-J>                       " Remap ctrl+direction to
+nnoremap <C-K> <C-W><C-K>                       " move between splits
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " Text Formatting
 "
 set autoindent                                  " automatic indent new lines
