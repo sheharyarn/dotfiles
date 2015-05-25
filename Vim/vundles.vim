@@ -13,6 +13,7 @@ call vundle#begin()
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'wakatime/vim-wakatime'
     Plugin 'scrooloose/nerdtree'
+    Plugin 'Xuyuanp/nerdtree-git-plugin'
     Plugin 'kien/ctrlp.vim'
     Plugin 'Valloric/MatchTagAlways'
 call vundle#end()
