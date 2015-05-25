@@ -12,6 +12,7 @@ call vundle#begin()
     Plugin 'bling/vim-airline'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'wakatime/vim-wakatime'
+    Plugin 'scrooloose/nerdtree'
     Plugin 'kien/ctrlp.vim'
     Plugin 'Valloric/MatchTagAlways'
 call vundle#end()
