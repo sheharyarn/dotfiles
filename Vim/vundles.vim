@@ -16,6 +16,7 @@ call vundle#begin()
     Plugin 'Xuyuanp/nerdtree-git-plugin'
     Plugin 'kien/ctrlp.vim'
     Plugin 'Valloric/MatchTagAlways'
+    Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 
 
