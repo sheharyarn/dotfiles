@@ -20,6 +20,14 @@ set history=100                                 " command line history
 set autoread                                    " reload files (no local changes only)
 
 
+" Moving
+"
+imap <silent> <Down> <C-o> gj                   " Don't move to physical lines
+imap <silent> <Up>   <C-o> gk                   " when wrap is on
+nmap <silent> <Down>       gj
+nmap <silent> <Up>         gk
+
+
 " UI
 "
 set ruler                                       " show the cursor position all the time
