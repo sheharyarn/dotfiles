@@ -20,7 +20,6 @@ set history=100                                 " command line history
 set autoread                                    " reload files (no local changes only)
 
 
-
 " UI
 "
 set ruler                                       " show the cursor position all the time
@@ -99,17 +98,21 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
 " Other
 "
 set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
-set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 
 
 
-" MacVim Specific Settings
+" Vim vs. gVim
 "
-if has("gui_running")
+if has("gui_running")                           " ## gVim Specific Settings
     colorscheme slate                           " Use the Slate colorscheme
     set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
     set fu                                      " Start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
     set nocursorline                            " Don't highlight current line in gvim
+    set nowrap                                  " Don't wrap lines on gvim
+
+else                                            " ## Non-GUI Vim
+    set scrolloff=8                             " Start scrolling when we're 8 lines away from margins
+    set wrap lbr                                " Wrap lines on terminal vim
 endif
 
