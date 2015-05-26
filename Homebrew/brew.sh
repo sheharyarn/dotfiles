@@ -38,7 +38,7 @@ brew install unrar
 
 #> External Binaries
 brew install karan/karan/gitignore
-
+brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 
 # Install Apps
 # ------------
