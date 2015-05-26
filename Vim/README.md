@@ -65,3 +65,21 @@ If you don't find your desired font patched with the Powerline Icons, [you'll ha
 YCM requires Vim v7.3.584 or greater; [On OSX, You can do this](http://stackoverflow.com/a/14511970/1533054). It has a compiled component as well. You'll need to set it up for it to work properly. [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
 
 
+## [NeoVim](http://neovim.io/)
+
+If you're planning to use NeoVim:
+
+```bash
+# Install NeoVim
+brew install neovim/neovim/neovim --HEAD
+
+# Or the Unofficial GUI
+brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
+
+# Symlink existing .vimrc and .vim directory
+ln -s ~/.vim   ~/.nvim
+ln -s ~/.vimrc ~/.nvimrc
+```
+
+Compatibility isn't guaranteed. In fact, most of the plugins and commands might not work.
+
