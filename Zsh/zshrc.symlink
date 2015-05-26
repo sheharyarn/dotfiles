@@ -7,7 +7,7 @@ export PATH=/usr/local/bin:$PATH
 
 
 # Default Editor
-export EDITOR='sublime'
+export EDITOR='subl'
 
 # Language fix
 export LANG=en_US.UTF-8
