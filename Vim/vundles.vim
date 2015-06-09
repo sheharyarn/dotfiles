@@ -21,6 +21,8 @@ call vundle#begin()
     " Syntax Highlighting Plugins
     Plugin 'slim-template/vim-slim'
     Plugin 'kchmck/vim-coffee-script'
+    Plugin 'elixir-lang/vim-elixir'
+
 call vundle#end()
 
 
