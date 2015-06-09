@@ -22,8 +22,8 @@ set autoread                                    " reload files (no local changes
 
 " Moving
 "
-imap <silent> <Down> <C-o> gj                   " Don't move to physical lines
-imap <silent> <Up>   <C-o> gk                   " when wrap is on
+imap <silent> <Down> <C-o> gj
+imap <silent> <Up>   <C-o> gk
 nmap <silent> <Down>       gj
 nmap <silent> <Up>         gk
 

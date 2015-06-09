@@ -17,7 +17,10 @@ call vundle#begin()
     Plugin 'kien/ctrlp.vim'
     Plugin 'Valloric/MatchTagAlways'
     Plugin 'terryma/vim-multiple-cursors'
+
+    " Syntax Highlighting Plugins
     Plugin 'slim-template/vim-slim'
+    Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
 
