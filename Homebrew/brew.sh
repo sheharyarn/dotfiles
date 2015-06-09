@@ -61,6 +61,7 @@ brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
 brew cask install android-studio            # point it to your huge sdk folder
 brew cask install java
+brew cask install postgres
 
 #> Not that important
 brew cask install lastfm
