@@ -22,10 +22,10 @@ set autoread                                    " reload files (no local changes
 
 " Moving
 "
-imap <silent> <Down> <C-o> gj
-imap <silent> <Up>   <C-o> gk
-nmap <silent> <Down>       gj
-nmap <silent> <Up>         gk
+" imap <silent> <Down> <C-o> gj
+" imap <silent> <Up>   <C-o> gk
+" nmap <silent> <Down>       gj
+" nmap <silent> <Up>         gk
 
 
 " UI
