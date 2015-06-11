@@ -6,23 +6,32 @@ set nocompatible
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
+    " Vundle Itself
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'tpope/vim-fugitive'
+
+    " UI Plugins
     Plugin 'airblade/vim-gitgutter'
     Plugin 'bling/vim-airline'
+
+    " Features
     Plugin 'Valloric/YouCompleteMe'
-    Plugin 'wakatime/vim-wakatime'
+    Plugin 'Valloric/MatchTagAlways'
+    Plugin 'kien/ctrlp.vim'
+    Plugin 'terryma/vim-multiple-cursors'
+
+    " NerdTree Plugins
     Plugin 'scrooloose/nerdtree'
     Plugin 'Xuyuanp/nerdtree-git-plugin'
-    Plugin 'kien/ctrlp.vim'
-    Plugin 'Valloric/MatchTagAlways'
-    Plugin 'terryma/vim-multiple-cursors'
+    Plugin 'jistr/vim-nerdtree-tabs'
 
     " Syntax Highlighting Plugins
     Plugin 'slim-template/vim-slim'
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'elixir-lang/vim-elixir'
 
-call vundle#end()
+    " Others
+    Plugin 'wakatime/vim-wakatime'
+    Plugin 'tpope/vim-fugitive'
 
+call vundle#end()
 
