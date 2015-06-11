@@ -53,7 +53,8 @@ hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number co
 "
 let g:netrw_liststyle         = 3               " Use Tree-View mode in netrw
 let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
-map <C-t> :NERDTreeToggle<CR>
+
+map <C-t> :NERDTreeTabsToggle<CR>               " Toggle NertTree (On all Tabs)
 
 
 " Splits
