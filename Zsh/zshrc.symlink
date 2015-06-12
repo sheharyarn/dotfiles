@@ -1,13 +1,12 @@
 #!/bin/zsh
 
-# Paths and whatnot
+# Paths and Variables
 export ZSH=$HOME/.oh-my-zsh
-export DOTFILES=$HOME/.dotfiles
 export PATH=/usr/local/bin:$PATH
 
+export dotfiles=$HOME/.dotfiles
+export DOTFILES=$dotfiles
 
-# Default Editor
-export EDITOR='subl'
 
 # Language fix
 export LANG=en_US.UTF-8
