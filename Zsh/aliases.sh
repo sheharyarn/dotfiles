@@ -31,7 +31,6 @@ alias vsc='open -a "Visual Studio Code"'
 # Variables
 # #########
 
-# Default Editor
 export EDITOR='subl'
 export zshrc='$HOME/.zshrc'
 
