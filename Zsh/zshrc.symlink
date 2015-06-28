@@ -30,6 +30,9 @@ source `brew --prefix`/etc/profile.d/z.sh
 export PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
+# Go Configs
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Load .localrc for SUPER SECRET SHIT
 if [[ -a ~/.localrc ]]
