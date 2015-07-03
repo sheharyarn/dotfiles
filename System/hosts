@@ -19,6 +19,12 @@
 192.168.1.1	router
 
 
+# Private Network
+192.168.0.1 air
+192.168.0.2 mbp
+192.168.0.3 rpi
+
+
 # Servers
 192.241.251.130 outy
 128.199.242.246	bluewave
