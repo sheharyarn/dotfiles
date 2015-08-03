@@ -30,6 +30,7 @@ alias       guc='git add -u && git commit -m'
 
 # Pushing, Pulling and Deploying
 alias        gp='git push'
+alias       gpp='git push origin $(current_branch)'
 alias     gpull='git pull origin $(current_branch)'
 alias     gpdep='gpdeploy'
 alias     gpher='gpheroku'
