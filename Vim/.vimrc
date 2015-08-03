@@ -49,12 +49,26 @@ hi SignColumn ctermbg=none                      " Make Gitgutter Transparent
 hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number columns
 
 
+" Syntastic
+"
+set statusline+=%#warningmsg#                   " Recommended Syntastic Configurations
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+
 " Netrw / NerdTree
 "
 let g:netrw_liststyle         = 3               " Use Tree-View mode in netrw
 let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
 
 map <C-t> :NERDTreeTabsToggle<CR>               " Toggle NertTree (On all Tabs)
+command E Ex                                    " Use :E instead of :Ex
 
 
 " Splits

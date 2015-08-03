@@ -26,10 +26,13 @@ call vundle#begin()
 
     " Syntax Highlighting Plugins
     Plugin 'slim-template/vim-slim'
+    Plugin 'pangloss/vim-javascript'
+    Plugin 'briancollins/vim-jst'
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'elixir-lang/vim-elixir'
 
     " Others
+    Plugin 'scrooloose/syntastic'
     Plugin 'wakatime/vim-wakatime'
     Plugin 'tpope/vim-fugitive'
 
