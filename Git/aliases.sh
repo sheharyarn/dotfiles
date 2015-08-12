@@ -39,6 +39,7 @@ alias  gpheroku='gp && gp heroku master'
 
 
 # Others
+alias        gm='git merge'
 alias       grt='gitroot'
 alias       gco='git checkout'
 alias   gitroot='cd $(git rev-parse --show-toplevel || echo ".")'
