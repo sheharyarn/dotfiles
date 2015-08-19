@@ -8,5 +8,6 @@
 		"Markdown Extended"
 	],
 	"scroll_past_end": true,
-	"theme": "Soda Dark.sublime-theme"
+	"theme": "Soda Dark.sublime-theme",
+	"word_wrap": false
 }
