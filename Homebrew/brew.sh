@@ -42,6 +42,8 @@ brew install karan/karan/gitignore
 brew install neovim/neovim/neovim --HEAD
 brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 
+
+
 # Install Apps
 # ------------
 
@@ -65,12 +67,12 @@ brew cask install java
 brew cask install postgres
 
 #> Not that important
-brew cask install lastfm
-brew cask install couleurs                  # i'm conflicted, i love this app
+brew cask install couleurs
 brew cask install tunnelbear
-brew cask install shiny-groove
 
 #> Maybe
 # brew cask install chromecast
 # brew cask install ps3-media-server
+# brew cask install lastfm
+# brew cask install shiny-groove
 
