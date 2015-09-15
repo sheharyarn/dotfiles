@@ -4,8 +4,9 @@
 # #######
 
 # List
-alias l='ls -FG'
-alias la='ls -FGal'
+alias  l='ls -FG'
+alias la='ls -FGalh'
+alias ll='ls -FG1'
 
 # Brew Binaries
 alias trash='rmtrash'
