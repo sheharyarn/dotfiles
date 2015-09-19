@@ -3,9 +3,9 @@
 	"font_size": 14.0,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Markdown Extended",
 		"sublimelint",
-		"Markdown Extended"
+		"Vintage"
 	],
 	"scroll_past_end": true,
 	"theme": "Soda Dark.sublime-theme",
