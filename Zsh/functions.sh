@@ -89,7 +89,7 @@ transfer() {
     # check arguments
     if [ $# -eq 0 ]; 
     then 
-        echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"
+        echo "No arguments specified. Usage:\ntransfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"
         return 1
     fi
 
