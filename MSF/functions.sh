@@ -1,4 +1,5 @@
-# Metasploit
+# MSF
+# ===
 
 msflisten() {
     if [[ $# -eq 0 ]] ; then
