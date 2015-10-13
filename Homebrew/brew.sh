@@ -28,6 +28,7 @@ brew install node
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
 brew install vim --override-system-vim      # : dotfiles/vim
+brew install macvim
 brew install heroku-toolbelt
 brew install brew-cask
 brew install tor
@@ -76,4 +77,11 @@ brew cask install tunnelbear
 # brew cask install ps3-media-server
 # brew cask install lastfm
 # brew cask install shiny-groove
+
+
+
+# Link Apps
+# ---------
+
+brew linkapps macvim
 
