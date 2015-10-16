@@ -1,7 +1,7 @@
 sheharyarn's dotfiles
 =====================
 
-Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holfman's](https://github.com/holman/dotfiles) Dotfiles. For more information check out [Github Does Dotfiles](http://dotfiles.github.io/) and [Dotfiles are meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+Inspired by [Ryan Bates'](https://github.com/ryanb/dotfiles) and [Zach Holman's](https://github.com/holman/dotfiles) Dotfiles. For more information check out [Github Does Dotfiles](http://dotfiles.github.io/) and [Dotfiles are meant to be Forked](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ![Screenshot](http://i.imgur.com/b6v3e8g.png)
 
