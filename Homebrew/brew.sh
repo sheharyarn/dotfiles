@@ -39,6 +39,8 @@ brew install rmtrash
 brew install tree
 brew install unrar
 brew install archey
+brew install z
+
 
 #> External Binaries
 brew install karan/karan/gitignore
