@@ -53,7 +53,6 @@ brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 #> Must apps
 brew cask install firefoxdeveloperedition
 brew cask install google-chrome
-brew cask install vlc
 brew cask install mpv                       # : dotfiles/osx/mpv
 brew cask install utorrent
 brew cask install skype
@@ -65,11 +64,12 @@ brew cask install nosleep
 #> Dev Apps
 brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
-brew cask install android-studio            # point it to your huge sdk folder
 brew cask install java
+brew cask install android-studio            # point it to your huge sdk folder
 brew cask install postgres
 
 #> Not that important
+brew cask install vlc
 brew cask install couleurs
 brew cask install tunnelbear
 
