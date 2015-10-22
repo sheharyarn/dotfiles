@@ -62,6 +62,8 @@ brew cask install jumpshare                 # fuck dropbox
 brew cask install teamviewer
 brew cask install android-file-transfer
 brew cask install nosleep
+brew cask install flash
+brew cask install spotify
 
 #> Dev Apps
 brew cask install sublime-text              # : dotfiles/sublime/2
