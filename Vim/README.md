@@ -21,7 +21,8 @@ brew install vim --override-system-vim
 or if you prefer macvim:
 
 ```bash
-brew cask install macvim
+brew install  macvim
+brew linkapps macvim
 ```
 
 
