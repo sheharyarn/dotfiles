@@ -23,6 +23,21 @@ set autoread                                    " reload files (no local changes
 
 
 
+
+" Important Key Maps
+" ------------------
+
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
+                                                " Use Enter & Shift+Enter to create empty
+                                                " lines above and below
+inoremap jj <ESC>
+                                                " simulate ESC key by jj in insert mode
+vnoremap . :norm.<CR>
+                                                " enable use of . in visual mode
+
+     
+
 " UI
 " --
 
