@@ -1,7 +1,7 @@
 #!/usr/bin/vim
 
 " sheharyar's .vimrc
-" ------------------
+" ##################
 
 
 " Load my Vundle Plugins from my vundles.vim
@@ -12,24 +12,20 @@ endif
 
 
 
-" General
-"
+
+" General Settings
+" ----------------
+
 filetype plugin indent on
 syntax on
 set history=100                                 " command line history
 set autoread                                    " reload files (no local changes only)
 
 
-" Moving
-"
-" imap <silent> <Down> <C-o> gj
-" imap <silent> <Up>   <C-o> gk
-" nmap <silent> <Down>       gj
-" nmap <silent> <Up>         gk
-
 
 " UI
-"
+" --
+
 set ruler                                       " show the cursor position all the time
 set noshowcmd                                   " don't display incomplete commands
 set cursorline                                  " underline the line i'm currently on
@@ -45,12 +41,15 @@ let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Pow
 let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime 
 let g:gitgutter_eager         = 1               " and eager
 
-hi SignColumn ctermbg=none                      " Make Gitgutter Transparent
-hi LineNr     ctermbg=none ctermfg=darkgray     " Do the same for Line Number columns
+hi SignColumn ctermbg=none
+hi LineNr     ctermbg=none ctermfg=darkgray
+                                                " Make Gitgutter Transparent and
+                                                " Do the same for Line Number columns
 
 
 " Syntastic
-"
+" ---------
+
 set statusline+=%#warningmsg#                   " Recommended Syntastic Configurations
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -62,28 +61,36 @@ let g:syntastic_check_on_wq = 0
 
 
 
+
 " Netrw / NerdTree
-"
+" ----------------
+
 let g:netrw_liststyle         = 3               " Use Tree-View mode in netrw
 let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
 
-map <C-t> :NERDTreeTabsToggle<CR>               " Toggle NertTree (On all Tabs)
 command E Ex                                    " Use :E instead of :Ex
+map <C-t> :NERDTreeTabsToggle<CR>
+                                                " Toggle NertTree (On all Tabs)
+
 
 
 " Splits
-"
+" ------
+
 set splitbelow                                  " Open Splits to the bottom
 set splitright                                  " and right sides
 
-nnoremap <C-J> <C-W><C-J>                       " Remap ctrl+direction to
-nnoremap <C-K> <C-W><C-K>                       " move between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+                                                " Remap ctrl+direction to
+                                                " move between splits
 
 
 " Text Formatting
-"
+" ---------------
+
 set autoindent                                  " automatic indent new lines
 set smartindent                                 " be smart about it
 set tabstop=4                                   " 4 is awesome
@@ -91,8 +98,11 @@ set shiftwidth=4                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
 
 
+
+
 " Fix Clipboard paste on OSX
-"
+" --------------------------
+
 if &term =~ "xterm.*"
     let &t_ti = &t_ti . "\e[?2004h"
     let &t_te = "\e[?2004l" . &t_te
@@ -109,8 +119,10 @@ endif
 
 
 
+
 " Backups
-"
+" -------
+
 set nobackup                                    " do not keep backups after close
 set backupdir=$HOME/.vim/backups                " store backups under ~/.vim/backup
 set backupcopy=yes                              " keep attributes of original file
@@ -118,15 +130,20 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
                                                 " make sure that `swap` and `backups` dirs exist in ~/.vim
 
 
+
 " Other
-"
+" -----
+
 set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
 set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 set wrap lbr                                    " Wrap lines without breaking words
 
 
+
+
 " Vim vs. gVim
-"
+" ------------
+
 if has("gui_running")                           " ## gVim Specific Settings
     colorscheme slate                           " Use the Slate colorscheme
     set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
