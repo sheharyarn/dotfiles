@@ -14,6 +14,7 @@ call vundle#begin()
     Plugin 'bling/vim-airline'
 
     " Features
+    Plugin 'tpope/vim-surround'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'Valloric/MatchTagAlways'
     Plugin 'kien/ctrlp.vim'
@@ -35,6 +36,7 @@ call vundle#begin()
     Plugin 'scrooloose/syntastic'
     Plugin 'wakatime/vim-wakatime'
     Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 
