@@ -13,6 +13,7 @@ alias       gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 alias        gl='git log --decorate --color         --oneline'
 alias       glg='git log --decorate --color --graph --oneline'
+alias      glga='git log --decorate --color --graph --oneline        --all'
 alias       gla='git log --decorate --color --graph'
 alias      glaa='git log --decorate --color --graph           --stat --all'
 
