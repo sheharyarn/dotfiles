@@ -92,3 +92,12 @@ brew cask install tunnelbear
 
 brew linkapps macvim
 
+
+
+# Launchd Configuration
+# ---------------------
+
+ln -sfv /usr/local/opt/tor/*.plist ~/Library/LaunchAgents
+
+
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
