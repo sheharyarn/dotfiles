@@ -38,6 +38,7 @@ brew install safe-rm
 brew install rmtrash
 brew install tree
 brew install unrar
+brew install imagemagick
 brew install archey
 brew install z
 
