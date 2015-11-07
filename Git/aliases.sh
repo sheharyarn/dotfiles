@@ -3,6 +3,8 @@
 # GIT ALIASES
 # ===========
 
+alias         g='git'
+
 # Status and Information
 alias        gb='git branch'
 alias        gs='git status'
@@ -47,6 +49,7 @@ alias  gpheroku='gp && gp heroku master'
 
 
 # Others
+alias       grb='git rebase -i'
 alias       grt='gitroot'
 alias   gitroot='cd $(git rev-parse --show-toplevel || echo ".")'
 alias  gitcount='git rev-list HEAD --count'
