@@ -61,6 +61,11 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Make Gitgutter Transparent and
                                                 " Do the same for Line Number columns
 
+set hlsearch
+nnoremap <esc><esc> :noh<return>
+                                                " Enable search highlights and
+                                                " press ESC twice to clear
+
 
 " Syntastic
 " ---------
