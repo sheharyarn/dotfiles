@@ -29,6 +29,13 @@ alias       gac='git add -A && git commit -m'
 alias       guc='git add -u && git commit -m'
 
 
+# Branches and Remotes
+alias        gm='git merge'
+alias       gco='git checkout'
+alias        gr='git remote'
+alias       gra='git remote add'
+
+
 # Pushing, Pulling and Deploying
 alias        gp='git push'
 alias       gpp='git push origin $(current_branch)'
@@ -40,9 +47,7 @@ alias  gpheroku='gp && gp heroku master'
 
 
 # Others
-alias        gm='git merge'
 alias       grt='gitroot'
-alias       gco='git checkout'
 alias   gitroot='cd $(git rev-parse --show-toplevel || echo ".")'
 alias  gitcount='git rev-list HEAD --count'
 alias   gsearch='gitsearch'
