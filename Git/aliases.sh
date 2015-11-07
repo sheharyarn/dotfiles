@@ -5,6 +5,7 @@
 
 alias         g='git'
 
+
 # Status and Information
 alias        gb='git branch'
 alias        gs='git status'
@@ -24,11 +25,12 @@ alias      glaa='git log --decorate --color --graph           --stat --all'
 
 
 # Staging and Commiting
-alias        gc='git commit -m'
 alias        ga='git add'
 alias       gaa='git add -A'
-alias       gac='git add -A && git commit -m'
-alias       guc='git add -u && git commit -m'
+alias       gac='git add -A && gc'
+alias       guc='git add -u && gc'
+
+  # gc moved to functions.sh
 
 
 # Branches and Remotes
