@@ -27,6 +27,8 @@ set autoread                                    " reload files (no local changes
 " Important Key Maps
 " ------------------
 
+let mapleader = ','                             " Use comma as the leader key
+
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
                                                 " Use Enter & Shift+Enter to create empty
@@ -36,6 +38,8 @@ inoremap jj <ESC>
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
 
+noremap <Leader>W :w !sudo tee % > /dev/null
+                                                " Write file using sudo by Leader + W 
      
 
 " UI
