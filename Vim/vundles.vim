@@ -25,7 +25,8 @@ call vundle#begin()
     Plugin 'Xuyuanp/nerdtree-git-plugin'
     Plugin 'jistr/vim-nerdtree-tabs'
 
-    " Syntax Highlighting Plugins
+    " Language/Framework specific
+    Plugin 'vim-ruby/vim-ruby'
     Plugin 'othree/html5.vim'
     Plugin 'slim-template/vim-slim'
     Plugin 'pangloss/vim-javascript'
