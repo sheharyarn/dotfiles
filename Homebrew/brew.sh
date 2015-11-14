@@ -42,6 +42,7 @@ brew install mysql
 brew install imagemagick
 brew install archey
 brew install z
+brew install android-platform-tools
 
 
 #> External Binaries
