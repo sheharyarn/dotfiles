@@ -97,6 +97,14 @@ map <C-t> :NERDTreeTabsToggle<CR>
                                                 " Toggle NertTree (On all Tabs)
 
 
+" Vim-Multiple-Cursors
+" --------------------
+
+let g:multi_cursor_exit_from_visual_mode = 0    
+let g:multi_cursor_exit_from_insert_mode = 0
+                                                " Don't exit multi-cursor mode if
+                                                " ESC pressed in insert/visual mode
+
 
 " Splits
 " ------
