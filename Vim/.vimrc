@@ -125,8 +125,8 @@ nnoremap <C-H> <C-W><C-H>
 
 set autoindent                                  " automatic indent new lines
 set smartindent                                 " be smart about it
-set tabstop=4                                   " 4 is awesome
-set shiftwidth=4                                " for automatic indents
+set tabstop=2                                   " 4 is awesome
+set shiftwidth=2                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
 
 vnoremap <Tab>   >gv
