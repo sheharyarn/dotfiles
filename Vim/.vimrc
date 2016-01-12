@@ -129,7 +129,10 @@ set tabstop=4                                   " 4 is awesome
 set shiftwidth=4                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
 
-
+vnoremap <Tab>   >gv
+vnoremap <S-Tab> <gv
+                                                " Indent using Tab in visual
+                                                " mode and stay in mode
 
 
 " Fix Clipboard paste on OSX
