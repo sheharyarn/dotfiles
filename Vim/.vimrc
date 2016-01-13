@@ -7,7 +7,7 @@
 " Load my Vundle Plugins from my vundles.vim
 "
 if filereadable(expand("~/.dotfiles/Vim/vundles.vim"))
-    source ~/.dotfiles/Vim/vundles.vim 
+    source ~/.dotfiles/Vim/vundles.vim
 endif
 
 
@@ -39,8 +39,8 @@ vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
 
 noremap <Leader>W :w !sudo tee % > /dev/null
-                                                " Write file using sudo by Leader + W 
-     
+                                                " Write file using sudo by Leader + W
+
 
 " UI
 " --
@@ -57,7 +57,7 @@ set ignorecase                                  " ignore case when searching
 
 let g:airline_theme           = 'bubblegum'     " Set my theme for Airline
 let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
-let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime 
+let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
 
 hi SignColumn ctermbg=none
@@ -65,11 +65,15 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Make Gitgutter Transparent and
                                                 " Do the same for Line Number columns
 
+hi ExtraWhitespace ctermbg=darkred guibg=darkred
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+                                                " Find trailing & before-tab spaces and
+                                                " highlight them dark red
+
 set hlsearch
 nnoremap <esc><esc> :noh<return>
                                                 " Enable search highlights and
                                                 " press ESC twice to clear
-
 
 " Syntastic
 " ---------
@@ -100,7 +104,7 @@ map <C-t> :NERDTreeTabsToggle<CR>
 " Vim-Multiple-Cursors
 " --------------------
 
-let g:multi_cursor_exit_from_visual_mode = 0    
+let g:multi_cursor_exit_from_visual_mode = 0
 let g:multi_cursor_exit_from_insert_mode = 0
                                                 " Don't exit multi-cursor mode if
                                                 " ESC pressed in insert/visual mode
