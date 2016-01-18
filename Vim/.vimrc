@@ -184,12 +184,14 @@ set wrap lbr                                    " Wrap lines without breaking wo
 " ------------
 
 if has("gui_running")                           " ## gVim Specific Settings
-    colorscheme slate                           " Use the Slate colorscheme
+    colorscheme apprentice                      " Use custom colorscheme
     set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
     set fu                                      " Start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
     set nocursorline                            " Don't highlight current line in gvim
     set nowrap                                  " Don't wrap lines on gvim
+
+    hi ExtraWhitespace ctermbg=darkred guibg=darkred
 
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
