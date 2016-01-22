@@ -1,0 +1,8 @@
+init-author-name  = "Sheharyar Naseer"
+init-author-email = "hello@sheharyar.me"
+init-author-url   = "https://sheharyar.me/"
+init-license      = "MIT"
+init-version      = "0.1.0"
+
+loglevel          = "verbose"
+

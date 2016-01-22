@@ -7,6 +7,14 @@ Node.js
 $ brew install node
 ```
 
+## npmrc
+
+Symlink the `.npmrc` file
+
+```bash
+$ ln -s ~/.dotfiles/Node.js/npmrc.symlink ~/.npmrc
+```
+
 ## Node Dev Tools
 
 Run this script once to install different npm based developer tools:
