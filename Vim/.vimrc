@@ -70,6 +70,21 @@ nnoremap <esc><esc> :noh<return>
                                                 " Enable search highlights and
                                                 " press ESC twice to clear
 
+
+hi ExtraWhitespace ctermbg=darkred guibg=darkred
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+au ColorScheme * hi ExtraWhitespace ctermbg=darkred guibg=darkred
+au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+                                                " Find trailing & before-tab spaces and
+                                                " highlight them dark red - then do the
+                                                " same for each buffer and colorscheme
+                                                " in gui / macvim
+
+
+
+
 " Syntastic
 " ---------
 
@@ -191,12 +206,4 @@ else                                            " ## Non-GUI Vim
 endif
 
 
-
-" Highlights and matches                        " Keep these at the end
-" ----------------------
-
-hi ExtraWhitespace ctermbg=darkred guibg=darkred
-match ExtraWhitespace /\s\+$\| \+\ze\t/
-                                                " Find trailing & before-tab spaces and
-                                                " highlight them dark red
 
