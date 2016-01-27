@@ -65,11 +65,6 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Make Gitgutter Transparent and
                                                 " Do the same for Line Number columns
 
-hi ExtraWhitespace ctermbg=darkred guibg=darkred
-match ExtraWhitespace /\s\+$\| \+\ze\t/
-                                                " Find trailing & before-tab spaces and
-                                                " highlight them dark red
-
 set hlsearch
 nnoremap <esc><esc> :noh<return>
                                                 " Enable search highlights and
@@ -191,9 +186,17 @@ if has("gui_running")                           " ## gVim Specific Settings
     set nocursorline                            " Don't highlight current line in gvim
     set nowrap                                  " Don't wrap lines on gvim
 
-    hi ExtraWhitespace ctermbg=darkred guibg=darkred
-
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
 endif
+
+
+
+" Highlights and matches                        " Keep these at the end
+" ----------------------
+
+hi ExtraWhitespace ctermbg=darkred guibg=darkred
+match ExtraWhitespace /\s\+$\| \+\ze\t/
+                                                " Find trailing & before-tab spaces and
+                                                " highlight them dark red
 
