@@ -46,6 +46,8 @@ fe80::1%lo0	localhost
 
 
 # Block List :P
+127.0.0.1 www.bohemiancoding.com
+127.0.0.1 bohemiancoding.com
 127.0.0.1 192.150.14.69
 127.0.0.1 192.150.18.101
 127.0.0.1 192.150.18.108
