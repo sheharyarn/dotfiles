@@ -5,14 +5,14 @@
 
 
 # Localhost variations
-127.0.0.1	psy
-127.0.0.1	psycho
-127.0.0.1	localhost
+127.0.0.1   psy
+127.0.0.1   psycho
+127.0.0.1   localhost
 127.0.0.1   MBP
 127.0.0.1   Air
 
-127.0.0.1   kholopk.local
-127.0.0.1   mobilepk.local
+127.0.0.1   kholopk.loc
+127.0.0.1   mobilepk.loc
 127.0.0.1   nuclearn.loc
 127.0.0.1   polystream.loc
 127.0.0.1   cc.loc
@@ -31,7 +31,7 @@
 128.199.242.246	bluewave
 107.170.111.64	devfiles
 107.170.111.64	filesdroid
-104.130.8.61	crewcade
+104.130.8.61	  crewcade
 104.130.2.40    veeto
 45.55.170.47    sites
 188.166.44.216  kholopk
@@ -41,7 +41,7 @@
 
 # System Stuff
 255.255.255.255	broadcasthost
-::1             localhost 
+::1             localhost
 fe80::1%lo0	localhost
 
 
