@@ -89,6 +89,20 @@ brew cask install tunnelbear
 
 
 
+# Quick Look Plugins
+# ------------------
+
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install quicklook-csv
+brew cask install qlimagesize
+brew cask install suspicious-package
+brew cask install provisionql
+brew cask install qlcolorcode
+brew cask install qlstephen
+
+
+
 # Link Apps
 # ---------
 
