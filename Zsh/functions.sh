@@ -26,6 +26,13 @@ search() {
     fi
 }
 
+
+# Search processes
+psaux() {
+  ps aux | grep -i "$1" | grep -v "grep"
+}
+
+
 # Do cool stuff with the edit command
 edit() {
     if [[ $# -eq 0 ]] ; then
