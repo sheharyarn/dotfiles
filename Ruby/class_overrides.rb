@@ -21,11 +21,13 @@ class Object
     end
     system 'ri', method.to_s
   end
+
+  alias_method :methods_search, :search_methods
 end
 
 module ActiveModel
   module Model
-    # Select / put selected fields of a Active/Mongoid Model 
+    # Select / put selected fields of a Active/Mongoid Model
     def select_fields(*fields)
       fields.flatten!
       fields.map { |f| self.send f }
