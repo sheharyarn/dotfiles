@@ -37,5 +37,17 @@ class Episodes
             puts "Renamed '#{f}' to '#{new_name}'"
         end
     end
+
+    def self.lowercase
+      regex = /^.*\.(mp4|avi|mkv|m4v)$/
+
+      Dir['*']
+        .select { |f| f =~ regex }
+        .each do  |f|
+          File.rename f, f.downcase
+
+          puts "Lowercased file: #{f}"
+      end
+    end
 end
 
