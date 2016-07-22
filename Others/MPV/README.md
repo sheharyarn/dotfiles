@@ -1,8 +1,8 @@
 
-YOU DA REAL MPV!
-================
+[mpv](https://mpv.io/)
+======================
 
-_Get it?_ Sigh, I know, lame...
+> a free, open source, and cross-platform media player
 
 ## Installation
 
@@ -16,6 +16,7 @@ brew cask install mpv                   # install mpv .app and binary
 ## Symlink Config Files
 
 ```bash
+mkdir -p ~/.config/mpv
 ln -s ~/.dotfiles/Others/MPV/mpv.conf ~/.config/mpv/mpv.conf
 ln -s ~/.dotfiles/Others/MPV/input.conf ~/.config/mpv/input.conf
 ```
