@@ -5,7 +5,7 @@ VIM - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
 
 ## Upgrade Vim
 
-The default `vim` by Apple sucks balls, so we're going to upgrade to the latest Vim. 
+The default `vim` by Apple sucks balls, so we're going to upgrade to the latest Vim.
 First, switch over to the system `ruby` if you're using `rvm`:
 
 ```bash
@@ -26,7 +26,7 @@ brew linkapps macvim
 ```
 
 
-## Setting up Plugins
+## Setting up Everything
 
 I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and I recommend that you do the same.
 
@@ -36,10 +36,12 @@ I use [Vundle](https://github.com/gmarik/Vundle.vim) for Plugin Management, and 
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     ```
 
-2. Set up your `.vimrc` or start by symlinking mine:
+2. Set up your `~/.vimrc` file and the `~/.vim/` directory:
 
     ```bash
-    ln -s ~/.dotfiles/Vim/.vimrc  ~/.vimrc
+    ln -s ~/.dotfiles/Vim/.vimrc ~/.vimrc
+    ln -s ~/.dotfiles/Vim/colors ~/.vim/colors
+    mkdir -p ~/.vim/swap ~/.vim/backups
     ```
 
 3. Install plugins using `vundle`:
