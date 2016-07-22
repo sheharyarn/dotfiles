@@ -54,6 +54,7 @@ set number                                      " line numbers
 set ttimeoutlen=50                              " recommended by airline
 set laststatus=2                                " needed for airline to be visible
 set ignorecase                                  " ignore case when searching
+set t_Co=256                                    " set terminal color mode to 256
 
 let g:airline_theme           = 'bubblegum'     " Set my theme for Airline
 let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
