@@ -11,7 +11,8 @@ call vundle#begin()
 
     " UI Plugins
     Plugin 'airblade/vim-gitgutter'
-    Plugin 'bling/vim-airline'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
 
     " Features
     Plugin 'tpope/vim-surround'
