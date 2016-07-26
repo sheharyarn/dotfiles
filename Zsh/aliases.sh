@@ -18,8 +18,8 @@ alias     code="cd ~/code"
 alias     crap="cd ~/crap"
 
 # Random
-alias zshrc='$EDITOR "$zshrc"'
-alias reload!='source "$zshrc"'
+alias zshrc="$EDITOR $zshrc"
+alias reload!="source $zshrc"
 alias myip='ifconfig en0 inet | grep inet'
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
