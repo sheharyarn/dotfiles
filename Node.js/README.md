@@ -1,18 +1,28 @@
 Node.js
 =======
 
+> Use [NVM](https://github.com/creationix/nvm) ffs!
+
+
 ## Installation
 
-```bash
-$ brew install node
-```
+Head over to the [NVM Installation Section](https://github.com/creationix/nvm#install-script)
+for the installation script.
 
-## npmrc
 
-Symlink the `.npmrc` file
+## Setup
+
+Symlink the `.npmrc` and `.nvmrc` dotfiles:
 
 ```bash
 $ ln -s ~/.dotfiles/Node.js/npmrc.symlink ~/.npmrc
+$ ln -s ~/.dotfiles/Node.js/nvmrc.symlink ~/.nvmrc
+```
+
+Finally install the latest release of node:
+
+```bash
+$ nvm install
 ```
 
 ## Node Dev Tools
