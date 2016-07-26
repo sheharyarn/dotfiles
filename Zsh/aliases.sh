@@ -13,26 +13,20 @@ alias trash='rmtrash'
 alias   del='rmtrash'
 
 # Directories
-alias dotfiles="cd ~/.dotfiles"
+alias dotfiles="cd $dotfiles"
 alias     code="cd ~/code"
 alias     crap="cd ~/crap"
 
 # Random
-alias zshrc='vi ~/.zshrc' 
-alias reload!='source ~/.zshrc'
-alias myip="ifconfig en0 inet | grep inet"
+alias zshrc='$EDITOR "$zshrc"'
+alias reload!='source "$zshrc"'
+alias myip='ifconfig en0 inet | grep inet'
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
 
 # Applications
 alias vsc='open -a "Visual Studio Code"'
 
-
-
-# Variables
-# #########
-
-export EDITOR='vim'
-export zshrc='$HOME/.zshrc'
-
+# Make sudo work with aliases
+alias sudo='sudo '
 

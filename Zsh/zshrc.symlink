@@ -7,6 +7,9 @@ export PATH=/usr/local/bin:$PATH
 export dotfiles=$HOME/.dotfiles
 export DOTFILES=$dotfiles
 
+export EDITOR='vim'
+export zshrc='$HOME/.zshrc'
+
 
 # Language fix
 export LANG=en_US.UTF-8
