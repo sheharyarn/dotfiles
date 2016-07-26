@@ -1,6 +1,6 @@
 
-Git - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
-====================================================================
+Git
+===
 
 ## Installation
 
@@ -25,5 +25,16 @@ I also use the awesome command-line utility [`joe`](https://github.com/karan/joe
 
 ```bash
 git config --global core.excludesfile ~/.dotfiles/Git/.gitignore.global
+```
+
+
+### Aliases and Functions
+
+If you're using my dotfiles (including my .zshrc), these will get automatically loaded, or you can load them manually by putting this in your shell-rc file:
+
+
+```bash
+source ~/.dotfiles/Git/aliases.sh
+source ~/.dotfiles/Git/functions.sh
 ```
 
