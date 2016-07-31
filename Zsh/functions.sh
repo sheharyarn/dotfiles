@@ -41,8 +41,8 @@ del() {
 
 
 # Search processes
-psaux() {
-  ps aux | grep -i "$1" | grep -v "grep"
+psx() {
+  ps aux | grep -i "$1" | grep -v grep
 }
 
 
