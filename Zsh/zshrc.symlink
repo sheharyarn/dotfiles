@@ -31,14 +31,18 @@ source $ZSH/oh-my-zsh.sh
 #source `brew --prefix`/etc/profile.d/z.sh
 
 
-# NVM Configs
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-
 # Go Configs
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+
+# Kiex Configs
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+
+
+# NVM Configs
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 
 
 # RVM Configs
