@@ -31,11 +31,6 @@ source $ZSH/oh-my-zsh.sh
 #source `brew --prefix`/etc/profile.d/z.sh
 
 
-# RVM Configs
-export PATH=$PATH:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-
 # NVM Configs
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
@@ -44,6 +39,11 @@ export NVM_DIR="$HOME/.nvm"
 # Go Configs
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+
+# RVM Configs
+export PATH=$PATH:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 # Load my .(z)sh files
