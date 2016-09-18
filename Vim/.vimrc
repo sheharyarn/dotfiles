@@ -196,7 +196,10 @@ set wrap lbr                                    " Wrap lines without breaking wo
 
 if has("gui_running")                           " ## gVim Specific Settings
     colorscheme apprentice                      " Use custom colorscheme
-    set guifont=Menlo\ for\ Powerline:h13       " Use the Menlo Powerline Font
+
+    "set guifont=Menlo\ for\ Powerline:h13      " Use the Menlo Powerline Font
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
+                                                " Use the Source Code Pro Powerline Font
     set fu                                      " Start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
     set nocursorline                            " Don't highlight current line in gvim
