@@ -27,7 +27,7 @@ set autoread                                    " reload files (no local changes
 " Important Key Maps
 " ------------------
 
-let mapleader = ','                             " Use comma as the leader key
+let mapleader = '\'                             " Use comma as the leader key
 
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
@@ -127,17 +127,19 @@ let g:multi_cursor_exit_from_insert_mode = 0
 set splitbelow                                  " Open Splits to the bottom
 set splitright                                  " and right sides
 
-"noremap <C-S-[> gT
-"noremap <C-S-]> gt
-"noremap <C-S-N> :tabnew<CR>
-                                                " Move between tabs
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
                                                 " Remap ctrl+direction to
                                                 " move between splits
+
+noremap <Leader>[ :tabprev<CR>
+noremap <Leader>] :tabnext<CR>
+noremap <Leader>= :tabnew<CR>
+                                                " Create a new tab using Leader + =
+                                                " and move
+                                                " between them using [ / ]
 
 
 " Text Formatting
