@@ -4,6 +4,6 @@
 # ===========
 
 alias     vi='vim'
-alias      v='mvim'
+alias      v='mvim || gvim'
 alias neovim='nvim'
 
