@@ -212,9 +212,13 @@ if has("gui_running")                           " ## GUI-Based Vim Settings
       set fu                                    " Start MacVim in Fullscreen Mode
       set guifont=Menlo\ for\ Powerline:h13     " Use the Menlo Powerline Font
 
-    else                                        " Other gVim Settings
+    else                                        " ## Other gVim Settings
+      set guioptions-=m                         " Remove Menu bar
+      set guioptions-=T                         " Remove Toolbar
+      set guioptions+=L                         " Show left-hand and
+      set guioptions+=r                         " right-hand scroll bars
+
       set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
-                                                " Use the Source Code Pro Powerline Font
     endif
 
 else                                            " ## Non-GUI Vim
