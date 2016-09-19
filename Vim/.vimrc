@@ -121,11 +121,16 @@ let g:multi_cursor_exit_from_insert_mode = 0
                                                 " ESC pressed in insert/visual mode
 
 
-" Splits
-" ------
+" Splits and Tabs
+" ---------------
 
 set splitbelow                                  " Open Splits to the bottom
 set splitright                                  " and right sides
+
+"noremap <C-S-[> gT
+"noremap <C-S-]> gt
+"noremap <C-S-N> :tabnew<CR>
+                                                " Move between tabs
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -143,6 +148,7 @@ set smartindent                                 " be smart about it
 set tabstop=2                                   " 4 is awesome
 set shiftwidth=2                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
+
 
 vnoremap <Tab>   >gv
 vnoremap <S-Tab> <gv
@@ -191,19 +197,25 @@ set wrap lbr                                    " Wrap lines without breaking wo
 
 
 
-" Vim vs. gVim
-" ------------
+" Vim vs. Macvim vs. gVim
+" -----------------------
 
-if has("gui_running")                           " ## gVim Specific Settings
+if has("gui_running")                           " ## GUI-Based Vim Settings
     colorscheme apprentice                      " Use custom colorscheme
 
-    "set guifont=Menlo\ for\ Powerline:h13      " Use the Menlo Powerline Font
-    set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
-                                                " Use the Source Code Pro Powerline Font
-    set fu                                      " Start MacVim in Fullscreen Mode
     set lines=34 columns=110                    " Set inital window size
     set nocursorline                            " Don't highlight current line in gvim
     set nowrap                                  " Don't wrap lines on gvim
+
+
+    if has("gui_macvim")                        " ## MacVim Specific Settings
+      set fu                                    " Start MacVim in Fullscreen Mode
+      set guifont=Menlo\ for\ Powerline:h13     " Use the Menlo Powerline Font
+
+    else                                        " Other gVim Settings
+      set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
+                                                " Use the Source Code Pro Powerline Font
+    endif
 
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
