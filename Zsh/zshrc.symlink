@@ -31,6 +31,10 @@ source $ZSH/oh-my-zsh.sh
 #source `brew --prefix`/etc/profile.d/z.sh
 
 
+# Heroku Toolbelt Path
+export PATH="/usr/local/heroku/bin:$PATH"
+
+
 # Go Configs
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
