@@ -41,6 +41,12 @@ vnoremap . :norm.<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null
                                                 " Write file using sudo by Leader + W
 
+noremap  <C-S-x> "+c
+noremap  <C-S-c> "+y
+noremap  <C-S-v> "+gP
+inoremap <C-S-v> <C-r><C-o>+
+                                                " Cut/Copy/Paste from clipboard using
+                                                " Ctrl+Shift and x/c/v
 
 " UI
 " --
@@ -215,6 +221,8 @@ if has("gui_running")                           " ## GUI-Based Vim Settings
       set guifont=Menlo\ for\ Powerline:h13     " Use the Menlo Powerline Font
 
     else                                        " ## Other gVim Settings
+      set clipboard=unnamedplus                 " Use '+' register for clipboard
+
       set guioptions-=m                         " Remove Menu bar
       set guioptions-=T                         " Remove Toolbar
       set guioptions+=L                         " Show left-hand and
@@ -226,6 +234,4 @@ if has("gui_running")                           " ## GUI-Based Vim Settings
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
 endif
-
-
 
