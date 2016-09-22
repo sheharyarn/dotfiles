@@ -57,12 +57,7 @@ edit() {
 
 # Use $ as a function
 function $ {
-    local cm=""
-    for i in "$@"; do
-        cm="$cm $i"
-    done
-
-    eval "$cm"
+    eval "$@"
 }
 
 
