@@ -41,12 +41,12 @@ vnoremap . :norm.<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null
                                                 " Write file using sudo by Leader + W
 
-noremap  <C-S-x> "+c
-noremap  <C-S-c> "+y
-noremap  <C-S-v> "+gP
-inoremap <C-S-v> <C-r><C-o>+
-                                                " Cut/Copy/Paste from clipboard using
-                                                " Ctrl+Shift and x/c/v
+"noremap  <C-S-x> "+c
+"noremap  <C-S-c> "+y
+"noremap  <C-S-v> "+gP
+"inoremap <C-S-v> <C-r><C-o>+
+                                                "" Cut/Copy/Paste from clipboard using
+                                                "" Ctrl+Shift and x/c/v
 
 " UI
 " --
@@ -144,8 +144,7 @@ noremap <Leader>[ :tabprev<CR>
 noremap <Leader>] :tabnext<CR>
 noremap <Leader>= :tabnew<CR>
                                                 " Create a new tab using Leader + =
-                                                " and move
-                                                " between them using [ / ]
+                                                " and move between them using [ / ]
 
 
 " Text Formatting
