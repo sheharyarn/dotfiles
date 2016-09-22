@@ -27,7 +27,7 @@ set autoread                                    " reload files (no local changes
 " Important Key Maps
 " ------------------
 
-let mapleader = '\'                             " Use comma as the leader key
+let mapleader = '\'                             " Use backslash as the leader key
 
 map <Enter> o<ESC>
 map <S-Enter> O<ESC>
@@ -37,6 +37,9 @@ inoremap jj <ESC>
                                                 " simulate ESC key by jj in insert mode
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
+noremap <C-a> gg0vG$
+imap    <C-a> <ESC><C-a>
+                                                " Replicate Select-All with Ctrl+A
 
 noremap <Leader>W :w !sudo tee % > /dev/null
                                                 " Write file using sudo by Leader + W
