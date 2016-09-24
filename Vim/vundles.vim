@@ -18,7 +18,7 @@ call vundle#begin()
     Plugin 'tpope/vim-surround'
     Plugin 'Valloric/YouCompleteMe'
     Plugin 'Valloric/MatchTagAlways'
-    Plugin 'kien/ctrlp.vim'
+    Plugin 'ctrlpvim/ctrlp.vim'
     Plugin 'terryma/vim-multiple-cursors'
 
     " NerdTree Plugins
