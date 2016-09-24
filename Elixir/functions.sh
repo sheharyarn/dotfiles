@@ -6,11 +6,20 @@ exp() {
     if [[ $# -eq 0 ]] ; then
         echo "usage: exp command [args...]"
     else
-        local args=""
-        for i in "$@"; do   
-            args="$args $i"
-        done
-        local command="mix phoenix.${args:1}"
+        local command="mix phoenix.$@"
+
+        echo "Executing:\n  $command\n\n"
+        eval "$command"
+    fi
+}
+
+
+# A shortcut for elixir phoenix generators
+epg() {
+    if [[ $# -eq 0 ]] ; then
+        echo "usage: epg command [args...]"
+    else
+        local command="mix phoenix.gen.$@"
 
         echo "Executing:\n  $command\n\n"
         eval "$command"
