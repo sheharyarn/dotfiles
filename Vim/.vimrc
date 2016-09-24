@@ -130,6 +130,14 @@ let g:multi_cursor_exit_from_insert_mode = 0
                                                 " ESC pressed in insert/visual mode
 
 
+" CtrlP.vim
+" ---------
+
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+                                                " Show everything but files in .gitignore
+
+
+
 " Splits and Tabs
 " ---------------
 
