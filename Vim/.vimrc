@@ -37,6 +37,9 @@ inoremap jj <ESC>
                                                 " simulate ESC key by jj in insert mode
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
+nnoremap da 0D
+                                                " Clear line without deleting it
+
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
                                                 " Replicate Select-All with Ctrl+A
@@ -50,6 +53,9 @@ noremap <Leader>W :w !sudo tee % > /dev/null
 "inoremap <C-S-v> <C-r><C-o>+
                                                 "" Cut/Copy/Paste from clipboard using
                                                 "" Ctrl+Shift and x/c/v
+
+
+
 
 " UI
 " --
@@ -118,7 +124,10 @@ let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
 
 command E Ex                                    " Use :E instead of :Ex
 map <C-t> :NERDTreeTabsToggle<CR>
+
                                                 " Toggle NertTree (On all Tabs)
+
+
 
 
 " Vim-Multiple-Cursors
@@ -130,11 +139,14 @@ let g:multi_cursor_exit_from_insert_mode = 0
                                                 " ESC pressed in insert/visual mode
 
 
+
+
 " CtrlP.vim
 " ---------
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
                                                 " Show everything but files in .gitignore
+
 
 
 
@@ -158,6 +170,8 @@ noremap <Leader>= :tabnew<CR>
                                                 " and move between them using [ / ]
 
 
+
+
 " Text Formatting
 " ---------------
 
@@ -172,6 +186,8 @@ vnoremap <Tab>   >gv
 vnoremap <S-Tab> <gv
                                                 " Indent using Tab in visual
                                                 " mode and stay in mode
+
+
 
 
 " Fix Clipboard paste on OSX
@@ -202,6 +218,7 @@ set backupdir=$HOME/.vim/backups                " store backups under ~/.vim/bac
 set backupcopy=yes                              " keep attributes of original file
 set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/swap
                                                 " make sure that `swap` and `backups` dirs exist in ~/.vim
+
 
 
 
