@@ -28,3 +28,14 @@ See the latest [Phoenix installation instructions](http://www.phoenixframework.o
 $ ln -s ~/.dotfiles/Elixir/iex.symlink ~/.iex.exs
 ```
 
+
+## Enable Persistent History
+
+By default, IEx input history does not persist across sessions. To make that happen, do this:
+
+```bash
+$ git clone git@github.com:ferd/erlang-history.git
+$ cd erlang-history
+$ sudo make install
+```
+
