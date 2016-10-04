@@ -163,9 +163,11 @@ nnoremap <C-H> <C-W><C-H>
                                                 " Remap ctrl+direction to
                                                 " move between splits
 
-noremap <Leader>[ :tabprev<CR>
-noremap <Leader>] :tabnext<CR>
-noremap <Leader>= :tabnew<CR>
+noremap  <Leader>= :tabnew<CR>
+noremap  <Leader>[ :tabprev<CR>
+noremap  <Leader>] :tabnext<CR>
+inoremap <Leader>[ <ESC>:tabprev<CR>a
+inoremap <Leader>] <ESC>:tabnext<CR>a
                                                 " Create a new tab using Leader + =
                                                 " and move between them using [ / ]
 
