@@ -35,7 +35,7 @@ search_in() {
         echo "usage: search_in 'some_method'"
         echo ""
     else
-        grep -rinw . -e "$1"
+        grep -rin . -e "$1"
     fi
 }
 
