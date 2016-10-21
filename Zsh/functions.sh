@@ -40,6 +40,24 @@ search_in() {
 }
 
 
+# Mass Search-and-Replace in current tree
+search_replace() {
+    if [[ $# -eq 0 ]] ; then
+        echo "no replace regex provided"
+        echo "usage: search_replace 's/match_regex/replace_regex/g'"
+        echo ""
+    else
+        if [[ "$1" =~ ^s/.+/.+/g$ ]] ; then
+            find . -path ./.git -prune -o -type f -exec sed -i "$1" {} +
+        else
+            echo "provide a valid match and replace regex"
+            echo "usage: search_replace 's/match_regex/replace_regex/g'"
+            echo ""
+        fi
+    fi
+}
+
+
 # Move files to trash
 del() {
   if hash trash-put 2>/dev/null; then
