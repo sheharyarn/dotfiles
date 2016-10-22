@@ -40,6 +40,9 @@ vnoremap . :norm.<CR>
 nnoremap da 0D
                                                 " Clear line without deleting it
 
+nmap <Leader>r :NERDTreeFocus<cr> \| R \| <c-w><c-p> \| :CtrlPClearCache<cr>
+                                                " Refresh NerdTree and CtrlP caches
+
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
                                                 " Replicate Select-All with Ctrl+A
@@ -143,9 +146,6 @@ let g:multi_cursor_exit_from_insert_mode = 0
 
 " CtrlP.vim
 " ---------
-
-nnoremap <Leader>r :CtrlPClearCache<cr>
-                                                " Clear cache with Leader + r map
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
                                                 " Show everything but files in .gitignore
