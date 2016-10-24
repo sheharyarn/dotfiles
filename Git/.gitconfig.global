@@ -1,0 +1,8 @@
+[core]
+	excludesfile = ~/.dotfiles/Git/.gitignore.global
+[user]
+	name = Sheharyar Naseer
+	email = hello@sheharyar.me
+[push]
+	default = simple
+	followTags = true

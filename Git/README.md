@@ -12,20 +12,21 @@ $ brew install git
 
 ## Configuration
 
-Set up some basic stuff:
+Load up my git configuration. It includes user.name and user.email defaults, my default global
+`.gitignore` file and a few push settings:
 
 ```bash
-git config --global user.name  "Sheharyar Naseer"
-git config --global user.email "hello@sheharyar.me"
-
-git config --global push.default simple
+$ ln -s ~/.dotfiles/Git/.gitconfig.global ~/.gitconfig
 ```
 
-I also use the awesome command-line utility [`joe`](https://github.com/karan/joe) to generate `.gitignore` files for me. But for OSX and Sublime temp files that I've to add to my `.gitignore` everytime, a better option is to use a Global Gitignore:
+You should enter your own name and email:
 
 ```bash
-git config --global core.excludesfile ~/.dotfiles/Git/.gitignore.global
+git config --global user.name  "Your Name"
+git config --global user.email "your@email.address"
 ```
+
+Checkout [`joe`](https://github.com/karan/joe) to generate your code/platform specific `.gitignore` files.
 
 
 ### Aliases and Functions
