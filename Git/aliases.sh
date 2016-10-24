@@ -20,15 +20,16 @@ alias      glga='git log --decorate --color --graph --oneline        --all'
 alias       gla='git log --decorate --color --graph'
 alias      glaa='git log --decorate --color --graph           --stat --all'
 
-  # gl="git log --graph --pretty=format:'%C(red)%h - %Creset%s'"  
+  # gl="git log --graph --pretty=format:'%C(red)%h - %Creset%s'"
   ## https://coderwall.com/p/euwpig/a-better-git-log
 
 
 # Staging and Commiting
 alias        ga='git add'
+alias        gu='git add -u'
 alias       gaa='git add -A'
-alias       gac='git add -A && gc'
-alias       guc='git add -u && gc'
+alias       guc='gu  && gc'
+alias       gac='gaa && gc'
 
   # gc moved to functions.sh
 
