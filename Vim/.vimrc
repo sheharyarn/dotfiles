@@ -29,12 +29,10 @@ set autoread                                    " reload files (no local changes
 
 let mapleader = '\'                             " Use backslash as the leader key
 
-map <Enter> o<ESC>
+map <Enter>   o<ESC>
 map <S-Enter> O<ESC>
                                                 " Use Enter & Shift+Enter to create empty
                                                 " lines above and below
-inoremap jj <ESC>
-                                                " simulate ESC key by jj in insert mode
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
 nnoremap da 0D
@@ -42,6 +40,14 @@ nnoremap da 0D
 
 nmap <Leader>r :NERDTreeFocus<cr> \| R \| <c-w><c-p> \| :CtrlPClearCache<cr>
                                                 " Refresh NerdTree and CtrlP caches
+
+noremap  ,,, <ESC>:noh<cr>
+noremap  ,,  <ESC>
+inoremap ,,  <ESC>
+inoremap jj  <ESC>
+"inoremap <ESC> <NOP>
+                                                " disable (avoid) ESC key and use alternate
+                                                " sequences instead
 
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
