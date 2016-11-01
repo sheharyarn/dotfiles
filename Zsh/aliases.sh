@@ -25,6 +25,11 @@ alias myip="ifconfig | grep inet | grep -vE '(inet6|127.0.0.1)' | awk '{print $2
 # Applications
 alias vsc='open -a "Visual Studio Code"'
 
+# Deluge Terminal Shortcuts
+alias deluge-list="deluge-console info --sort=state | grep -E 'Name:.*$|$' --color=always | less -R"
+alias deluge-pause="deluge-console pause '*'"
+alias deluge-resume="deluge-console resume '*'"
+
 # Make sudo work with aliases
 alias sudo='sudo '
 
