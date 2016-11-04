@@ -10,6 +10,7 @@ npm install -g node-dev
 
 npm install -g coffee-script
 
+npm install -g yarn
 npm install -g grunt-cli
 npm install -g ember-cli
 npm install -g gulp
