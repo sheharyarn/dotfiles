@@ -38,7 +38,7 @@ vnoremap . :norm.<CR>
 nnoremap da 0D
                                                 " Clear line without deleting it
 
-nmap <Leader>r :NERDTreeFocus<cr> \| R \| <c-w><c-p> \| :CtrlPClearCache<cr>
+nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<cr>
                                                 " Refresh NerdTree and CtrlP caches
 
 noremap  ,,, <ESC>:noh<cr>
