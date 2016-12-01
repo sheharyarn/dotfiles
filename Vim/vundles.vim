@@ -31,6 +31,7 @@ call vundle#begin()
     Plugin 'othree/html5.vim'
     Plugin 'slim-template/vim-slim'
     Plugin 'pangloss/vim-javascript'
+    Plugin 'mxw/vim-jsx'
     Plugin 'briancollins/vim-jst'
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'elixir-lang/vim-elixir'

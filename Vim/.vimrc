@@ -239,6 +239,7 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
 set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
 set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 set wrap lbr                                    " Wrap lines without breaking words
+let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 
 
 
