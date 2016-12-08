@@ -16,6 +16,7 @@ alias     crap="cd ~/crap"
 # Random
 alias zshrc="$EDITOR $zshrc"
 alias reload!="source $zshrc"
+alias reload="echo 'Use \"reload!\" instead'"
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
 alias pubip='curl icanhazip.com'
