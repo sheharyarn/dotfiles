@@ -19,6 +19,7 @@ alias reload!="source $zshrc"
 alias reload="echo 'Use \"reload!\" instead'"
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
+alias sshproxy='echo "Starting proxy server on port 5555..."; ssh -qTnN -D 5555'
 alias pubip='curl icanhazip.com'
 alias wifi-reload='sudo iwlist wlp3s0 scan'
 alias myip="ifconfig | grep inet | grep -vE '(inet6|127.0.0.1)' | awk '{print $2}' | awk -F ':' '{print $2}'"
