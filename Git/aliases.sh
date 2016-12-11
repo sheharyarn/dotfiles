@@ -38,7 +38,8 @@ alias       gac='gaa && gc'
 alias        gm='git merge'
 alias       gco='git checkout'
 alias        gr='git remote'
-alias       gra='git remote add'
+alias       grv='gr -v'
+alias       gra='gr add'
 
 
 # Pushing, Pulling and Deploying
