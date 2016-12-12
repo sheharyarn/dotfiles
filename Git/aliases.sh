@@ -40,6 +40,7 @@ alias       gco='git checkout'
 alias        gr='git remote'
 alias       grv='gr -v'
 alias       gra='gr add'
+alias      grap='gr set-url --add --push'
 
 
 # Pushing, Pulling and Deploying
