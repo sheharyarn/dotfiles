@@ -37,6 +37,8 @@ vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
 nnoremap da 0D
                                                 " Clear line without deleting it
+inoremap <Leader>p <ESC>pa
+                                                " Paste items in Insert mode
 
 nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<cr>
                                                 " Refresh NerdTree and CtrlP caches
