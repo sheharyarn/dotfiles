@@ -15,9 +15,7 @@
 # ---------------------
 
 brew tap homebrew/dupes
-brew tap caskroom/cask
 brew tap caskroom/fonts
-brew tap caskroom/versions
 
 
 # Install binaries
@@ -31,7 +29,6 @@ brew install curl --with-openssl
 brew install vim --override-system-vim      # : dotfiles/vim
 brew install macvim
 brew install heroku-toolbelt
-brew install brew-cask
 brew install tor
 brew install torsocks
 brew install safe-rm
