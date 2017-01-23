@@ -16,6 +16,7 @@
 
 brew tap homebrew/dupes
 brew tap caskroom/fonts
+brew tap caskroom/versions
 
 
 # Install binaries
