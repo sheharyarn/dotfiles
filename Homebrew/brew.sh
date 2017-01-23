@@ -110,10 +110,7 @@ brew linkapps macvim
 # Launchd Configuration
 # ---------------------
 
-ln -sfv /usr/local/opt/tor/*.plist    ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/mysql/*.plist  ~/Library/LaunchAgents
-
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+brew services start mysql
+brew services start tor
 
 
