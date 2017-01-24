@@ -24,7 +24,6 @@ brew tap caskroom/versions
 
 brew install git                            # : dotfiles/git
 brew install wget
-brew install node
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
 brew install vim --override-system-vim      # : dotfiles/vim
