@@ -15,7 +15,6 @@
 # ---------------------
 
 brew tap homebrew/dupes
-brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap caskroom/versions
 
@@ -25,13 +24,11 @@ brew tap caskroom/versions
 
 brew install git                            # : dotfiles/git
 brew install wget
-brew install node
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
 brew install vim --override-system-vim      # : dotfiles/vim
 brew install macvim
 brew install heroku-toolbelt
-brew install brew-cask
 brew install tor
 brew install torsocks
 brew install safe-rm
@@ -113,10 +110,7 @@ brew linkapps macvim
 # Launchd Configuration
 # ---------------------
 
-ln -sfv /usr/local/opt/tor/*.plist    ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/mysql/*.plist  ~/Library/LaunchAgents
-
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+brew services start mysql
+brew services start tor
 
 
