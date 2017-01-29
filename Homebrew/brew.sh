@@ -58,7 +58,8 @@ brew cask install google-chrome
 brew cask install mpv                       # : dotfiles/osx/mpv
 brew cask install utorrent
 brew cask install skype
-brew cask install jumpshare                 # fuck dropbox
+brew cask install jumpshare
+brew cask install dropbox
 brew cask install teamviewer
 brew cask install android-file-transfer
 brew cask install nosleep
