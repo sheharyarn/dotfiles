@@ -116,3 +116,10 @@ brew services start mysql
 brew services start tor
 
 
+
+# Run Installers
+# --------------
+
+open /usr/local/Caskroom/utorrent/latest/uTorrent.app
+open /usr/local/Caskroom/little-snitch/*/Little\ Snitch\ Installer.app
+
