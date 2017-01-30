@@ -74,6 +74,7 @@ brew cask install android-studio            # point it to your huge sdk folder
 brew cask install postgres
 
 #> Not that important
+brew cask install little-snitch
 brew cask install vlc
 brew cask install couleurs
 brew cask install tunnelbear
