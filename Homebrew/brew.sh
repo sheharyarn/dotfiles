@@ -36,6 +36,8 @@ brew install rmtrash
 brew install tree
 brew install unrar
 brew install mysql
+brew install mongodb
+brew install postgresql
 brew install imagemagick
 brew install archey
 brew install z
@@ -71,7 +73,6 @@ brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
 brew cask install java
 brew cask install android-studio            # point it to your huge sdk folder
-brew cask install postgres
 
 #> Not that important
 brew cask install little-snitch
@@ -112,8 +113,10 @@ brew linkapps macvim
 # Launchd Configuration
 # ---------------------
 
-brew services start mysql
 brew services start tor
+brew services start mysql
+brew services start mongodb
+brew services start postgresql
 
 
 
