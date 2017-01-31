@@ -12,6 +12,9 @@
 
 
 
+# Create the Locate database
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
 # Always show Hidden files
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
@@ -54,16 +57,16 @@ killall Finder
 killall Dock
 
 
-# Ask the User to Reboot 
+# Ask the User to Reboot
 sleep 1
 
-echo "Success! All OS X defaults are set." 
-echo 
+echo "Success! All OS X defaults are set."
+echo
 echo "Some changes will not take effect until you reboot your machine."
 
 function reboot() {
   read -p "Do you want to reboot your machine now (yes/no)? " choice
-  case "$choice" in 
+  case "$choice" in
     y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
     n | No | no) echo "No"; exit;; # If n | no, exit
     * ) echo "Invalid answer!" && return;;
