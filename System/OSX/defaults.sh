@@ -15,6 +15,11 @@
 # Create the Locate database
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
+# Turn the display off after 20 minutes on battery
+# and after 1 hour when charger is connected
+sudo pmset -b displaysleep 20 sleep 20
+sudo pmset -c displaysleep 60 sleep 60
+
 # Always show Hidden files
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
