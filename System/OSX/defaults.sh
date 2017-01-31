@@ -41,6 +41,12 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Disable Screensaver (Set to 'never')
 defaults -currentHost write com.apple.screensaver idleTime 0
 
+# Ask for password when waking up / lid is opened
+defaults write com.apple.screensaver askForPassword -bool true
+
+# but not if I open it back within 15 seconds
+defaults write com.apple.screensaver askForPasswordDelay 15
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
