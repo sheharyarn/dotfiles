@@ -35,6 +35,7 @@ brew install safe-rm
 brew install rmtrash
 brew install tree
 brew install unrar
+brew install erlang
 brew install mysql
 brew install mongodb
 brew install postgresql
