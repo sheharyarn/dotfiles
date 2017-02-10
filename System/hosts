@@ -51,6 +51,11 @@
 fe80::1%lo0	localhost
 
 
+# Avoid Torrent Sites on Normal Connection
+127.0.0.1 thepiratebay.org
+127.0.0.1 theproxybay.pw
+
+
 # Block List :P
 127.0.0.1 www.bohemiancoding.com
 127.0.0.1 bohemiancoding.com
