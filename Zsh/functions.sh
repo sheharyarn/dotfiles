@@ -3,6 +3,30 @@
 # FUNCTIONS
 # =========
 
+
+# Get current Platform
+get-platform() {
+  case "$(uname -s)" in
+     Darwin)
+       echo 'apple'
+       ;;
+
+     Linux)
+       echo 'linux'
+       ;;
+
+     CYGWIN*|MINGW32*|MSYS*)
+       echo 'windows'
+       ;;
+
+     *)
+       echo 'unknown'
+       exit 1
+       ;;
+   esac
+}
+
+
 # List all of current user's processes
 myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
