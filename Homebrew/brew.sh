@@ -76,6 +76,7 @@ brew cask install java
 brew cask install android-studio            # point it to your huge sdk folder
 
 #> Not that important
+brew cask install flux
 brew cask install little-snitch
 brew cask install vlc
 brew cask install couleurs
