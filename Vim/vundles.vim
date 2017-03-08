@@ -35,6 +35,7 @@ call vundle#begin()
     Plugin 'briancollins/vim-jst'
     Plugin 'kchmck/vim-coffee-script'
     Plugin 'elixir-lang/vim-elixir'
+    Plugin 'alvan/vim-closetag'
 
     " Others
     Plugin 'scrooloose/syntastic'
