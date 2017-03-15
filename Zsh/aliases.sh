@@ -36,3 +36,5 @@ alias deluge-resume="deluge-console resume '*'"
 # Make sudo work with aliases
 alias sudo='sudo '
 
+# Refresh TouchBar on OSX
+alias touchbar-reload="pkill TouchBarAgent && killall ControlStrip"
