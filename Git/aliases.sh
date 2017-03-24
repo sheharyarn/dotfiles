@@ -13,6 +13,7 @@ alias       gss='git status -s'
 
 alias        gt='git tag'
 alias        gd='git diff'
+alias       gds='git diff --staged'
 alias       gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 alias        gl='git log --decorate --color         --oneline'
