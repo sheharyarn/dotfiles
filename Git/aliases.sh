@@ -12,6 +12,7 @@ alias        gs='git status'
 alias       gss='git status -s'
 
 alias        gt='git tag'
+alias       gtn='git tag -n'
 alias        gd='git diff'
 alias       gds='git diff --staged'
 alias       gwc='git whatchanged -p --abbrev-commit --pretty=medium'
