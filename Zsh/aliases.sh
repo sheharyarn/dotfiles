@@ -13,17 +13,23 @@ alias dotfiles="cd $dotfiles"
 alias     code="cd ~/code"
 alias     crap="cd ~/crap"
 
-# Random
+# Edit .zshrc file
 alias zshrc="$EDITOR $zshrc"
+
+# Reload settings or hardware
 alias reload!="source $zshrc"
 alias reload="echo 'Use \"reload!\" instead'"
-alias fsize='du -hs'
-alias dsize='du -h -d 1'
+alias reload-wifi='sudo iwlist wlp3s0 scan'
+alias reload-touchbar="pkill TouchBarAgent && killall ControlStrip"
+
+# Networking
 alias sshproxy='echo "Starting proxy server on port 5555..."; ssh -qTnN -D 5555'
 alias pubip='curl icanhazip.com'
-alias wifi-reload='sudo iwlist wlp3s0 scan'
 alias myip="ifconfig | grep inet | grep -vE '(inet6|127.0.0.1)' | awk '{print $2}' | awk -F ':' '{print $2}'"
-#alias myip='ifconfig en0 inet | grep inet'
+
+# Random
+alias fsize='du -hs'
+alias dsize='du -h -d 1'
 
 # Applications
 alias vsc='open -a "Visual Studio Code"'
@@ -36,5 +42,3 @@ alias deluge-resume="deluge-console resume '*'"
 # Make sudo work with aliases
 alias sudo='sudo '
 
-# Refresh TouchBar on OSX
-alias touchbar-reload="pkill TouchBarAgent && killall ControlStrip"
