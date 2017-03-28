@@ -20,6 +20,7 @@ alias zshrc="$EDITOR $zshrc"
 alias reload!="source $zshrc"
 alias reload="echo 'Use \"reload!\" instead'"
 alias reload-wifi='sudo iwlist wlp3s0 scan'
+alias reload-audio='sudo killall coreaudiod'
 alias reload-touchbar="pkill TouchBarAgent && killall ControlStrip"
 
 # Networking
