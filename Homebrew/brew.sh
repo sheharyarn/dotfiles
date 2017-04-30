@@ -22,6 +22,8 @@ brew tap caskroom/versions
 # Install binaries
 # ----------------
 
+brew install coreutils                      # Use GNU Tools
+brew install gnu-sed
 brew install git                            # : dotfiles/git
 brew install wget
 brew install nano                           # : dotfiles/nano
@@ -41,6 +43,7 @@ brew install mongodb
 brew install postgresql
 brew install imagemagick
 brew install archey
+brew install pow
 brew install z
 brew install android-platform-tools
 
