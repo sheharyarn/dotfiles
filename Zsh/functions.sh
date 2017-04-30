@@ -66,19 +66,26 @@ search_in() {
 
 # Mass Search-and-Replace in current tree
 search_replace() {
-    if [[ $# -eq 0 ]] ; then
-        echo "no replace regex provided"
-        echo "usage: search_replace 's/match_regex/replace_regex/g'"
-        echo ""
-    else
-        if [[ "$1" =~ ^s/.+/.+/g$ ]] ; then
-            find . -path ./.git -prune -o -type f -exec sed -i "$1" {} +
-        else
-            echo "provide a valid match and replace regex"
-            echo "usage: search_replace 's/match_regex/replace_regex/g'"
-            echo ""
-        fi
+  if [[ $# -eq 0 ]] ; then
+    echo "no replace regex provided"
+    echo "usage: search_replace 's/match_regex/replace_regex/g'"
+    echo ""
+
+  else
+    if [ "$(get-platform)" == "linux" ]; then
+      local sed="sed"
+    elif [ "$(get-platform)" == "apple" ]; then
+      local sed="gsed"
     fi
+
+    if [[ "$1" =~ ^s/.+/.+/g$ ]] ; then
+      find . -path ./.git -prune -o -type f -exec $sed -i "$1" {} +
+    else
+      echo "provide a valid match and replace regex"
+      echo "usage: search_replace 's/match_regex/replace_regex/g'"
+      echo ""
+    fi
+  fi
 }
 
 
@@ -97,7 +104,13 @@ del() {
 
 # Search processes
 psx() {
-  ps aux | grep -i "$1" | grep -v grep
+  ps aux | grep -i "$@" | grep -v grep
+}
+
+
+# Kill all processes that match string
+psxkill() {
+  psx "$@" | awk '{ print $2 }' | xargs kill
 }
 
 
