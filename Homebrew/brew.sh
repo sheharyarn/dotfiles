@@ -45,6 +45,7 @@ brew install imagemagick
 brew install archey
 brew install pow
 brew install z
+brew install jq
 brew install android-platform-tools
 
 

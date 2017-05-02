@@ -27,6 +27,12 @@ get-platform() {
 }
 
 
+# Pretty Print JSON Curl Responses
+# Need to have jq installed
+jcurl() {
+  curl -s "$@" | jq .
+}
+
 # List all of current user's processes
 myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
@@ -53,22 +59,23 @@ search() {
 
 
 # Search for text within files in current tree
-search_in() {
-    if [[ $# -eq 0 ]] ; then
-        echo "no search expression provided"
-        echo "usage: search_in 'some_method'"
-        echo ""
-    else
-        grep -rin . -e "$1"
-    fi
+search-in() {
+  if [[ $# -eq 0 ]] ; then
+    echo "no search expression provided"
+    echo "usage: search-in 'some string'"
+    echo ""
+  else
+    grep -rin . -e "$1"
+  fi
 }
 
 
 # Mass Search-and-Replace in current tree
-search_replace() {
+# Need to have gnused installed on OSX
+search-replace() {
   if [[ $# -eq 0 ]] ; then
     echo "no replace regex provided"
-    echo "usage: search_replace 's/match_regex/replace_regex/g'"
+    echo "usage: search-replace 's/match_regex/replace_regex/g'"
     echo ""
 
   else
@@ -90,6 +97,7 @@ search_replace() {
 
 
 # Move files to trash
+# Need to have either trash-put or rmtrash installed on the system
 del() {
   if hash trash-put 2>/dev/null; then
     trash-put "$@"
