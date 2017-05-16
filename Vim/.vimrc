@@ -180,6 +180,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+nmap <C-S-Left>  <C-H>
+nmap <C-S-Down>  <C-J>
+nmap <C-S-Up>    <C-K>
+nmap <C-S-Right> <C-L>
                                                 " Remap ctrl + direction keys to
                                                 " move between splits
 
