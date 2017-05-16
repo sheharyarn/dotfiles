@@ -180,7 +180,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-                                                " Remap ctrl+direction to
+                                                " Remap ctrl + direction keys to
                                                 " move between splits
 
 noremap  <Leader>= :tabnew<CR>
@@ -208,10 +208,12 @@ set shiftwidth=2                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
 
 
+nmap     <Tab>   v<Tab><Esc>
+nmap     <S-Tab> v<S-Tab><Esc>
 vnoremap <Tab>   >gv
 vnoremap <S-Tab> <gv
-                                                " Indent using Tab in visual
-                                                " mode and stay in mode
+                                                " Indent using Tab in visual and
+                                                " normal modes
 
 
 
