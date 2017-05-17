@@ -3,11 +3,22 @@
 " sheharyar's .vimrc
 " ##################
 
+let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
+let g:path_vim_vundles   = expand("~/.dotfiles/Vim/vundles.vim")
 
-" Load my Vundle Plugins from my vundles.vim
-"
-if filereadable(expand("~/.dotfiles/Vim/vundles.vim"))
-    source ~/.dotfiles/Vim/vundles.vim
+let g:path_spacevim      = expand("~/.dotfiles/Vim/spacevim.vim")
+let g:path_spacevim_core = expand("~/.SpaceVim/vimrc")
+
+
+
+" Load my Spacevim / Vundles based on flavor
+" ------------------------------------------
+if filereadable(g:path_spacevim_core)
+    execute 'source' g:path_spacevim_core
+    let g:spacevim_running = 1
+
+elseif filereadable(g:path_vim_vundles)
+    execute 'source' g:path_vim_vundles
 endif
 
 
@@ -195,6 +206,14 @@ nmap <C-S-Right> <C-L>
                                                 " Remap ctrl + direction keys to
                                                 " move between splits
 
+"nnoremap <C-S-H> <C-W><S-H>
+"nnoremap <C-S-J> <C-W><S-J>
+"nnoremap <C-S-K> <C-W><S-K>
+"nnoremap <C-S-L> <C-W><S-L>
+                                                " Use ctrl + shift + direction keys
+                                                " change split positions
+
+
 noremap  <Leader>= :tabnew<CR>
 noremap  <Leader>[ :tabprev<CR>
 noremap  <Leader>] :tabnext<CR>
@@ -302,4 +321,3 @@ if has("gui_running")                           " ## GUI-Based Vim Settings
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
 endif
-
