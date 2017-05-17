@@ -92,6 +92,13 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Make Gitgutter Transparent and
                                                 " Do the same for Line Number columns
 
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set nolist
+                                                " Use custom characters for whitespace
+                                                " but don't show them by default
+
+
 set hlsearch
 nnoremap <esc><esc> :noh<return>
                                                 " Enable search highlights and
