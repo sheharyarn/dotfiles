@@ -1,5 +1,7 @@
-VIM - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
-====================================================================
+Vim 
+===
+
+[_See all dotfiles_](https://github.com/sheharyarn/dotfiles)
 
 ![Vim Configuration Screenshot](http://i.imgur.com/WSkHxAz.png)
 
@@ -86,6 +88,9 @@ Spacevim uses its own plugin management system, but when not using it,
     vim +PluginInstall +qall
     ```
 
+<br>
+
+
 ### Plugins that require extra work:
 
  - [**Airline**](https://github.com/bling/vim-airline/)
@@ -98,8 +103,6 @@ Spacevim uses its own plugin management system, but when not using it,
     If you don't find your desired font patched with the Powerline Icons, [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
 
  - [**You Complete Me**](https://github.com/Valloric/YouCompleteMe)
-
-    > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.
 
     YCM requires Vim v7.3.584 or greater; [On OSX, You can do this](http://stackoverflow.com/a/14511970/1533054). It has a compiled component as well. You'll need to set it up for it to work properly. [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
 
