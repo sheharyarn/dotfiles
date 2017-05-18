@@ -6,7 +6,7 @@ VIM - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
 
 ## Installation
 
-#### Upgrade Vim
+### Upgrade Vim
 
 The default `vim` by Apple sucks balls, so we're going to upgrade to the latest Vim.
 First, switch over to the system `ruby` if you're using `rvm`:
@@ -21,14 +21,14 @@ Use Homebrew to install `vim`:
 brew install vim --override-system-vim
 ```
 
-#### Install MacVim
+### Install MacVim
 
 ```bash
 brew install  macvim
 brew linkapps macvim
 ```
 
-#### Install [NeoVim](http://neovim.io/)
+### Install [NeoVim](http://neovim.io/)
 
 Let's take advantage of the Dark Features
 
@@ -40,7 +40,7 @@ brew install neovim/neovim/neovim
 brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 ```
 
-#### Install [SpaceVim](https://github.com/SpaceVim/SpaceVim)
+### Install [SpaceVim](https://github.com/SpaceVim/SpaceVim)
 
 Finally [install Spacevim](https://github.com/SpaceVim/SpaceVim#install) to come over to
 the Dark Side :wink: :
@@ -49,17 +49,22 @@ the Dark Side :wink: :
 curl -sLf https://spacevim.org/install.sh | bash -s -- -h
 ```
 
+<br>
+
 
 ## Configuration
 
 Once everything is installed, symlink the vim dotfiles and create the required directories:
-    ```bash
-    mkdir -p ~/.vim/swap ~/.vim/backups ~/.SpaceVim.d/
 
-    ln -s ~/.dotfiles/Vim/.vimrc        ~/.vimrc
-    ln -s ~/.dotfiles/Vim/colors        ~/.vim/colors
-    ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
-    ```
+```bash
+mkdir -p ~/.vim/swap ~/.vim/backups ~/.SpaceVim.d/
+
+ln -s ~/.dotfiles/Vim/.vimrc        ~/.vimrc
+ln -s ~/.dotfiles/Vim/colors        ~/.vim/colors
+ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
+```
+
+<br>
 
 
 ## Plugins
@@ -81,9 +86,9 @@ Spacevim uses its own plugin management system, but when not using it,
     vim +PluginInstall +qall
     ```
 
-#### Plugins that require extra work
+### Plugins that require extra work:
 
- - [Airline](https://github.com/bling/vim-airline/)
+ - [**Airline**](https://github.com/bling/vim-airline/)
 
     If you are using `vim-airline`, you need to use fonts that have been patched for powerline in your terminal. Here are a few patched fonts that I use in my OSX [Terminal Themes](https://github.com/sheharyarn/dotfiles/tree/master/OSX/Terminal):
 
@@ -92,7 +97,7 @@ Spacevim uses its own plugin management system, but when not using it,
 
     If you don't find your desired font patched with the Powerline Icons, [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
 
- - [You Complete Me](https://github.com/Valloric/YouCompleteMe)
+ - [**You Complete Me**](https://github.com/Valloric/YouCompleteMe)
 
     > YouCompleteMe is a fast, as-you-type, fuzzy-search code completion engine for Vim.
 
