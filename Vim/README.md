@@ -40,6 +40,9 @@ brew install neovim/neovim/neovim
 
 # Or the Unofficial GUI
 brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
+
+# And the python modules (or use pip2 / pip3)
+pip install neovim
 ```
 
 ### Install [SpaceVim](https://github.com/SpaceVim/SpaceVim)
@@ -97,8 +100,9 @@ Spacevim uses its own plugin management system, but when not using it,
 
     If you are using `vim-airline`, you need to use fonts that have been patched for powerline in your terminal. Here are a few patched fonts that I use in my OSX [Terminal Themes](https://github.com/sheharyarn/dotfiles/tree/master/OSX/Terminal):
 
-      - [Powerline Patched Font-Pack](https://github.com/powerline/fonts/)
       - [Menlo for Powerline](https://github.com/abertsch/Menlo-for-Powerline)
+      - [Powerline Patched Font-Pack](https://github.com/powerline/fonts/)
+      - [Nerd Patched Font-Pack](https://github.com/ryanoasis/nerd-fonts) for extra symbols
 
     If you don't find your desired font patched with the Powerline Icons, [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
 
