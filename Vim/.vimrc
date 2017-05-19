@@ -290,6 +290,25 @@ set scrolloff=8                                 " Start scrolling when we're 8 l
 set wrap lbr                                    " Wrap lines without breaking words
 let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 
+let g:startify_custom_header = [
+      \ '',
+      \ '',
+      \ '        ____               _          _    __ _',
+      \ '       / __ \ _____ __  __( )_____   | |  / /(_)____ ___',
+      \ '      / /_/ // ___// / / /|// ___/   | | / // // __ `__ \',
+      \ '     / ____/(__  )/ /_/ /  (__  )    | |/ // // / / / / /',
+      \ '    /_/    /____/ \__, /  /____/     |___//_//_/ /_/ /_/',
+      \ '                 /____/',
+      \ '',
+      \ '',
+      \ "    Sheharyar's Customized Vim",
+      \ '',
+      \ '    SpaceVim: ' . g:spacevim_version,
+      \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
+      \ '',
+      \ '',
+      \ ]
+
 
 
 
