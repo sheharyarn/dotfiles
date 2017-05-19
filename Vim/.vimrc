@@ -5,21 +5,19 @@
 
 let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
 let g:path_vim_vundles   = expand("~/.dotfiles/Vim/vundles.vim")
-
-let g:path_spacevim      = expand("~/.dotfiles/Vim/spacevim.vim")
 let g:path_spacevim_core = expand("~/.SpaceVim/vimrc")
 
 
 
-" Load my Spacevim / Vundles based on flavor
-" ------------------------------------------
+" Load SpaceVim / Vundle configs
+" ------------------------------
 
-if filereadable(g:path_spacevim_core)
-    execute 'source' g:path_spacevim_core
-    let g:spacevim_running = 1
+if filereadable(path_spacevim_core)
+  execute 'source' path_spacevim_core
+  let g:spacevim_running = 1
 
-elseif filereadable(g:path_vim_vundles)
-    execute 'source' g:path_vim_vundles
+elseif filereadable(path_vim_vundles)
+  execute 'source' path_vim_vundles
 endif
 
 
@@ -47,8 +45,6 @@ map <S-Enter> O<ESC>
                                                 " lines above and below
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
-nnoremap da 0D
-                                                " Clear line without deleting it
 inoremap <Leader>p <ESC>pa
                                                 " Paste items in Insert mode
 
@@ -59,9 +55,7 @@ noremap  ,,, <ESC>:noh<cr>
 noremap  ,,  <ESC>
 inoremap ,,  <ESC>
 inoremap jj  <ESC>
-"inoremap <ESC> <NOP>
-                                                " disable (avoid) ESC key and use alternate
-                                                " sequences instead
+                                                " alternate ESC maps
 
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
@@ -291,23 +285,23 @@ set wrap lbr                                    " Wrap lines without breaking wo
 let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 
 let g:startify_custom_header = [
-      \ '',
-      \ '',
-      \ '        ____               _          _    __ _',
-      \ '       / __ \ _____ __  __( )_____   | |  / /(_)____ ___',
-      \ '      / /_/ // ___// / / /|// ___/   | | / // // __ `__ \',
-      \ '     / ____/(__  )/ /_/ /  (__  )    | |/ // // / / / / /',
-      \ '    /_/    /____/ \__, /  /____/     |___//_//_/ /_/ /_/',
-      \ '                 /____/',
-      \ '',
-      \ '',
-      \ "    Sheharyar's Customized Vim",
-      \ '',
-      \ '    SpaceVim: ' . g:spacevim_version,
-      \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
-      \ '',
-      \ '',
-      \ ]
+  \ '',
+  \ '',
+  \ '        ____               _          _    __ _',
+  \ '       / __ \ _____ __  __( )_____   | |  / /(_)____ ___',
+  \ '      / /_/ // ___// / / /|// ___/   | | / // // __ `__ \',
+  \ '     / ____/(__  )/ /_/ /  (__  )    | |/ // // / / / / /',
+  \ '    /_/    /____/ \__, /  /____/     |___//_//_/ /_/ /_/',
+  \ '                 /____/',
+  \ '',
+  \ '',
+  \ "    Sheharyar's Customized Vim",
+  \ '',
+  \ '    SpaceVim: ' . g:spacevim_version,
+  \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
+  \ '',
+  \ '',
+  \ ]
 
 
 
@@ -316,7 +310,7 @@ let g:startify_custom_header = [
 " -----------------------
 
 if has("gui_running")                           " ## GUI-Based Vim Settings
-    execute 'source' g:path_vim_gui
+  execute 'source' path_vim_gui
 else                                            " ## Non-GUI Vim
-    set wrap                                    " Wrap lines on terminal vim
+  set wrap                                      " Wrap lines on terminal vim
 endif
