@@ -13,6 +13,7 @@ let g:path_spacevim_core = expand("~/.SpaceVim/vimrc")
 
 " Load my Spacevim / Vundles based on flavor
 " ------------------------------------------
+
 if filereadable(g:path_spacevim_core)
     execute 'source' g:path_spacevim_core
     let g:spacevim_running = 1
@@ -296,28 +297,7 @@ let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 " -----------------------
 
 if has("gui_running")                           " ## GUI-Based Vim Settings
-    colorscheme apprentice                      " Use custom colorscheme
-
-    set lines=34 columns=110                    " Set inital window size
-    set nocursorline                            " Don't highlight current line in gvim
-    set nowrap                                  " Don't wrap lines on gvim
-
-
-    if has("gui_macvim")                        " ## MacVim Specific Settings
-      set fu                                    " Start MacVim in Fullscreen Mode
-      set guifont=Menlo\ for\ Powerline:h13     " Use the Menlo Powerline Font
-
-    else                                        " ## Other gVim Settings
-      set clipboard=unnamedplus                 " Use '+' register for clipboard
-
-      set guioptions-=m                         " Remove Menu bar
-      set guioptions-=T                         " Remove Toolbar
-      set guioptions+=L                         " Show left-hand and
-      set guioptions+=r                         " right-hand scroll bars
-
-      set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
-    endif
-
+    execute 'source' g:path_vim_gui
 else                                            " ## Non-GUI Vim
     set wrap                                    " Wrap lines on terminal vim
 endif
