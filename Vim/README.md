@@ -1,4 +1,4 @@
-Vim 
+Vim
 ===
 
 [_See all dotfiles_](https://github.com/sheharyarn/dotfiles)
@@ -38,11 +38,16 @@ Let's take advantage of the Dark Features
 # Install NeoVim
 brew install neovim/neovim/neovim
 
-# Or the Unofficial GUI
-brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
-
 # And the python modules (or use pip2 / pip3)
 pip install neovim
+```
+
+You can also install the unofficial GUIs ([VimR](https://github.com/qvacua/vimr) /
+[neovim-dot-app](https://github.com/rogual/neovim-dot-app)):
+
+```bash
+brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
+brew linkapps neovim-dot-app
 ```
 
 ### Install [SpaceVim](https://github.com/SpaceVim/SpaceVim)
@@ -62,11 +67,14 @@ curl -sLf https://spacevim.org/install.sh | bash -s -- -h
 Once everything is installed, symlink the vim dotfiles and create the required directories:
 
 ```bash
-mkdir -p ~/.vim/swap ~/.vim/backups ~/.SpaceVim.d/
+mv ~/.config/nvim ~/.config/nvim_backup
+mkdir -p ~/.vim/swap ~/.vim/backups ~/.config/nvim ~/.SpaceVim.d/
 
 ln -s ~/.dotfiles/Vim/.vimrc        ~/.vimrc
 ln -s ~/.dotfiles/Vim/colors        ~/.vim/colors
 ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
+
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 ```
 
 <br>
@@ -109,4 +117,3 @@ Spacevim uses its own plugin management system, but when not using it,
  - [**You Complete Me**](https://github.com/Valloric/YouCompleteMe)
 
     YCM requires Vim v7.3.584 or greater; [On OSX, You can do this](http://stackoverflow.com/a/14511970/1533054). It has a compiled component as well. You'll need to set it up for it to work properly. [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
-
