@@ -9,6 +9,7 @@ set nowrap                                    " Don't wrap lines on gvim
 
 if spacevim_running                           " ## SpaceVim GUI Settings
   " Handle SpaceVim GUI in spacevim.vim
+  set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete:h12
 
 else                                          " ## Non-SpaceVim Settings
   colorscheme apprentice                      " Use custom colorscheme
@@ -16,7 +17,7 @@ else                                          " ## Non-SpaceVim Settings
 
   if has("gui_macvim")                        " #### MacVim Specific Settings
     set nofu                                  " Don't start MacVim in Fullscreen Mode
-    set guifont=Menlo\ for\ Powerline:h13     " Use the Menlo Powerline Font
+    set guifont=Menlo\ for\ Powerline:h13
 
   else                                        " #### Other gVim Settings
     set clipboard=unnamedplus                 " Use '+' register for clipboard
