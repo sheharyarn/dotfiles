@@ -28,38 +28,35 @@ call SpaceVim#layers#load('lang#javascript')
 " Configure SpaceVim
 " ------------------
 
-if has("gui_running")                         " Different Colorschemes for GUI / Terminal
-  let g:spacevim_colorscheme = 'onedark'      "'gruvbox'
+if has("gui_running")                               " Different Colorschemes for GUI / Terminal
+  let g:spacevim_colorscheme = 'onedark'            "'gruvbox'
 else
   let g:spacevim_colorscheme = 'one-dark'
   let g:spacevim_enable_guicolors = 0
 endif
 
 
-let g:deoplete#auto_complete_delay = 150
-
-let g:spacevim_enable_tabline_filetype_icon = 1
-let g:spacevim_enable_os_fileformat_icon = 1
-let g:spacevim_buffer_index_type = 1
-
-let g:spacevim_error_symbol = 'x'
-let g:spacevim_warning_symbol = '!'
-let g:spacevim_statusline_separator = 'arrow'
-
-let g:neomake_vim_enabled_makers = ['vimlint', 'vint']
-let g:spacevim_buffer_index_type = 3
-let g:spacevim_filemanager = 'NerdTree'
-let g:spacevim_disabled_plugins = []
-let g:spacevim_custom_plugins = [
+let g:spacevim_custom_plugins = [                   " External Plugins to use
   \ ['jistr/vim-nerdtree-tabs'],
   \ ['vim-airline/vim-airline'],
   \ ['vim-airline/vim-airline-themes'],
+  \
   \ ]
+
+
+let g:spacevim_disabled_plugins = []                " SpaceVim Plugins to disable
+let g:spacevim_filemanager = 'NerdTree'             " Use NERD instead of VimFiler
+
+
+let g:spacevim_enable_tabline_filetype_icon = 1     " Set SpaceVim Icons / Symbols
+let g:spacevim_enable_os_fileformat_icon    = 1
+let g:spacevim_buffer_index_type            = 3
+let g:spacevim_warning_symbol               = '!'
+let g:spacevim_error_symbol                 = 'x'
 
 
 if has('python3')
   let g:ctrlp_map = ''
   nnoremap <silent> <C-p> :Denite file_rec<CR>
 endif
-
 
