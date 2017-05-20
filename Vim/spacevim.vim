@@ -5,8 +5,7 @@
 
 " Initial Settings
 let g:spacevim_enable_debug = 1
-let g:spacevim_realtime_leader_guide = 1
-let g:spacevim_enable_vimfiler_welcome = 1
+let g:spacevim_realtime_leader_guide = 0
 
 
 
@@ -32,9 +31,10 @@ call SpaceVim#layers#load('lang#javascript')
 if has("gui_running")                         " Different Colorschemes for GUI / Terminal
   let g:spacevim_colorscheme = 'onedark'      "'gruvbox'
 else
-  let g:spacevim_enable_guicolors = 0
   let g:spacevim_colorscheme = 'one-dark'
+  let g:spacevim_enable_guicolors = 0
 endif
+
 
 let g:deoplete#auto_complete_delay = 150
 
@@ -47,7 +47,15 @@ let g:spacevim_warning_symbol = '!'
 let g:spacevim_statusline_separator = 'arrow'
 
 let g:neomake_vim_enabled_makers = ['vimlint', 'vint']
+let g:spacevim_buffer_index_type = 3
+let g:spacevim_filemanager = 'NerdTree'
+let g:spacevim_disabled_plugins = []
+let g:spacevim_custom_plugins = [['jistr/vim-nerdtree-tabs']]
+
+
 if has('python3')
-    let g:ctrlp_map = ''
-    nnoremap <silent> <C-p> :Denite file_rec<CR>
+  let g:ctrlp_map = ''
+  nnoremap <silent> <C-p> :Denite file_rec<CR>
 endif
+
+

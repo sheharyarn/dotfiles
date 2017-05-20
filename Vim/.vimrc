@@ -148,8 +148,7 @@ let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
 
 command E Ex                                    " Use :E instead of :Ex
 map <C-t> :NERDTreeTabsToggle<CR>
-
-                                                " Toggle NertTree (On all Tabs)
+                                                " Toggle NerdTree (On all Tabs)
 
 
 

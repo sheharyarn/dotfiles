@@ -6,10 +6,12 @@
 set lines=42 columns=140                      " Set inital window size
 set nowrap                                    " Don't wrap lines on gvim
 
+autocmd VimEnter * NERDTreeTabsOpen           " Load NerdTree (Tabs) on start
+
 
 if spacevim_running                           " ## SpaceVim GUI Settings
-  " Handle SpaceVim GUI in spacevim.vim
   set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete:h12
+  " Handle the rest in spacevim.vim
 
 else                                          " ## Non-SpaceVim Settings
   colorscheme apprentice                      " Use custom colorscheme
