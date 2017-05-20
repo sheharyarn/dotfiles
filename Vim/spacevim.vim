@@ -50,7 +50,11 @@ let g:neomake_vim_enabled_makers = ['vimlint', 'vint']
 let g:spacevim_buffer_index_type = 3
 let g:spacevim_filemanager = 'NerdTree'
 let g:spacevim_disabled_plugins = []
-let g:spacevim_custom_plugins = [['jistr/vim-nerdtree-tabs']]
+let g:spacevim_custom_plugins = [
+  \ ['jistr/vim-nerdtree-tabs'],
+  \ ['vim-airline/vim-airline'],
+  \ ['vim-airline/vim-airline-themes'],
+  \ ]
 
 
 if has('python3')

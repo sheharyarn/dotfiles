@@ -32,3 +32,4 @@ else                                          " ## Non-SpaceVim Settings
     set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
   endif
 endif
+

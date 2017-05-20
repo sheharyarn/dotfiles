@@ -82,13 +82,14 @@ set noshowcmd                                   " don't display incomplete comma
 set cursorline                                  " underline the line i'm currently on
 set nostartofline                               " don't jump to the start of line when scrolling
 set report=0                                    " tell us about changes
-set number                                      " line numbers
+set number                                      " show line numbers
+set norelativenumber                            " but not in relative mode
 set ttimeoutlen=50                              " recommended by airline
 set laststatus=2                                " needed for airline to be visible
 set ignorecase                                  " ignore case when searching
 set t_Co=256                                    " set terminal color mode to 256
 
-let g:airline_theme           = 'bubblegum'     " Set my theme for Airline
+let g:airline_theme           = 'tomorrow'      " Set my theme for Airline
 let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
 let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
@@ -143,10 +144,12 @@ let g:syntastic_check_on_wq = 0
 " Netrw / NerdTree
 " ----------------
 
-let g:netrw_liststyle         = 3               " Use Tree-View mode in netrw
-let NERDTreeShowHidden        = 1               " Show Hidden files in NerdTree
-
 command E Ex                                    " Use :E instead of :Ex
+
+let g:netrw_liststyle  = 3                      " Use Tree-View mode in netrw
+let NERDTreeShowHidden = 1                      " Show Hidden files in NerdTree
+let NERDTreeWinPos     = "left"                 " Always open NerdTree on the left
+
 map <C-t> :NERDTreeTabsToggle<CR>
                                                 " Toggle NerdTree (On all Tabs)
 
