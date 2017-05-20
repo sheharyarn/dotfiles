@@ -1,9 +1,9 @@
 Vim
 ===
 
-[_See all dotfiles_](https://github.com/sheharyarn/dotfiles)
+![Sheharyar's Vim Setup](http://i.imgur.com/kv6O42J.jpg)
 
-![Vim Configuration Screenshot](http://i.imgur.com/WSkHxAz.png)
+[_See all dotfiles_](https://github.com/sheharyarn/dotfiles)
 
 
 ## Installation
