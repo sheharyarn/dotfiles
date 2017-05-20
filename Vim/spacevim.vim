@@ -36,7 +36,8 @@ else
 endif
 
 
-let g:spacevim_custom_plugins = [                   " External Plugins to use
+                                                    " External Plugins to use
+let g:spacevim_custom_plugins = [
   \ ['jistr/vim-nerdtree-tabs'],
   \ ['vim-airline/vim-airline'],
   \ ['vim-airline/vim-airline-themes'],

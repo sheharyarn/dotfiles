@@ -1,4 +1,3 @@
-#!/usr/bin/vim
 
 " sheharyar's .vimrc
 " ##################
@@ -93,6 +92,8 @@ let g:airline_theme           = 'tomorrow'      " Set my theme for Airline
 let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
 let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
+
+let g:indentLine_color_gui    = '#465366'       " Set indent line color
 
 hi SignColumn ctermbg=none
 hi LineNr     ctermbg=none ctermfg=darkgray
