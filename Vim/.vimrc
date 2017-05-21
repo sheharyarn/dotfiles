@@ -142,6 +142,20 @@ let g:syntastic_check_on_wq = 0
 
 
 
+" NeoComplete
+" -----------
+
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+endfunction
+                                                " Recommended NeoComplete mapping to
+                                                " smoothly go to the next line from a
+                                                " completion popup
+
+
+
+
 " Netrw / NerdTree
 " ----------------
 
@@ -317,3 +331,5 @@ if has("gui_running")                           " ## GUI-Based Vim Settings
 else                                            " ## Non-GUI Vim
   set wrap                                      " Wrap lines on terminal vim
 endif
+
+

@@ -5,7 +5,7 @@
 
 " Initial Settings
 let g:spacevim_enable_debug = 1
-let g:spacevim_realtime_leader_guide = 0
+let g:spacevim_realtime_leader_guide = 1
 
 
 
@@ -13,7 +13,6 @@ let g:spacevim_realtime_leader_guide = 0
 " -----------
 
 call SpaceVim#layers#load('shell')
-call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('tools#screensaver')
 
 call SpaceVim#layers#load('lang#c')
