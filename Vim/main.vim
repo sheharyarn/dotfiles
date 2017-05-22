@@ -1,6 +1,6 @@
 
-" sheharyar's .vimrc
-" ##################
+" Sheharyar's Vim Configs
+" #######################
 
 let g:startify_custom_header = [
   \ '',
@@ -118,6 +118,7 @@ let g:airline_theme           = 'tomorrow'      " Set my theme for Airline
 let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
 let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
+let g:vim_markdown_conceal    = 0               " Don't conceal markdown links
 
 let g:indentLine_color_gui    = '#465366'       " Set indent line color
 let g:indentLine_fileTypeExclude = ['help', 'startify']
