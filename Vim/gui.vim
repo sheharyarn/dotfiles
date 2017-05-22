@@ -11,16 +11,15 @@ autocmd VimEnter * NERDTreeTabsOpen
 
 
 if spacevim_running                           " ## SpaceVim GUI Settings
-  set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete:h12
-  " Handle the rest in spacevim.vim
+  " Handle them in spacevim.vim
 
 else                                          " ## Non-SpaceVim Settings
-  colorscheme apprentice                      " Use custom colorscheme
+  colorscheme one-dark "apprentice                       Use custom colorscheme
   set nocursorline                            " Don't highlight current line in gvim
 
   if has("gui_macvim")                        " #### MacVim Specific Settings
     set nofu                                  " Don't start MacVim in Fullscreen Mode
-    set guifont=Menlo\ for\ Powerline:h13
+    set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete:h12
 
   else                                        " #### Other gVim Settings
     set clipboard=unnamedplus                 " Use '+' register for clipboard

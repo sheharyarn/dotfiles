@@ -59,4 +59,3 @@ if has('python3')
   let g:ctrlp_map = ''
   nnoremap <silent> <C-p> :Denite file_rec<CR>
 endif
-
