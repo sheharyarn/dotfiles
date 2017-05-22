@@ -8,6 +8,8 @@ set nowrap                                    " Don't wrap lines on gvim
 
 autocmd VimEnter * NERDTreeTabsOpen
                                               " Load NerdTree (Tabs) on start
+autocmd VimEnter * wincmd p
+                                              " And then switch to startify
 
 
 if spacevim_running                           " ## SpaceVim GUI Settings

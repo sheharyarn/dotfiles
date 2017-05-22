@@ -98,7 +98,6 @@ noremap <Leader>W :w !sudo tee % > /dev/null
                                                 "" Ctrl+Shift and x/c/v
 
 
-let g:indent_guides_enable_on_vim_startup = 0
 
 " UI
 " --
@@ -121,12 +120,17 @@ let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
 
 let g:indentLine_color_gui    = '#465366'       " Set indent line color
+let g:indentLine_fileTypeExclude = ['help', 'startify']
+                                                " Don't show it on specific buffers
 
 hi SignColumn ctermbg=none
 hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Make Gitgutter Transparent and
                                                 " Do the same for Line Number columns
 
+hi VertSplit ctermbg=NONE guibg=NONE
+set fillchars+=vert:│
+                                                " Set custom separator for vertical splits
 
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set nolist
@@ -186,7 +190,7 @@ endfunction
 " Netrw / NerdTree
 " ----------------
 
-"command E Ex                                    " Use :E instead of :Ex
+command E Ex                                    " Use :E instead of :Ex
 
 let g:netrw_liststyle  = 3                      " Use Tree-View mode in netrw
 let NERDTreeShowHidden = 1                      " Show Hidden files in NerdTree
@@ -223,6 +227,25 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 let g:closetag_filenames = "*.html,*.xhtml,*.js,*.jsx,*.es6"
                                                 " Automatically close html tags in these files
+
+
+
+
+" Startify
+" --------
+
+let g:startify_files_number = 5                 " No. of files to show
+let g:startify_list_order = [
+      \ ['', '   Recent Project Files:'],
+      \ 'dir',
+      \ ['', '   Recent Files:'],
+      \ 'files',
+      \ ['', '   Sessions:'],
+      \ 'sessions',
+      \ ['', '   Bookmarks:'],
+      \ 'bookmarks',
+\ ]
+                                                " Items show in Startify
 
 
 
@@ -327,6 +350,23 @@ set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX 
 set scrolloff=8                                 " Start scrolling when we're 8 lines away from margins
 set wrap lbr                                    " Wrap lines without breaking words
 let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
+
+
+
+
+" Set Initial Screen
+" ------------------
+
+function! PsyVimStart() abort
+  if exists(':Startify') == 2
+    Startify                                    " Show initial startify screen
+    if isdirectory(bufname(1))
+      bwipeout! 1
+    endif
+  endif
+endfunction
+
+autocmd VimEnter * call PsyVimStart()           " Call function when vim starts
 
 
 
