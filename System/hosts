@@ -15,11 +15,7 @@
 127.0.0.1   MBP
 127.0.0.1   Air
 
-127.0.0.1   kholopk.loc
-127.0.0.1   mobilepk.loc
-127.0.0.1   nuclearn.loc
-127.0.0.1   polystream.loc
-127.0.0.1   cc.loc
+127.0.0.1   healthhero.dev
 127.0.0.1   carline apnitoyota apnihonda apnisuzuki
 
 192.168.1.1	router
@@ -51,9 +47,14 @@
 fe80::1%lo0	localhost
 
 
-# Avoid Torrent Sites on Normal Connection
+# Absolutely avoid without a VPN
 127.0.0.1 thepiratebay.org
 127.0.0.1 theproxybay.pw
+127.0.0.1 psarips.com
+127.0.0.1 zooqle.com
+127.0.0.1 rmz.cr
+127.0.0.1 shaanig.org
+127.0.0.1 nyaa.pantsu.cat
 
 
 # Block List :P
