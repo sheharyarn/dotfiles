@@ -47,6 +47,9 @@ defaults write com.apple.screensaver askForPassword -bool true
 # but not if I open it back within 15 seconds
 defaults write com.apple.screensaver askForPasswordDelay 15
 
+# Use tab to change focus between buttons on dialogs, etc.
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
