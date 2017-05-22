@@ -285,10 +285,10 @@ inoremap <Leader>] <ESC>:tabnext<CR>a
                                                 " Create a new tab using Leader + =
                                                 " and move between them using [ / ]
 
-noremap <A-Left>  :-tabmove<cr>
-noremap <A-Right> :+tabmove<cr>
-                                                " Relocate tab position to the left
-                                                " or right
+noremap <M-Left>  :tabmove-<cr>
+noremap <M-Right> :tabmove+<cr>
+                                                " Relocate tab position to left/right
+                                                " using Meta (Alt) key
 
 
 
