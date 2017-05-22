@@ -359,10 +359,10 @@ let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 " ------------------
 
 function! PsyVimStart() abort
-  if exists(':Startify') == 2
-    Startify                                    " Show initial startify screen
-    if isdirectory(bufname(1))
-      bwipeout! 1
+  if exists(':Startify') == 2                   " If Startify is available
+    if isdirectory(bufname(1))                  " and a directory was opened in Vim
+      bwipeout! 1                               " then clear buffer contents and
+      Startify                                  " show the startify screen
     endif
   endif
 endfunction
