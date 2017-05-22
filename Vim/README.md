@@ -62,7 +62,6 @@ mv ~/.config/nvim ~/.config/nvim_backup
 mkdir -p ~/.vim/swap ~/.vim/backups ~/.config/nvim ~/.SpaceVim.d/
 
 ln -s ~/.dotfiles/Vim/main.vim      ~/.vimrc
-ln -s ~/.dotfiles/Vim/colors        ~/.vim/colors
 ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
 
 ln -s ~/.vimrc ~/.config/nvim/init.vim
@@ -115,13 +114,6 @@ _(If you're using Spacevim, use its built-in plugin management system)_
 
     If you don't find your desired font patched with the Powerline Icons,
     [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
-
- - [**You Complete Me**](https://github.com/Valloric/YouCompleteMe)
-
-    If you're not using NeoComplete / Deoplete and YCM instead, use Vim v7.4 or greater;
-    [On OSX, You can do this](http://stackoverflow.com/a/14511970/1533054).
-    It has a compiled component as well. You'll need to set it up for it to work properly.
-    [Installation instructions found here](http://valloric.github.io/YouCompleteMe/).
 
 
 ### SpaceVim
