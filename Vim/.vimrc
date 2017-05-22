@@ -3,17 +3,25 @@
 " ##################
 
 let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
+let g:path_vim_dein      = expand("~/.dotfiles/Vim/dein.vim")
 let g:path_vim_vundles   = expand("~/.dotfiles/Vim/vundles.vim")
 let g:path_spacevim_core = expand("~/.SpaceVim/vimrc")
 
+let g:spacevim_enabled   = 0
+let g:spacevim_running   = 0
 
 
-" Load SpaceVim / Vundle configs
-" ------------------------------
 
-if filereadable(path_spacevim_core)
+
+" Load SpaceVim / Custom Plugin Manager
+" -------------------------------------
+
+if filereadable(path_spacevim_core) && spacevim_enabled
   execute 'source' path_spacevim_core
   let g:spacevim_running = 1
+
+elseif filereadable(path_vim_dein)
+  execute 'source' path_vim_dein
 
 elseif filereadable(path_vim_vundles)
   execute 'source' path_vim_vundles
@@ -26,7 +34,7 @@ endif
 " ----------------
 
 filetype plugin indent on
-syntax on
+syntax enable
 set history=100                                 " command line history
 set autoread                                    " reload files (no local changes only)
 
@@ -314,7 +322,6 @@ let g:startify_custom_header = [
   \ '',
   \ "    Sheharyar's Customized Vim",
   \ '',
-  \ '    SpaceVim: ' . g:spacevim_version,
   \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
   \ '',
   \ '',
