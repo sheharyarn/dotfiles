@@ -17,8 +17,13 @@ if spacevim_running                           " ## SpaceVim GUI Settings
 
 else                                          " ## Non-SpaceVim Settings
   colorscheme onedark                         " Use custom colorscheme
-  set nocursorline                            " Don't highlight current line in gvim
+  set cursorline                              " Highlight current line in gvim
   set showtabline=2                           " Always show tabline
+
+  set guioptions-=m                           " Remove Menu bar
+  set guioptions-=T                           " Remove Toolbar
+  set guioptions-=L                           " Remove left-hand and
+  set guioptions-=r                           " right-hand scroll bars
 
   if has("gui_macvim")                        " #### MacVim Specific Settings
     set nofu                                  " Don't start MacVim in Fullscreen Mode
@@ -26,12 +31,6 @@ else                                          " ## Non-SpaceVim Settings
 
   else                                        " #### Other gVim Settings
     set clipboard=unnamedplus                 " Use '+' register for clipboard
-
-    set guioptions-=m                         " Remove Menu bar
-    set guioptions-=T                         " Remove Toolbar
-    set guioptions+=L                         " Show left-hand and
-    set guioptions+=r                         " right-hand scroll bars
-
     set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
   endif
 endif
