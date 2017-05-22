@@ -2,6 +2,25 @@
 " sheharyar's .vimrc
 " ##################
 
+let g:startify_custom_header = [
+  \ '',
+  \ '',
+  \ '        ____               _          _    __ _',
+  \ '       / __ \ _____ __  __( )_____   | |  / /(_)____ ___',
+  \ '      / /_/ // ___// / / /|// ___/   | | / // // __ `__ \',
+  \ '     / ____/(__  )/ /_/ /  (__  )    | |/ // // / / / / /',
+  \ '    /_/    /____/ \__, /  /____/     |___//_//_/ /_/ /_/',
+  \ '                 /____/',
+  \ '',
+  \ '',
+  \ "    Sheharyar's Customized Vim",
+  \ '',
+  \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
+  \ '',
+  \ '',
+  \ ]
+
+
 let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
 let g:path_vim_dein      = expand("~/.dotfiles/Vim/dein.vim")
 let g:path_vim_vundles   = expand("~/.dotfiles/Vim/vundles.vim")
@@ -79,7 +98,7 @@ noremap <Leader>W :w !sudo tee % > /dev/null
                                                 "" Ctrl+Shift and x/c/v
 
 
-
+let g:indent_guides_enable_on_vim_startup = 0
 
 " UI
 " --
@@ -167,7 +186,7 @@ endfunction
 " Netrw / NerdTree
 " ----------------
 
-command E Ex                                    " Use :E instead of :Ex
+"command E Ex                                    " Use :E instead of :Ex
 
 let g:netrw_liststyle  = 3                      " Use Tree-View mode in netrw
 let NERDTreeShowHidden = 1                      " Show Hidden files in NerdTree
@@ -309,33 +328,15 @@ set scrolloff=8                                 " Start scrolling when we're 8 l
 set wrap lbr                                    " Wrap lines without breaking words
 let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 
-let g:startify_custom_header = [
-  \ '',
-  \ '',
-  \ '        ____               _          _    __ _',
-  \ '       / __ \ _____ __  __( )_____   | |  / /(_)____ ___',
-  \ '      / /_/ // ___// / / /|// ___/   | | / // // __ `__ \',
-  \ '     / ____/(__  )/ /_/ /  (__  )    | |/ // // / / / / /',
-  \ '    /_/    /____/ \__, /  /____/     |___//_//_/ /_/ /_/',
-  \ '                 /____/',
-  \ '',
-  \ '',
-  \ "    Sheharyar's Customized Vim",
-  \ '',
-  \ '    Dotfiles: https://github.com/sheharyarn/dotfiles',
-  \ '',
-  \ '',
-  \ ]
 
 
 
+" Vim vs. gVim
+" ------------
 
-" Vim vs. Macvim vs. gVim
-" -----------------------
-
-if has("gui_running")                           " ## GUI-Based Vim Settings
+if has("gui_running") || exists("neovim_dot_app")
   execute 'source' path_vim_gui
-else                                            " ## Non-GUI Vim
+else
   set wrap                                      " Wrap lines on terminal vim
 endif
 

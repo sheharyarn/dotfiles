@@ -14,8 +14,9 @@ if spacevim_running                           " ## SpaceVim GUI Settings
   " Handle them in spacevim.vim
 
 else                                          " ## Non-SpaceVim Settings
-  colorscheme one-dark "apprentice                       Use custom colorscheme
+  colorscheme onedark                         " Use custom colorscheme
   set nocursorline                            " Don't highlight current line in gvim
+  set showtabline=2                           " Always show tabline
 
   if has("gui_macvim")                        " #### MacVim Specific Settings
     set nofu                                  " Don't start MacVim in Fullscreen Mode

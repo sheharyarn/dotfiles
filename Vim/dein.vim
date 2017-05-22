@@ -16,36 +16,38 @@ if dein#load_state(path_dein_root)
 
 
   " UI Plugins
-  call dein#add('Yggdroot/indentLine')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('Yggdroot/indentLine')                  " Show indent lines
+  call dein#add('airblade/vim-gitgutter')               " Show git changes in gutter
+  call dein#add('vim-airline/vim-airline')              " Sexy status line
+  call dein#add('vim-airline/vim-airline-themes')       " Sexy status line themes
 
 
   " Nerd Plugins
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('scrooloose/nerdcommenter')
-  call dein#add('jistr/vim-nerdtree-tabs')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('scrooloose/nerdtree')                  " Project tree sidebar
+  call dein#add('scrooloose/nerdcommenter')             " Comment Management
+  call dein#add('jistr/vim-nerdtree-tabs')              " Keep NERD same across multiple tabs
+  call dein#add('Xuyuanp/nerdtree-git-plugin')          " Show changed files in NERDTree
 
 
   " Features
-  call dein#add('tpope/vim-surround')
-  call dein#add('ctrlpvim/ctrlp.vim')
-  call dein#add('terryma/vim-multiple-cursors')
+  call dein#add('tpope/vim-surround')                   " Surround Features (Brackets, Quotes, Tags)
+  call dein#add('ctrlpvim/ctrlp.vim')                   " Fuzzy finder for projects
+  call dein#add('terryma/vim-multiple-cursors')         " Edit multiple lines at once
+  call dein#add('sheerun/vim-polyglot')                 " Language packs (Syntax, etc.)
 
 
   " Others
-  call dein#add('wakatime/vim-wakatime')
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('tpope/vim-repeat')
-  call dein#add('mhinz/vim-startify')
+  call dein#add('wakatime/vim-wakatime')                " Wakatime plugin
+  call dein#add('tpope/vim-fugitive')                   " Git Tools for Vim
+  call dein#add('tpope/vim-repeat')                     " Dot Repeat enabler for plugins
+  call dein#add('mhinz/vim-startify')                   " Custom Start Screen for Vim
 
 
   " Vim vs NeoVim
-  if has("nvim")
-    call dein#add('Shougo/deoplete.vim')
+  if has('nvim')
+    call dein#add('Shougo/deoplete.nvim')               " Dark Completion Plugin (Neovim only)
   else
-    call dein#add('Shougo/neocomplete.vim')
+    call dein#add('Shougo/neocomplete.vim')             " Fast Completion Plugin
   endif
 
 
