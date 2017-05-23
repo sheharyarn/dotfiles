@@ -22,9 +22,9 @@
 
 
 # Private Network
-192.168.0.1 air
-192.168.0.2 mbp
-192.168.0.3 rpi
+192.168.0.1   air
+192.168.0.2   mbp
+192.168.1.100 pi
 
 
 # Servers
@@ -39,6 +39,7 @@
 128.199.123.168 mobilepk
 162.218.234.32  haxor
 139.59.36.84    apnicar
+104.196.4.18    playhost
 
 
 # System Stuff
