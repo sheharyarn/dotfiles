@@ -71,6 +71,8 @@ map <S-Enter> O<ESC>
                                                 " lines above and below
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
+nnoremap da 0D
+                                                " Clear line without deleting it
 inoremap <Leader>p <ESC>pa
                                                 " Paste items in Insert mode
 
