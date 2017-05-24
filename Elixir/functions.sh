@@ -15,9 +15,9 @@ exp() {
 
 
 # A shortcut for elixir phoenix generators
-epg() {
+expg() {
     if [[ $# -eq 0 ]] ; then
-        echo "usage: epg command [args...]"
+        echo "usage: expg command [args...]"
     else
         local command="mix phoenix.gen.$@"
 

@@ -1,7 +1,8 @@
 # Elixir Aliases
 # --------------
 
-alias  eps='mix phoenix.server'
-alias  epc='iex -S mix'
-alias epsc='iex -S mix phoenix.server'
+alias   ex='iex'
+alias  exs='mix phoenix.server'
+alias  exc='iex -S mix'
+alias exsc='iex -S mix phoenix.server'
 
