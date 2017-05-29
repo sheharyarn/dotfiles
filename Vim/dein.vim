@@ -34,6 +34,7 @@ if dein#load_state(path_dein_root)
   call dein#add('ctrlpvim/ctrlp.vim')                   " Fuzzy finder for projects
   call dein#add('terryma/vim-multiple-cursors')         " Edit multiple lines at once
   call dein#add('sheerun/vim-polyglot')                 " Language packs (Syntax, etc.)
+  call dein#add('alvan/vim-closetag')                   " Auto-close xhtml tags
 
 
   " Others
