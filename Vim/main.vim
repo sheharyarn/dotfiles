@@ -215,6 +215,20 @@ let g:multi_cursor_exit_from_insert_mode = 0
                                                 " Don't exit multi-cursor mode if
                                                 " ESC pressed in insert/visual mode
 
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
+
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction
+                                                " Don't invoke NeoComplete in
+                                                " multi-cursor mode
+
 
 
 
