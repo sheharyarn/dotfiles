@@ -230,7 +230,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " CloseTag
 " --------
 
-let g:closetag_filenames = "*.html,*.xhtml,*.js,*.jsx,*.es6"
+let g:closetag_filenames = "*.html,*.xhtml,*.js,*.jsx,*.es6,*.erb,*.eex"
                                                 " Automatically close html tags in these files
 
 
