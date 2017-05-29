@@ -29,6 +29,8 @@ else                                          " ## Non-SpaceVim Settings
     set nofu                                  " Don't start MacVim in Fullscreen Mode
     set guifont=DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete:h12
 
+    autocmd VimEnter * set guioptions+=e      " Use Mac Native Tabs
+
   else                                        " #### Other gVim Settings
     set clipboard=unnamedplus                 " Use '+' register for clipboard
     set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 10
