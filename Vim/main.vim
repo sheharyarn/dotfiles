@@ -181,6 +181,8 @@ let g:syntastic_check_on_wq = 0
 " NeoComplete
 " -----------
 
+let g:neocomplete#enable_at_startup  = 1        " Start NeoComplete with Vim
+
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
   return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
