@@ -207,6 +207,16 @@ map <C-t> :NERDTreeTabsToggle<CR>
 
 
 
+" NerdCommenter
+" -------------
+
+let g:NERDSpaceDelims     = 1                   " Add spaces after comment symbol
+let g:NERDCompactSexyComs = 1                   " Compact pretty multi-line comments
+let g:NERDDefaultAlign    = 'left'              " Don't indent comments like code
+
+
+
+
 " Vim-Multiple-Cursors
 " --------------------
 
