@@ -182,6 +182,8 @@ let g:syntastic_check_on_wq = 0
 " -----------
 
 let g:neocomplete#enable_at_startup  = 1        " Start NeoComplete with Vim
+let g:neocomplete#enable_smart_case  = 1        " Consider case during completions
+let g:neocomplete#enable_auto_select = 1        " Autoselect first option
 
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
