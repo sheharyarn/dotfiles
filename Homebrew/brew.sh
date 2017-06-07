@@ -28,7 +28,7 @@ brew install git                            # : dotfiles/git
 brew install wget
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
-brew install vim --override-system-vim      # : dotfiles/vim
+brew install vim  --with-python3 --with-lua --with-override-system-vi
 brew install macvim
 brew install heroku-toolbelt
 brew install tor
