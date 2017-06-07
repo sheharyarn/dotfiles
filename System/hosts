@@ -14,6 +14,7 @@
 127.0.0.1   arch
 127.0.0.1   MBP
 127.0.0.1   Air
+127.0.0.1   postgres
 
 127.0.0.1   healthhero.dev
 127.0.0.1   carline apnitoyota apnihonda apnisuzuki
