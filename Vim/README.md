@@ -20,7 +20,7 @@ rvm use system
 Use Homebrew to install `vim`:
 
 ```bash
-brew install vim --override-system-vim
+brew install vim --with-python3 --with-lua --with-override-system-vi
 ```
 
 ### Install MacVim
