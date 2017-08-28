@@ -3,7 +3,7 @@
 # GIT FUNCTIONS
 # =============
 
-unalias gc     # avoid collision with zsh git plugin
+unalias gc 2>/dev/null  # avoid collision with zsh git plugin
 
 
 # Commits - Either inline or in vim
