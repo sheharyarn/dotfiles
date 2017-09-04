@@ -16,6 +16,9 @@ alias     crap="cd ~/crap"
 # Edit .zshrc file
 alias zshrc="$EDITOR $zshrc"
 
+# Lock Screen
+alias lockscreen='pmset displaysleepnow'
+
 # Reload settings or hardware
 alias reload!="source $zshrc"
 alias reload="echo 'Use \"reload!\" instead'"
