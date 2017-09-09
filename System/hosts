@@ -1,4 +1,3 @@
-
 ## Psycho's Host Database
 ## ============================
 ## (Found in /etc/hosts)
@@ -31,11 +30,10 @@
 # Servers
 192.241.251.130 outy
 128.199.242.246	bluewave
-107.170.111.64	devfiles
-107.170.111.64	filesdroid
-104.130.8.61	  crewcade
+159.203.91.233  devfiles
+107.170.111.64  filesdroid
+104.130.8.61    crewcade
 104.130.2.40    veeto
-45.55.170.47    sites
 188.166.44.216  kholopk
 128.199.123.168 mobilepk
 162.218.234.32  haxor
