@@ -24,7 +24,7 @@ alias reload!="source $zshrc"
 alias reload="echo 'Use \"reload!\" instead'"
 alias reload-wifi='sudo iwlist wlp3s0 scan'
 alias reload-audio='sudo killall coreaudiod'
-alias reload-touchbar="pkill TouchBarAgent && killall ControlStrip"
+alias reload-touchbar="sudo pkill TouchBarServer && sudo killall ControlStrip && sudo pkill NowPlayingTouchUI"
 
 # Networking
 alias sshproxy='echo "Starting proxy server on port 5555..."; ssh -qTnN -D 5555'
