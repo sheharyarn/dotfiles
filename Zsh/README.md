@@ -19,7 +19,11 @@ ln -s ~/.dotfiles/Zsh/zshrc.symlink ~/.zshrc
 
 # Symlink external Plugins
 ln -s ~/.dotfiles/Zsh/Plugins ~/.oh-my-zsh/custom/plugins
-
 ```
 
+Use Aliases/Functions in other apps like Vim:
+
+```bash
+ln -s ~/.dotfiles/Zsh/simple-load.sh ~/.zshenv
+```
 
