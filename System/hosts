@@ -20,6 +20,17 @@
 
 192.168.1.1	router
 
+# DBFS
+# 45.55.188.124 dbfs.newyork
+# 45.55.188.124 dbfs.london
+# 45.55.188.124 dbfs.singapore
+
+127.0.0.1 dbfs.newyork
+127.0.0.1 dbfs.london
+127.0.0.1 dbfs.singapore
+127.0.0.1 dbfs.cairo
+
+
 
 # Private Network
 192.168.0.1   air
