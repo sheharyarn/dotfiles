@@ -4,8 +4,9 @@
 # ============
 
 v() {
+  # If MacVim exists
   if hash mvim 2>/dev/null; then
-    mvim "$@"
+    mvim "$@" > /dev/null 2>&1  # disable all exceptions
   else
     gvim "$@"
   fi
