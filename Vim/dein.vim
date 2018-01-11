@@ -35,6 +35,7 @@ if dein#load_state(path_dein_root)
   call dein#add('terryma/vim-multiple-cursors')         " Edit multiple lines at once
   call dein#add('sheerun/vim-polyglot')                 " Language packs (Syntax, etc.)
   call dein#add('alvan/vim-closetag')                   " Auto-close xhtml tags
+  call dein#add('vim-scripts/BufOnly.vim')              " Delete all buffers except the open one
 
 
   " Others
