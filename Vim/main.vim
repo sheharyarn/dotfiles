@@ -54,8 +54,9 @@ endif
 
 filetype plugin indent on
 syntax enable
-set history=100                                 " command line history
 set autoread                                    " reload files (no local changes only)
+set history=100                                 " command line history
+set shell=zsh                                   " Use Zsh for shell commands
 
 
 
@@ -319,11 +320,6 @@ inoremap <Leader>[ <ESC>:tabprev<CR>a
 inoremap <Leader>] <ESC>:tabnext<CR>a
                                                 " Create a new tab using Leader + =
                                                 " and move between them using [ / ]
-
-noremap <M-Left>  :tabmove-<cr>
-noremap <M-Right> :tabmove+<cr>
-                                                " Relocate tab position to left/right
-                                                " using Meta (Alt) key
 
 
 
