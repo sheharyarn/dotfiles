@@ -321,6 +321,14 @@ inoremap <Leader>] <ESC>:tabnext<CR>a
                                                 " Create a new tab using Leader + =
                                                 " and move between them using [ / ]
 
+function! PsyVimSetMaps() abort
+  noremap <A-Left>  :tabmove-<cr>
+  noremap <A-Right> :tabmove+<cr>
+endfunction
+autocmd VimEnter * call PsyVimSetMaps()         " Relocate tab position to left/right
+                                                " using Meta (Alt) key
+
+
 
 
 " Text Formatting
