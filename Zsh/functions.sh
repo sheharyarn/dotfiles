@@ -139,7 +139,7 @@ function $ {
 
 # Extract all archives with a single command
 extract () {
-  if [ -f $1 ] ; then
+  if [ $# -eq 1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1     ;;
       *.tar.gz)    tar xzf $1     ;;
