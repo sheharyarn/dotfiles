@@ -3,6 +3,7 @@
 # Paths and Variables
 export ZSH=$HOME/.oh-my-zsh
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 export dotfiles=$HOME/.dotfiles
 export DOTFILES=$dotfiles
