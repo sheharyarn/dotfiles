@@ -16,9 +16,8 @@ brew cask install mpv                   # install mpv .app and binary
 ## Symlink Config Files
 
 ```bash
-mkdir -p ~/.config/mpv
-ln -s ~/.dotfiles/Others/MPV/mpv.conf ~/.config/mpv/mpv.conf
-ln -s ~/.dotfiles/Others/MPV/input.conf ~/.config/mpv/input.conf
+mkdir -p ~/.config
+ln -s ~/.dotfiles/Others/MPV ~/.config/mpv
 ```
 
 
