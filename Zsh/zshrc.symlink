@@ -9,6 +9,7 @@ export dotfiles=$HOME/.dotfiles
 export DOTFILES=$dotfiles
 
 export EDITOR="vim"
+export LESS="-R"
 export zshrc="$HOME/.zshrc"
 
 
