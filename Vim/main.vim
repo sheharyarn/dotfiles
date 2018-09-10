@@ -80,12 +80,6 @@ inoremap <Leader>p <ESC>pa
 nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<cr>
                                                 " Refresh NerdTree and CtrlP caches
 
-noremap  ,,, <ESC>:noh<cr>
-noremap  ,,  <ESC>
-inoremap ,,  <ESC>
-inoremap jj  <ESC>
-                                                " alternate ESC maps
-
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
                                                 " Replicate Select-All with Ctrl+A
