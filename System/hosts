@@ -16,15 +16,13 @@
 127.0.0.1   postgres
 
 127.0.0.1   enroll.dev
+127.0.0.1   slabdev.com shey.slabdev.com
 127.0.0.1   carline apnitoyota apnihonda apnisuzuki
 
 192.168.1.1	router
 
-# DBFS
-# 45.55.188.124 dbfs.newyork
-# 45.55.188.124 dbfs.london
-# 45.55.188.124 dbfs.singapore
 
+# DBFS
 127.0.0.1 dbfs.newyork
 127.0.0.1 dbfs.london
 127.0.0.1 dbfs.singapore
