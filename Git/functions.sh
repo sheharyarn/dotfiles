@@ -32,6 +32,12 @@ gta() {
 }
 
 
+# Generate content for .gitignore files
+gi() {
+  curl -fsSL "https://gitignore.io/api/$@"
+}
+
+
 # Commits in a specific instance in time
 # See: http://stackoverflow.com/a/3896112/1533054
 gc-time() {
