@@ -4,6 +4,3 @@
 [submodule "Sublime/2/sftp_servers"]
 	path = Sublime/2/sftp_servers
 	url = git@bitbucket.org:sheharyar/sublimesftp-servers.git
-[submodule "Zsh/Plugins/zsh-syntax-highlighting"]
-	path = Zsh/Plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
