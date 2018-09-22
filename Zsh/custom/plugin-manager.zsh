@@ -48,6 +48,7 @@ zsh-custom() {
     return 1
   fi
 
+  # Check Git URL and perform operation
   if [[ "$arg_url" =~ ^git@.+\..+\:.+/.+\.git$ ]] ; then
     local dirname=$(basename $arg_url .git)
     local fullpath="$dirpath/$dirname"
