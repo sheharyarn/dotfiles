@@ -1,29 +1,22 @@
 Node.js
 =======
 
-> Use [NVM](https://github.com/creationix/nvm) ffs!
+> Use ~[NVM](https://github.com/creationix/nvm)~ [ASDF][https://github.com/asdf-vm/asdf] ffs!
 
 
 ## Installation
 
-Head over to the [NVM Installation Section](https://github.com/creationix/nvm#install-script)
-for the installation script.
+Follow the installation instructions in the [`asdf-nodej`](https://github.com/asdf-vm/asdf-nodejs) README.
 
 
 ## Setup
 
-Symlink the `.npmrc` and `.nvmrc` dotfiles:
+Symlink the `.npmrc` dotfile:
 
 ```bash
 $ ln -s ~/.dotfiles/Node.js/npmrc.symlink ~/.npmrc
-$ ln -s ~/.dotfiles/Node.js/nvmrc.symlink ~/.nvmrc
 ```
 
-Finally install the latest release of node:
-
-```bash
-$ nvm install
-```
 
 ## Node Dev Tools
 
