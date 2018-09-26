@@ -1,12 +1,12 @@
 Node.js
 =======
 
-> Use ~[NVM](https://github.com/creationix/nvm)~ [ASDF][https://github.com/asdf-vm/asdf] ffs!
+> Use ~[NVM](https://github.com/creationix/nvm)~ [ASDF](https://github.com/asdf-vm/asdf) ffs!
 
 
 ## Installation
 
-Follow the installation instructions in the [`asdf-nodej`](https://github.com/asdf-vm/asdf-nodejs) README.
+Follow the installation instructions in the [`asdf-nodejs`](https://github.com/asdf-vm/asdf-nodejs) README.
 
 
 ## Setup
