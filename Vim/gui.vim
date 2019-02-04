@@ -16,7 +16,7 @@ if spacevim_running                           " ## SpaceVim GUI Settings
   " Handle them in spacevim.vim
 
 else                                          " ## Non-SpaceVim Settings
-  colorscheme onedark                         " Use custom colorscheme
+  colorscheme apprentice                      " Use custom colorscheme
   set cursorline                              " Highlight current line in gvim
   set showtabline=2                           " Always show tabline
 
