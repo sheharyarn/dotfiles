@@ -33,6 +33,7 @@ alias        gu='git add -u'
 alias       gaa='git add -A'
 alias       guc='gu  && gc'
 alias       gac='gaa && gc'
+alias       gst='git stash'
 
   # gc moved to functions.sh
 
