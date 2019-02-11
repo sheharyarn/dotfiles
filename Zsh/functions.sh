@@ -79,9 +79,9 @@ search-replace() {
     echo ""
 
   else
-    if [ "$(get-platform)" == "linux" ]; then
+    if [[ "$(get-platform)" == "linux" ]]; then
       local sed="sed"
-    elif [ "$(get-platform)" == "apple" ]; then
+    elif [[ "$(get-platform)" == "apple" ]]; then
       local sed="gsed"
     fi
 
