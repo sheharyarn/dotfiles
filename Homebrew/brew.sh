@@ -37,16 +37,13 @@ brew install safe-rm
 brew install rmtrash
 brew install tree
 brew install unrar
-brew install erlang
 brew install mysql
 brew install mongodb
 brew install postgresql
 brew install imagemagick
 brew install archey
-brew install pow
 brew install z
 brew install jq
-brew install android-platform-tools
 
 
 #> External Binaries
@@ -60,6 +57,8 @@ brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 # ------------
 
 #> Must apps
+brew cask install 1password
+brew cask install 1password-cli
 brew cask install firefoxdeveloperedition
 brew cask install google-chrome
 brew cask install mpv                       # : dotfiles/osx/mpv
@@ -78,6 +77,7 @@ brew cask install sublime-text              # : dotfiles/sublime/2
 brew cask install atom
 brew cask install java
 brew cask install android-studio            # point it to your huge sdk folder
+brew cask install android-platform-tools
 
 #> Not that important
 brew cask install flux
