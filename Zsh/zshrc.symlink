@@ -20,9 +20,18 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 
+# Geometry Theme Settings
+GEOMETRY_SYMBOL_PROMPT="▲"
+GEOMETRY_SYMBOL_EXIT_VALUE="▲"
+GEOMETRY_COLOR_EXIT_VALUE="yellow"
+GEOMETRY_PROMPT_PREFIX="\n\n"
+PROMPT_GEOMETRY_EXEC_TIME=true
+PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME=0
+
+
 # Zsh Settings
 plugins=(git sublime brew zsh-syntax-highlighting)
-ZSH_THEME="blinks"
+ZSH_THEME="geometry/geometry"
 COMPLETION_WAITING_DOTS="true"
 
 
