@@ -33,16 +33,16 @@ zsh-custom() {
   local arg_url=$3
 
   # Check Mode
-  if   [ "$arg_mode" == "add" ]    ; then ; local mode="add"  ; local result="Commited new"
-  elif [ "$arg_mode" == "update" ] ; then ; local mode="pull" ; local result="Updated"
+  if   [[ "$arg_mode" == "add"    ]] ; then ; local mode="add"  ; local result="Committed new"
+  elif [[ "$arg_mode" == "update" ]] ; then ; local mode="pull" ; local result="Updated"
   else
     __zshcustom_error "invalid mode specified"
     return 1
   fi
 
   # Check Plugin Type
-  if   [ "$arg_type" == "plugin" ] ; then ; local dirpath="Zsh/custom/plugins"
-  elif [ "$arg_type" == "theme" ]  ; then ; local dirpath="Zsh/custom/themes"
+  if   [[ "$arg_type" == "plugin" ]] ; then ; local dirpath="Zsh/custom/plugins"
+  elif [[ "$arg_type" == "theme"  ]] ; then ; local dirpath="Zsh/custom/themes"
   else
     __zshcustom_error "invalid type specified"
     return 1
