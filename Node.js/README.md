@@ -1,7 +1,7 @@
 Node.js
 =======
 
-> Use ~[NVM](https://github.com/creationix/nvm)~ [ASDF](https://github.com/asdf-vm/asdf) ffs!
+> Use ~[NVM](https://github.com/creationix/nvm)~ [ASDF][https://github.com/asdf-vm/asdf] ffs!
 
 
 ## Installation
