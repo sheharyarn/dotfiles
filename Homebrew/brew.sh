@@ -85,6 +85,7 @@ brew cask install little-snitch
 brew cask install vlc
 brew cask install couleurs
 brew cask install tunnelbear
+brew cask install rocket
 
 #> Maybe
 # brew cask install firefox
