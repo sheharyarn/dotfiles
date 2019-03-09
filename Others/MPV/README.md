@@ -17,7 +17,7 @@ brew cask install mpv                   # install mpv .app and binary
 
 ```bash
 mkdir -p ~/.config
-ln -s ~/.dotfiles/Others/MPV ~/.config/mpv
+ln -s ~/.dotfiles/Others/MPV ~/.mpv
 ```
 
 
