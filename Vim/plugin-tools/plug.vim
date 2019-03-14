@@ -55,4 +55,13 @@ call plug#begin(path_vim_plug_root)
   Plug 'wakatime/vim-wakatime'                " Wakatime plugin
   Plug 'vim-scripts/BufOnly.vim'              " Delete all buffers except the open one
 
+  " Color Schemes
+  Plug 'kaicataldo/material.vim'
+  Plug 'sonph/onehalf'
+  Plug 'rakr/vim-one'
+  Plug 'morhetz/gruvbox'
+  Plug 'joshdick/onedark.vim'
+  Plug 'romainl/Apprentice'
+  Plug 'KeitaNakamura/neodark.vim'
+
 call plug#end()
