@@ -42,6 +42,8 @@ brew install mongodb
 brew install postgresql
 brew install imagemagick
 brew install archey
+brew install fzf
+brew install ripgrep
 brew install z
 brew install jq
 
