@@ -3,6 +3,7 @@
 # Vim Aliases
 # ===========
 
-alias neovim='nvim'
-alias     vi='vim'
+alias vi="nvim"
+alias vim="nvim"
+alias vimdiff="nvim -d"
 
