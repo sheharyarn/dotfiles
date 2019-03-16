@@ -9,7 +9,7 @@ export dotfiles=$HOME/.dotfiles
 export DOTFILES=$dotfiles
 export ZSH_CUSTOM=$DOTFILES/Zsh/custom
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export LESS="-R"
 export zshrc="$HOME/.zshrc"
 
@@ -21,12 +21,12 @@ export LC_ALL=en_US.UTF-8
 
 
 # Geometry Theme Settings
-GEOMETRY_SYMBOL_PROMPT="▲"
-GEOMETRY_SYMBOL_EXIT_VALUE="▲"
-GEOMETRY_COLOR_EXIT_VALUE="yellow"
-GEOMETRY_PROMPT_PREFIX="\n\n"
-PROMPT_GEOMETRY_EXEC_TIME=true
-PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME=0
+export GEOMETRY_SYMBOL_PROMPT="▲"
+export GEOMETRY_SYMBOL_EXIT_VALUE="▲"
+export GEOMETRY_COLOR_EXIT_VALUE="yellow"
+export GEOMETRY_PROMPT_PREFIX="\n\n"
+export PROMPT_GEOMETRY_EXEC_TIME=true
+export PROMPT_GEOMETRY_COMMAND_MAX_EXEC_TIME=0
 
 
 # Zsh Settings
