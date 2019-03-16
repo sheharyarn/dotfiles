@@ -65,6 +65,10 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Disable Smart Quotes and Dashes
+defaults write -g NSAutomaticDashSubstitutionEnabled 0
+defaults write -g NSAutomaticQuoteSubstitutionEnabled 0
+
 
 # Restart Finder and other Services
 killall Finder
