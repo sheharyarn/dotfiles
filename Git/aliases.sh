@@ -7,7 +7,7 @@ alias         g='git'
 
 
 # Status and Information
-alias        gb='git branch'
+alias        gb='LESS="-FRX" git branch'
 alias        gs='git status'
 alias       gss='git status -s'
 
