@@ -20,6 +20,11 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 
+# Search Configs (fzf/rg)
+export IGNORED_DIRS="{.git,.bzr,.svn,.hg,CVS,node_modules,deps,_build,.backstop,.elixir_ls}"
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore-vcs --hidden --follow --glob '!$IGNORED_DIRS/*'"
+
+
 # Geometry Theme Settings
 export GEOMETRY_SYMBOL_PROMPT="▲"
 export GEOMETRY_SYMBOL_EXIT_VALUE="▲"
