@@ -62,9 +62,8 @@ mv ~/.config/nvim ~/.config/nvim_backup
 mkdir -p ~/.vim/swap ~/.vim/backups ~/.config/nvim ~/.SpaceVim.d/
 
 ln -s ~/.dotfiles/Vim/main.vim      ~/.vimrc
+ln -s ~/.dotfiles/Vim/main.vim      ~/.config/nvim/init.vim
 ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
-
-ln -s ~/.vimrc ~/.config/nvim/init.vim
 ```
 
 <br>
@@ -72,27 +71,18 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 ## Plugins
 
-I use [Dein](https://github.com/Shougo/dein.vim) for Plugin Management (Previously
-[Vundle](https://github.com/gmarik/Vundle.vim)). It's fast and leverages new features
-in Vim 8.0 and NeoVim:
+I use _Vim-Plug_ for Plugin Management (Previously Dein & Vundle).
 
-1. Install Dein
-
-    ```bash
-    $ curl -fsSL https://github.com/Shougo/dein.vim/raw/master/bin/installer.sh > dein.sh
-    $ sh ./dein.sh ~/.vim/dein
-    ```
+1. Install ~Dein~ [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 2. Make sure your `vimrc` dotfiles are set up
 
-3. The plugins would be auto-installed on start
+3. The plugins would be auto-installed on start but you can do it manually too:
 
     ```vim
-    " But you can manually install them
-    :call dein#install()
-
-    " Or force update them
-    :call dein#update()
+    " For dein
+    :call dein#install() " manually install them
+    :call dein#update()  " force update them
     ```
 
 _(If you're using Spacevim, use its built-in plugin management system)_
