@@ -79,13 +79,13 @@ map <S-Enter> O<ESC>
                                                 " lines above and below
 vnoremap . :norm.<CR>
                                                 " enable use of . in visual mode
-nnoremap da 0D
+" nnoremap daa 0D
                                                 " Clear line without deleting it
 inoremap <Leader>p <ESC>pa
                                                 " Paste items in Insert mode
 
-nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<cr>
-                                                " Refresh NerdTree and CtrlP caches
+nmap <Leader>r :NERDTreeRefreshRoot
+                                                " Refresh NERDTree cache
 
 noremap <C-a> gg0vG$
 imap    <C-a> <ESC><C-a>
