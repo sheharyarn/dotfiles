@@ -22,8 +22,9 @@ let g:startify_custom_header = [
 
 
 let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
-let g:path_vim_dein      = expand("~/.dotfiles/Vim/dein.vim")
-let g:path_vim_vundles   = expand("~/.dotfiles/Vim/vundles.vim")
+let g:path_vim_plug      = expand("~/.dotfiles/Vim/plugin-tools/plug.vim")
+let g:path_vim_dein      = expand("~/.dotfiles/Vim/plugin-tools/dein.vim")
+let g:path_vim_vundle    = expand("~/.dotfiles/Vim/plugin-tools/vundle.vim")
 let g:path_spacevim_core = expand("~/.SpaceVim/vimrc")
 
 let g:spacevim_enabled   = 0
@@ -35,15 +36,20 @@ let g:spacevim_running   = 0
 " Load SpaceVim / Custom Plugin Manager
 " -------------------------------------
 
+set nocompatible
+
 if filereadable(path_spacevim_core) && spacevim_enabled
   execute 'source' path_spacevim_core
   let g:spacevim_running = 1
 
+elseif filereadable(path_vim_plug)
+  execute 'source' path_vim_plug
+
 elseif filereadable(path_vim_dein)
   execute 'source' path_vim_dein
 
-elseif filereadable(path_vim_vundles)
-  execute 'source' path_vim_vundles
+elseif filereadable(path_vim_vundle)
+  execute 'source' path_vim_vundle
 endif
 
 
