@@ -61,7 +61,7 @@ endif
 filetype plugin indent on
 syntax enable
 set autoread                                    " reload files (no local changes only)
-set history=100                                 " command line history
+set history=1000                                " command line history
 set shell=zsh                                   " Use Zsh for shell commands
 
 
