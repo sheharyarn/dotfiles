@@ -122,7 +122,7 @@ let g:vim_markdown_conceal    = 0               " Don't conceal markdown links
 let g:airline#extensions#tabline#enabled = 1    " Enable sexy tabline
 
 let g:indentLine_color_gui = '#465366'          " Set indent line color
-let g:indentLine_fileTypeExclude = ['help', 'startify']
+let g:indentLine_fileTypeExclude = ['help', 'startify', 'vim', 'markdown']
                                                 " Don't show it on specific buffers
 
 hi SignColumn ctermbg=none
