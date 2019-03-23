@@ -87,9 +87,9 @@ inoremap <Leader>p <ESC>pa
 nmap <Leader>r :NERDTreeRefreshRoot
                                                 " Refresh NERDTree cache
 
-noremap <C-a> gg0vG$
-imap    <C-a> <ESC><C-a>
-                                                " Replicate Select-All with Ctrl+A
+noremap <M-a> gg0vG$
+imap    <M-a> <ESC><M-a>
+                                                " Replicate Select-All with ⌘ + A
 
 noremap <Leader>W :w !sudo tee % > /dev/null
                                                 " Write file using sudo by Leader + W
