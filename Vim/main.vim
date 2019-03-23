@@ -131,6 +131,9 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Do the same for Line Number columns
 
 hi VertSplit ctermbg=NONE guibg=NONE
+                                                " Default VertSplit config
+hi VertSplit guibg=#2c3a41 guifg=#2c3a41
+                                                " VertSplit config for `material` theme
 set fillchars+=vert:│
                                                 " Set custom separator for vertical splits
 
