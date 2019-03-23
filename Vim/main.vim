@@ -109,8 +109,12 @@ set laststatus=2                                " needed for airline to be visib
 set ignorecase                                  " ignore case when searching
 set t_Co=256                                    " set terminal color mode to 256
 
-let g:airline_theme           = 'tomorrow'      " Set my theme for Airline
-let g:airline_powerline_fonts = 1               " Use the sexy fonts used in Powerline
+set background=dark                             " Set dark mode and custom colorscheme
+colorscheme material
+
+let g:material_theme_style    = 'default'
+let g:airline_theme           = 'material'      " Set my theme for Airline
+let g:airline_powerline_fonts = 1               " Use Airline with Powerline fonts
 let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
 let g:gitgutter_eager         = 1               " and eager
 let g:vim_markdown_conceal    = 0               " Don't conceal markdown links
