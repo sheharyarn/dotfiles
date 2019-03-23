@@ -91,15 +91,6 @@ noremap <M-a> gg0vG$
 imap    <M-a> <ESC><M-a>
                                                 " Replicate Select-All with ⌘ + A
 
-noremap <Leader>W :w !sudo tee % > /dev/null
-                                                " Write file using sudo by Leader + W
-
-"noremap  <C-S-x> "+c
-"noremap  <C-S-c> "+y
-"noremap  <C-S-v> "+gP
-"inoremap <C-S-v> <C-r><C-o>+
-                                                "" Cut/Copy/Paste from clipboard using
-                                                "" Ctrl+Shift and x/c/v
 
 
 
