@@ -163,6 +163,16 @@ au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 
 
+" fzf.vim
+" -------
+
+let g:fzf_layout = { 'down': '~20%' }           " Open fzf at bottom with max width of 20%
+nnoremap <C-p> :Files<Cr>
+                                                " Map Ctrl+P to fzf
+
+
+
+
 " Syntastic
 " ---------
 
