@@ -173,17 +173,14 @@ nnoremap <C-p> :Files<Cr>
 
 
 
-" Syntastic
-" ---------
+" ALE + Linting
+" -------------
 
-set statusline+=%#warningmsg#                   " Recommended Syntastic Configurations
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:ale_enabled = 0
+let g:airline#extensions#ale#enabled = 1          " Connect ALE to Airline
+let g:ale_lint_on_text_changed = 'never'          " Don't lint while editing but
+let g:ale_lint_on_save = 1                        " do it on save and
+let g:ale_lint_on_enter = 1                       " when a file is opened
 
 
 
