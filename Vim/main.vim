@@ -177,10 +177,19 @@ nnoremap <C-p> :Files<Cr>
 " -------------
 
 let g:ale_enabled = 0
-let g:airline#extensions#ale#enabled = 1          " Connect ALE to Airline
-let g:ale_lint_on_text_changed = 'never'          " Don't lint while editing but
-let g:ale_lint_on_save = 1                        " do it on save and
-let g:ale_lint_on_enter = 1                       " when a file is opened
+let g:airline#extensions#ale#enabled = 1        " Connect ALE to Airline
+let g:ale_lint_on_text_changed = 'never'        " Don't lint while editing but
+let g:ale_lint_on_save = 1                      " do it on save and
+let g:ale_lint_on_enter = 1                     " when a file is opened
+
+nnoremap <Leader>f :ALEFix<cr>
+nnoremap <Leader>e :ALEToggle<cr>
+                                                " Manually fix file with \f and toggle
+                                                " ALE with \e
+nnoremap <Leader>w :ALENextWrap<cr>
+nnoremap <Leader>W :ALEPreviousWrap<cr>
+                                                " Map \w and \W to go to the next or
+                                                " previous error
 
 
 
