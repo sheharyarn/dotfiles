@@ -359,7 +359,7 @@ autocmd VimEnter * call PsyVimSetMaps()         " Relocate tab position to left/
 
 set autoindent                                  " automatic indent new lines
 set smartindent                                 " be smart about it
-set tabstop=2                                   " 4 is awesome
+set tabstop=2                                   " 2 is awesome
 set shiftwidth=2                                " for automatic indents
 set expandtab                                   " expand tabs to spaces
 
@@ -377,19 +377,19 @@ vnoremap <S-Tab> <gv
 " Fix Clipboard paste on OSX
 " --------------------------
 
-if &term =~ "xterm.*"
-    let &t_ti = &t_ti . "\e[?2004h"
-    let &t_te = "\e[?2004l" . &t_te
-    function XTermPasteBegin(ret)
-        set pastetoggle=<Esc>[201~
-        set paste
-        return a:ret
-    endfunction
-    map <expr> <Esc>[200~ XTermPasteBegin("i")
-    imap <expr> <Esc>[200~ XTermPasteBegin("")
-    cmap <Esc>[200~ <nop>
-    cmap <Esc>[201~ <nop>
-endif
+" if &term =~ "xterm.*"
+"     let &t_ti = &t_ti . "\e[?2004h"
+"     let &t_te = "\e[?2004l" . &t_te
+"     function XTermPasteBegin(ret)
+"         set pastetoggle=<Esc>[201~
+"         set paste
+"         return a:ret
+"     endfunction
+"     map <expr> <Esc>[200~ XTermPasteBegin("i")
+"     imap <expr> <Esc>[200~ XTermPasteBegin("")
+"     cmap <Esc>[200~ <nop>
+"     cmap <Esc>[201~ <nop>
+" endif
 
 
 
