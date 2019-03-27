@@ -265,15 +265,6 @@ endfunction
 
 
 
-" CtrlP.vim
-" ---------
-
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-                                                " Show everything but files in .gitignore
-
-
-
-
 " CloseTag
 " --------
 
