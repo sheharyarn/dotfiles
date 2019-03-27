@@ -293,6 +293,23 @@ let g:startify_list_order = [
 
 
 
+" External file changes
+" ---------------------
+
+set autoread                                    " Trigger autoread on file changes
+
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+  \ if mode() != 'c' | checktime | endif        " Trigger when cursor stops moving,
+                                                " buffer changes or gains focus
+
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg |
+  \ echo 'File changed on disk. Buffer reloaded.'
+  \ | echohl None                               " Notify user if auto changes
+
+
+
+
 " Splits and Tabs
 " ---------------
 
