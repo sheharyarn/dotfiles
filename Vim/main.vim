@@ -434,13 +434,23 @@ autocmd VimEnter * call PsyVimStart()           " Call function when vim starts
 
 
 
-" Vim vs. gVim
-" ------------
+" Feature Specific Options
+" ------------------------
 
 if has("gui_running") || exists("neovim_dot_app")
   execute 'source' path_vim_gui
 else
-  set wrap                                      " Wrap lines on terminal vim
+  set wrap
+endif
+
+
+if has("nvim")
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+
+if has("termguicolors")
+  set termguicolors
 endif
 
 
