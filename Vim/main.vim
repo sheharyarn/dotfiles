@@ -440,7 +440,7 @@ autocmd VimEnter * call PsyVimStart()           " Call function when vim starts
 if has("gui_running") || exists("neovim_dot_app")
   execute 'source' path_vim_gui
 else
-  set wrap
+  set nowrap
 endif
 
 
