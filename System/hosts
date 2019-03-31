@@ -4,9 +4,10 @@
 
 
 # Localhost variations
-127.0.0.1   psy
-127.0.0.1   psycho
 127.0.0.1   localhost
+::1         localhost
+
+127.0.0.1   psy
 127.0.0.1   utorrent
 127.0.0.1   ubuntu
 127.0.0.1   debian
@@ -14,12 +15,6 @@
 127.0.0.1   MBP
 127.0.0.1   Air
 127.0.0.1   postgres
-
-127.0.0.1   enroll.dev
-127.0.0.1   slabdev.com shey.slabdev.com
-127.0.0.1   carline apnitoyota apnihonda apnisuzuki
-
-192.168.1.1	router
 
 
 # DBFS
@@ -29,10 +24,8 @@
 127.0.0.1 dbfs.cairo
 
 
-
 # Private Network
-192.168.0.1   air
-192.168.0.2   mbp
+192.168.1.1	  router
 192.168.1.70  rig
 192.168.1.100 pi
 
@@ -58,7 +51,6 @@
 
 # System Stuff
 255.255.255.255	broadcasthost
-::1             localhost
 fe80::1%lo0	localhost
 
 
