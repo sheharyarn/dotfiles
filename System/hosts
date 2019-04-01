@@ -17,6 +17,12 @@
 127.0.0.1   postgres
 
 
+# Work
+
+127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com
+::1         slabdev.com api.slabdev.com shey.slabdev.com
+
+
 # DBFS
 127.0.0.1 dbfs.newyork
 127.0.0.1 dbfs.london
