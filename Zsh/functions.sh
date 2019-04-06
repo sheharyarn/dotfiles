@@ -49,8 +49,7 @@ search() {
     echo "usage: search string"
     echo ""
   else
-    eval "rg --files $RG_DEFAULT_FLAGS | rg -i '$@'"
-    echo ""
+    rg --files $RG_DEFAULT_ARGS | rg -i "$@"
   fi
 }
 
