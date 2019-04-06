@@ -386,6 +386,16 @@ vnoremap <S-Tab> <gv
 
 
 
+" Fix Clipboard copy on OSX
+" -------------------------
+
+vnoremap <M-c> "+y
+                                                " First make sure iTerm sends ⌘ C
+                                                " escape code
+
+
+
+
 " Fix Clipboard paste on OSX
 " --------------------------
 
