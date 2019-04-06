@@ -182,6 +182,18 @@ let g:ale_lint_on_text_changed = 'never'        " Don't lint while editing but
 let g:ale_lint_on_save = 1                      " do it on save and
 let g:ale_lint_on_enter = 1                     " when a file is opened
 
+let g:ale_elixir_elixir_ls_release =
+  \ expand('~/.elixir-ls/release')
+
+let g:ale_linters = {
+  \ 'elixir': ['elixir-ls', 'credo'],
+\}
+
+let g:ale_fixers = {
+  \ 'javascript': ['eslint'],
+  \ 'elixir': ['mix_format'],
+\}
+
 nnoremap <Leader>f :ALEFix<cr>
 nnoremap <Leader>e :ALEToggle<cr>
                                                 " Manually fix file with \f and toggle
