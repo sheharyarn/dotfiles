@@ -44,17 +44,14 @@ memhogs() { ps wwaxm -o pid,stat,vsize,rss,time,command | head -10; }
 
 # Search for matching files and directories in the current tree
 search() {
-    if [[ $# -eq 0 ]] ; then
-        echo "no arguments provided"
-        echo "usage: search string [string2 string3 ...]"
-        echo ""
-    else
-        for i in "$@"; do
-            echo "Finding $i:"
-            find . -iname "*$i*" -d | sed 's/^..//' | grep -i --color "$i"
-            echo ""
-        done
-    fi
+  if [[ $# -eq 0 ]] ; then
+    echo "no arguments provided"
+    echo "usage: search string"
+    echo ""
+  else
+    eval "rg --files $RG_DEFAULT_FLAGS | rg -i '$@'"
+    echo ""
+  fi
 }
 
 
