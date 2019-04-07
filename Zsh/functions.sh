@@ -82,7 +82,7 @@ search-replace() {
     fi
 
     if [[ "$1" =~ ^s/.+/.+/g$ ]] ; then
-      find . -path ./.git -prune -o -type f -exec $sed -i "$1" {} +
+      rg --files $RG_DEFAULT_ARGS | xargs $sed -i "$1"
     else
       echo "provide a valid match and replace regex"
       echo "usage: search_replace 's/match_regex/replace_regex/g'"
