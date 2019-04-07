@@ -61,7 +61,7 @@ search-in() {
     echo "usage: search-in 'some string'"
     echo ""
   else
-    grep -rin . -e "$1"
+    rg $RG_DEFAULT_ARGS -i "$@"
   fi
 }
 
