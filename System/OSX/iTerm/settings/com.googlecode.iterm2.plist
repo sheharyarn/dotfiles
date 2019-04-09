@@ -1525,6 +1525,20 @@
 			<key>Text</key>
 			<string>c</string>
 		</dict>
+		<key>0x70-0x80000</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Text</key>
+			<string>:Rg\n</string>
+		</dict>
+		<key>0x78-0x80000</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Text</key>
+			<string>#iex:break\n</string>
+		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
@@ -1782,10 +1796,12 @@
 	<string>269 1176 606 469 0 1050 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>471 510 770 429 0 0 1680 1027 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>146 182 898 478 0 0 1680 1027 </string>
+	<string>290 323 910 494 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>348 175 910 494 0 0 1680 1027 </string>
+	<string>290 143 982 674 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>294 163 910 494 0 0 1680 1050 </string>
 	<key>New Bookmarks</key>
@@ -2564,7 +2580,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{660, 917}</string>
+		<string>{239, 759}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2575,7 +2591,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>4855A31D-19F0-4199-AA11-AB860132FBD2</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>1</integer>
+	<integer>4</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3239,8 +3255,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-07T03:47:57Z</date>
+	<date>2019-04-12T20:47:49Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
@@ -3272,6 +3290,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1555118976</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -3295,6 +3315,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.0beta1</string>
+	<string>3.3.0beta2</string>
 </dict>
 </plist>
