@@ -12,3 +12,10 @@ command PsyThemeMaterial
   \ | set background=dark
 
 
+" Smyck Theme
+command PsyThemeSmyck
+  \ colorscheme smyck
+  \ | AirlineTheme minimalist
+  \ | hi VertSplit guifg=#424242 guibg=#424242
+  \ | set background=dark
+
