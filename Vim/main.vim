@@ -22,6 +22,7 @@ let g:startify_custom_header = [
 
 
 let g:path_vim_gui       = expand("~/.dotfiles/Vim/gui.vim")
+let g:path_vim_commands  = expand("~/.dotfiles/Vim/commands.vim")
 let g:path_vim_plug      = expand("~/.dotfiles/Vim/plugin-tools/plug.vim")
 let g:path_vim_dein      = expand("~/.dotfiles/Vim/plugin-tools/dein.vim")
 let g:path_vim_vundle    = expand("~/.dotfiles/Vim/plugin-tools/vundle.vim")
@@ -51,6 +52,13 @@ elseif filereadable(path_vim_dein)
 elseif filereadable(path_vim_vundle)
   execute 'source' path_vim_vundle
 endif
+
+
+" Load Custom Commands
+" --------------------
+
+execute 'source' path_vim_commands
+
 
 
 
@@ -97,6 +105,7 @@ imap    <M-a> <ESC><M-a>
 " UI
 " --
 
+
 set ruler                                       " show the cursor position all the time
 set noshowcmd                                   " don't display incomplete commands
 set cursorline                                  " underline the line i'm currently on
@@ -108,22 +117,15 @@ set ttimeoutlen=50                              " recommended by airline
 set laststatus=2                                " needed for airline to be visible
 set ignorecase                                  " ignore case when searching
 set t_Co=256                                    " set terminal color mode to 256
+set background=dark                             " Set dark mode by default
 
-set background=dark                             " Set dark mode and custom colorscheme
-colorscheme material
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set nolist                                      " Use custom characters for whitespace
+                                                " but don't show them by default
 
-let g:material_theme_style    = 'default'
-let g:airline_theme           = 'material'      " Set my theme for Airline
-let g:airline_powerline_fonts = 1               " Use Airline with Powerline fonts
-let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
-let g:gitgutter_eager         = 1               " and eager
-let g:vim_markdown_conceal    = 0               " Don't conceal markdown links
-
-let g:airline#extensions#tabline#enabled = 1    " Enable sexy tabline
-
-let g:indentLine_color_gui = '#465366'          " Set indent line color
-let g:indentLine_fileTypeExclude = ['help', 'startify', 'vim', 'markdown']
-                                                " Don't show it on specific buffers
+nnoremap <esc><esc> :noh<return>
+set hlsearch                                    " Enable search highlights and
+                                                " press ESC twice to clear
 
 hi SignColumn ctermbg=none
 hi LineNr     ctermbg=none ctermfg=darkgray
@@ -131,23 +133,8 @@ hi LineNr     ctermbg=none ctermfg=darkgray
                                                 " Do the same for Line Number columns
 
 hi VertSplit ctermbg=NONE guibg=NONE
-                                                " Default VertSplit config
-hi VertSplit guibg=#2c3a41 guifg=#2c3a41
-                                                " VertSplit config for `material` theme
-set fillchars+=vert:│
-                                                " Set custom separator for vertical splits
-
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set nolist
-                                                " Use custom characters for whitespace
-                                                " but don't show them by default
-
-
-set hlsearch
-nnoremap <esc><esc> :noh<return>
-                                                " Enable search highlights and
-                                                " press ESC twice to clear
-
+set fillchars+=vert:│                           " Disable existing VertSplit formatting and
+                                                " use custom separator for vertical splits
 
 hi ExtraWhitespace ctermbg=darkred guibg=darkred
 match ExtraWhitespace /\s\+$\| \+\ze\t/
@@ -159,6 +146,25 @@ au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
                                                 " highlight them dark red - then do the
                                                 " same for each buffer and colorscheme
                                                 " in gui / macvim
+
+autocmd VimEnter * PsyThemeMaterial             " Use my main theme
+
+
+
+
+" UI Plugins
+" ----------
+
+let g:airline_powerline_fonts = 1               " Use Airline with Powerline fonts
+let g:gitgutter_realtime      = 1               " Set Gitgutter to realtime
+let g:gitgutter_eager         = 1               " and eager
+let g:vim_markdown_conceal    = 0               " Don't conceal markdown links
+
+let g:airline#extensions#tabline#enabled = 1    " Enable sexy tabline
+
+let g:indentLine_color_gui = '#465366'          " Set indent line color
+let g:indentLine_fileTypeExclude = ['help', 'startify', 'vim', 'markdown']
+                                                " Don't show it on specific buffers
 
 
 
