@@ -63,5 +63,6 @@ call plug#begin(path_vim_plug_root)
   Plug 'joshdick/onedark.vim'
   Plug 'romainl/Apprentice'
   Plug 'KeitaNakamura/neodark.vim'
+  Plug 'brendonrapp/smyck-vim'
 
 call plug#end()
