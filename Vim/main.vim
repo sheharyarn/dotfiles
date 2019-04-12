@@ -147,7 +147,7 @@ au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
                                                 " same for each buffer and colorscheme
                                                 " in gui / macvim
 
-autocmd VimEnter * PsyThemeMaterial             " Use my main theme
+autocmd VimEnter * PsyThemeMaterial             " Use my main theme on vim load
 
 
 
