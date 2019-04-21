@@ -47,6 +47,7 @@ brew install fzf
 brew install ripgrep
 brew install z
 brew install jq
+brew install hub
 
 
 #> External Binaries
