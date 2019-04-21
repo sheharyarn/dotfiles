@@ -5,6 +5,14 @@
 " http://andrewradev.com/2011/08/06/making-vim-pretty-with-custom-colors/
 
 
+
+" Highlight Extra Whitespace
+command PsyHighlightWhitespace
+  \ hi ExtraWhitespace ctermbg=darkred guibg=darkred
+  \ | match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+
+
 " Material Theme
 command PsyThemeMaterial
   \ colorscheme material
@@ -12,6 +20,7 @@ command PsyThemeMaterial
   \ | AirlineTheme material
   \ | let g:material_theme_style = 'default'
   \ | hi VertSplit guibg=#2c3a41 guifg=#2c3a41
+
 
 
 " Smyck Theme

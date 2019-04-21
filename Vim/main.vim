@@ -136,18 +136,10 @@ hi VertSplit ctermbg=NONE guibg=NONE
 set fillchars+=vert:│                           " Disable existing VertSplit formatting and
                                                 " use custom separator for vertical splits
 
-hi ExtraWhitespace ctermbg=darkred guibg=darkred
-match ExtraWhitespace /\s\+$\| \+\ze\t/
-
-au ColorScheme * hi ExtraWhitespace ctermbg=darkred guibg=darkred
-au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
-
-                                                " Find trailing & before-tab spaces and
-                                                " highlight them dark red - then do the
-                                                " same for each buffer and colorscheme
-                                                " in gui / macvim
-
 autocmd VimEnter * PsyThemeMaterial             " Use my main theme on vim load
+autocmd VimEnter * PsyHighlightWhitespace       " Apply red whitespace highlights when vim
+autocmd ColorScheme * PsyHighlightWhitespace    " is started, the colorscheme is changed,
+autocmd BufWinEnter * PsyHighlightWhitespace    " or a new buffer / window is opened
 
 
 
