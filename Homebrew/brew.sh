@@ -25,9 +25,10 @@ brew tap caskroom/versions
 brew install coreutils                      # Use GNU Tools
 brew install gnu-sed
 brew install git                            # : dotfiles/git
-brew install wget
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
+brew install wget
+brew install httpie
 brew install vim  --with-python3 --with-lua --with-override-system-vi
 brew install macvim
 brew install heroku-toolbelt
