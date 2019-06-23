@@ -41,6 +41,7 @@ alias       gst='git stash'
 # Branches and Remotes
 alias        gm='git merge'
 alias       gco='git checkout'
+alias      gcob='gco -b'
 alias        gr='git remote'
 alias       grv='gr -v'
 alias       gra='gr add'
