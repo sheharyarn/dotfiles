@@ -3,7 +3,9 @@
 # GIT FUNCTIONS
 # =============
 
-unalias gc 2>/dev/null  # avoid collision with zsh git plugin
+# avoid collisions with zsh git plugin
+unalias gc 2>/dev/null
+unalias gbda 2>/dev/null
 
 
 # Commits - Either inline or in vim
@@ -29,6 +31,32 @@ gta() {
     echo "   gta v1.2"
     echo "   gta v0.4-beta.3 \"Added Feature X\""
   fi
+}
+
+
+# Delete all branches that match passed arg
+gbda() {
+  local branches="$(gb | grep -v '*' | grep -v master)"
+
+  if [[ $# -eq 1 ]] ; then
+    branches="$(echo $branches | grep -i "$1")"
+  fi
+
+  echo "This will delete these branches:\n"
+  echo $branches
+  echo -n "\nContinue? [Y/n]? "
+  read yn
+
+  case $yn in
+    [Y]* )
+      echo $branches | xargs git branch -D
+      ;;
+
+    * )
+      echo "Delete cancelled"
+      return 1
+      ;;
+  esac
 }
 
 
