@@ -19,6 +19,7 @@
 
 # Work
 
+127.0.0.1   kubernetes.docker.internal
 127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com
 ::1         slabdev.com api.slabdev.com shey.slabdev.com
 
