@@ -65,6 +65,7 @@ brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 brew cask install 1password
 brew cask install 1password-cli
 brew cask install firefoxdeveloperedition
+brew cask install iterm2
 brew cask install google-chrome
 brew cask install mpv                       # : dotfiles/osx/mpv
 brew cask install utorrent
