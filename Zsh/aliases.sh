@@ -35,6 +35,7 @@ alias mymac='ifconfig en0 | grep ether'
 # Random
 alias fsize='du -hs'
 alias dsize='du -h -d 1'
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,node_modules,deps} -i --color'
 
 # Applications
 alias vsc='open -a "Visual Studio Code"'
