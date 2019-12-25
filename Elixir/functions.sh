@@ -6,7 +6,7 @@ exp() {
     if [[ $# -eq 0 ]] ; then
         echo "usage: exp command [args...]"
     else
-        local command="mix phoenix.$@"
+        local command="mix phx.$@"
 
         echo "Executing:\n  $command\n\n"
         eval "$command"
@@ -19,7 +19,7 @@ expg() {
     if [[ $# -eq 0 ]] ; then
         echo "usage: expg command [args...]"
     else
-        local command="mix phoenix.gen.$@"
+        local command="mix phx.gen.$@"
 
         echo "Executing:\n  $command\n\n"
         eval "$command"
