@@ -19,6 +19,12 @@ command Mkdir !mkdir -p %:p:h
 " Copy file path
 command FilePath !ls %:p | pbcopy
 
+" Replace buffer with formatted json
+command FormatJSON %!jq .
+
+" Mass Search current word
+command RgWord norm :noh<CR>yiw*:Rg <C-R>"<CR>
+
 
 
 " THEMES
