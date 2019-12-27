@@ -42,6 +42,7 @@ call plug#begin(path_vim_plug_root)
   Plug 'tpope/vim-fugitive'                   " Git Tools for Vim
   Plug 'airblade/vim-gitgutter'               " Show git changes in gutter
   Plug 'Xuyuanp/nerdtree-git-plugin'          " Show changed files in NERDTree
+  Plug 'ruanyl/vim-gh-line'                   " Github blob/blame link shortcuts
 
 
   " Features
