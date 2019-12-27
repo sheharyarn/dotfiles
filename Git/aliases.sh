@@ -10,6 +10,8 @@ alias         g='git'
 alias        gb='LESS="-FRX" git branch'
 alias        gs='git status'
 alias       gss='git status -s'
+alias       gsh='git show'
+alias      gshf='git show --name-only'
 
 alias        gt='git tag'
 alias       gtn='git tag -n'
@@ -34,6 +36,7 @@ alias       gaa='git add -A'
 alias       guc='gu  && gc'
 alias       gac='gaa && gc'
 alias       gst='git stash'
+alias      gstm='gst push -m'
 
   # gc moved to functions.sh
 
