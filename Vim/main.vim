@@ -92,7 +92,7 @@ vnoremap . :norm.<CR>
 inoremap <Leader>p <ESC>pa
                                                 " Paste items in Insert mode
 
-nmap <Leader>r :NERDTreeRefreshRoot
+nmap <Leader>r :NERDTreeRefreshRoot<CR>
                                                 " Refresh NERDTree cache
 
 noremap <M-a> gg0vG$
