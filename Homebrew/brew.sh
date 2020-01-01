@@ -28,6 +28,7 @@ brew install git                            # : dotfiles/git
 brew install nano                           # : dotfiles/nano
 brew install curl --with-openssl
 brew install wget
+brew install watch
 brew install httpie
 brew install vim  --with-python3 --with-lua --with-override-system-vi
 brew install macvim
