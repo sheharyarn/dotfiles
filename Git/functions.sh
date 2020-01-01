@@ -8,6 +8,10 @@ unalias gc 2>/dev/null
 unalias gbda 2>/dev/null
 
 
+# Fetch and checkout
+gfco() { gfo "$@" && gco "$@" }
+
+
 # Commits - Either inline or in vim
 gc() {
   if [[ $# -eq 0 ]] ; then
