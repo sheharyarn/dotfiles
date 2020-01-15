@@ -12,6 +12,11 @@ unalias gbda 2>/dev/null
 gfco() { gfo "$@" && gco "$@" }
 
 
+# Git log all commits (or PR commits) since specified tag
+gl-since()     { gl "$1"..HEAD }
+gl-since-prs() { gl-since "$@" | grep -i "#" }
+
+
 # Commits - Either inline or in vim
 gc() {
   if [[ $# -eq 0 ]] ; then
