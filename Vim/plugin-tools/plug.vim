@@ -27,8 +27,16 @@ call plug#begin(path_vim_plug_root)
   endif
 
 
+  " Deoplete Language Packs
+  Plug 'slashmili/alchemist.vim'              " Elixir
+  Plug 'carlitux/deoplete-ternjs'             " Javascript
+  Plug 'mhartington/nvim-typescript'          " Typescript
+  Plug 'Shougo/neco-vim'                      " VimL
+  Plug 'deoplete-plugins/deoplete-zsh'        " Zsh
+
+
   " Syntax + Linting + Highlightinh
-  Plug 'w0rp/ale'
+  Plug 'dense-analysis/ale'
   Plug 'sheerun/vim-polyglot'                 " Language packs (Syntax, etc.)
   Plug 'alvan/vim-closetag'                   " Auto-close xhtml tags
 
@@ -57,7 +65,7 @@ call plug#begin(path_vim_plug_root)
   Plug 'vim-scripts/BufOnly.vim'              " Delete all buffers except the open one
 
   " Color Schemes
-  Plug 'kaicataldo/material.vim'
+  Plug 'kaicataldo/material.vim', {'commit': '5aabe47'}
   Plug 'sonph/onehalf'
   Plug 'rakr/vim-one'
   Plug 'morhetz/gruvbox'
