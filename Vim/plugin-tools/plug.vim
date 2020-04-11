@@ -17,6 +17,16 @@ call plug#begin(path_vim_plug_root)
   Plug 'junegunn/fzf.vim'                     " FZF vim wrapper
 
 
+  " Denite
+  if has('nvim')
+    Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/denite.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
+
+
   " Completion (using Deoplete)
   if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -30,9 +40,10 @@ call plug#begin(path_vim_plug_root)
   " Deoplete Language Packs
   Plug 'slashmili/alchemist.vim'              " Elixir
   Plug 'carlitux/deoplete-ternjs'             " Javascript
-  Plug 'mhartington/nvim-typescript'          " Typescript
   Plug 'Shougo/neco-vim'                      " VimL
   Plug 'deoplete-plugins/deoplete-zsh'        " Zsh
+  Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+                                              " Typescript
 
 
   " Syntax + Linting + Highlightinh
