@@ -1,21 +1,20 @@
 
-Homebrew - [sheharyar's dotfiles](https://github.com/sheharyarn/dotfiles)
-=========================================================================
+Homebrew
+========
 
 > [Homebrew](http://brew.sh/), the nectar of the OSX Gods
 
 
 ### Installation
 
-```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+Use the official installation instructions.
 
 
-### Brew that shit up
+### Install binaries, apps and fonts
 
 ```bash
 source ~/.dotfiles/Homebrew/brew.sh
+source ~/.dotfiles/Homebrew/fonts.sh
 ```
 
 

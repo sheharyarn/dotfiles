@@ -73,16 +73,14 @@ ln -s ~/.dotfiles/Vim/spacevim.vim  ~/.SpaceVim.d/init.vim
 
 I use _Vim-Plug_ for Plugin Management (Previously Dein & Vundle).
 
-1. Install ~Dein~ [Vim-Plug](https://github.com/junegunn/vim-plug)
+1. Install [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 2. Make sure your `vimrc` dotfiles are set up
 
 3. The plugins would be auto-installed on start but you can do it manually too:
 
-    ```vim
-    " For dein
-    :call dein#install() " manually install them
-    :call dein#update()  " force update them
+    ```bash
+    nvim :PlugInstall
     ```
 
 _(If you're using Spacevim, use its built-in plugin management system)_
@@ -104,6 +102,14 @@ _(If you're using Spacevim, use its built-in plugin management system)_
 
     If you don't find your desired font patched with the Powerline Icons,
     [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
+
+
+## Check Helath
+
+Once you're done installing everything run `:checkhealth` to make sure all other required dependencies are installed correctly and Vim is working correctly
+
+
+<br>
 
 
 ### SpaceVim

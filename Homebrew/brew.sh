@@ -47,6 +47,7 @@ brew install imagemagick
 brew install archey
 brew install fzf
 brew install ripgrep
+brew install python
 brew install z
 brew install jq
 brew install hub
@@ -66,29 +67,27 @@ brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 brew cask install 1password
 brew cask install 1password-cli
 brew cask install firefoxdeveloperedition
-brew cask install iterm2
 brew cask install google-chrome
 brew cask install mpv                       # : dotfiles/osx/mpv
 brew cask install utorrent
-brew cask install skype
 brew cask install jumpshare
 brew cask install dropbox
 brew cask install teamviewer
 brew cask install android-file-transfer
+brew cask install little-snitch
 brew cask install nosleep
 brew cask install flash
 brew cask install spotify
 
 #> Dev Apps
-brew cask install sublime-text              # : dotfiles/sublime/2
-brew cask install atom
+brew cask install iterm2
+brew cask install visual-studio-code
 brew cask install java
 brew cask install android-studio            # point it to your huge sdk folder
 brew cask install android-platform-tools
 
 #> Not that important
 brew cask install flux
-brew cask install little-snitch
 brew cask install vlc
 brew cask install couleurs
 brew cask install tunnelbear
@@ -100,6 +99,9 @@ brew cask install rocket
 # brew cask install ps3-media-server
 # brew cask install lastfm
 # brew cask install shiny-groove
+# brew cask install sublime-text              # : dotfiles/sublime/2
+# brew cask install atom
+# brew cask install skype
 
 
 
