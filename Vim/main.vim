@@ -118,6 +118,8 @@ set laststatus=2                                " needed for airline to be visib
 set ignorecase                                  " ignore case when searching
 set t_Co=256                                    " set terminal color mode to 256
 set background=dark                             " Set dark mode by default
+set updatetime=500                              " Time before vim writes to swap and changes
+                                                " like gitgutter are visible
 
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set nolist                                      " Use custom characters for whitespace
@@ -174,7 +176,7 @@ nnoremap <C-p> :Files<Cr>
 " ALE + Linting
 " -------------
 
-let g:ale_enabled = 0
+let g:ale_enabled = 1
 let g:airline#extensions#ale#enabled = 1        " Connect ALE to Airline
 let g:ale_lint_on_text_changed = 'never'        " Don't lint while editing but
 let g:ale_lint_on_save = 1                      " do it on save and
