@@ -201,9 +201,9 @@ nnoremap gD :ALEGoToDefinitionInTab<cr>
                                                 " Open function definition in split or
                                                 " a new tab
 nnoremap <Leader>f :ALEFix<cr>
-nnoremap <Leader>e :ALEToggle<cr>
-                                                " Manually fix file with \f and toggle
-                                                " ALE with \e
+nnoremap <Leader>e :ALEDetail<cr>
+                                                " Manually fix file with \f and show
+                                                " error details \e
 nnoremap <Leader>w :ALENextWrap<cr>
 nnoremap <Leader>W :ALEPreviousWrap<cr>
                                                 " Map \w and \W to go to the next or
