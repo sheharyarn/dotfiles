@@ -194,6 +194,10 @@ let g:ale_fixers = {
   \ 'elixir': ['mix_format'],
 \}
 
+nnoremap gd :ALEGoToDefinitionInVSplit<cr>
+nnoremap gD :ALEGoToDefinitionInTab<cr>
+                                                " Open function definition in split or
+                                                " a new tab
 nnoremap <Leader>f :ALEFix<cr>
 nnoremap <Leader>e :ALEToggle<cr>
                                                 " Manually fix file with \f and toggle
