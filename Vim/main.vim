@@ -92,6 +92,8 @@ vnoremap . :norm.<CR>
 inoremap <Leader>p <ESC>pa
                                                 " Paste items in Insert mode
 
+nmap <Leader>t :NERDTreeFind<CR>
+                                                " Show current file in NERDTree
 nmap <Leader>r :NERDTreeRefreshRoot<CR>
                                                 " Refresh NERDTree cache
 
