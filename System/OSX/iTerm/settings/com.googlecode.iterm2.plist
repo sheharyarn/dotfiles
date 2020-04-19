@@ -1824,7 +1824,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>431 384 910 492 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>486 350 910 492 0 0 1680 1027 </string>
+	<string>486 368 920 470 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>599 340 559 402 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -2620,7 +2620,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{118, 760}</string>
+		<string>{101, 669}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2631,7 +2631,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>4855A31D-19F0-4199-AA11-AB860132FBD2</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>34</integer>
+	<integer>36</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3456,7 +3456,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-02T08:03:09Z</date>
+	<date>2020-06-03T10:27:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -3478,7 +3478,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.19069011012713119</real>
 	<key>StatusBarPosition</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -3487,6 +3487,10 @@
 	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>TerminalMargin</key>
+	<integer>10</integer>
+	<key>TerminalVMargin</key>
+	<integer>2</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
