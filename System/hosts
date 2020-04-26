@@ -22,8 +22,8 @@
 
 127.0.0.1   kuard-local
 127.0.0.1   kubernetes.docker.internal
-127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com other.slabdev.com the.slabdev.com
-::1         slabdev.com api.slabdev.com shey.slabdev.com other.slabdev.com the.slabdev.com
+127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
+::1         slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
 
 
 # DBFS
