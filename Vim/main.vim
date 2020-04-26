@@ -68,10 +68,15 @@ execute 'source' path_vim_commands
 
 filetype plugin indent on
 syntax enable
+
 set autoread                                    " reload files (no local changes only)
 set history=1000                                " command line history
 set shell=zsh                                   " Use Zsh for shell commands
 set mouse=a                                     " Make mouse work with neovim
+
+set nospell                                     " Disable spell-checking by default
+set spelllang=en                                " Specify spellcheck language and file
+set spellfile=$HOME/.dotfiles/Vim/spell/en.utf-8.add
 
 
 
