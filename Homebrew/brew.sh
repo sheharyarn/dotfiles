@@ -92,6 +92,7 @@ brew cask install vlc
 brew cask install couleurs
 brew cask install tunnelbear
 brew cask install rocket
+brew cask install kap
 
 #> Maybe
 # brew cask install firefox
