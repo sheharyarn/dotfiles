@@ -46,7 +46,7 @@ call plug#begin(path_vim_plug_root)
                                               " Typescript
 
 
-  " Syntax + Linting + Highlightinh
+  " Syntax + Linting + Highlighting
   Plug 'dense-analysis/ale'
   Plug 'sheerun/vim-polyglot'                 " Language packs (Syntax, etc.)
   Plug 'alvan/vim-closetag'                   " Auto-close xhtml tags
@@ -68,6 +68,12 @@ call plug#begin(path_vim_plug_root)
   Plug 'tpope/vim-surround'                   " Surround Features (Brackets, Quotes, Tags)
   Plug 'scrooloose/nerdcommenter'             " Comment Management
   " Plug 'terryma/vim-multiple-cursors'         " Edit multiple lines at once
+
+
+  " Content Writing
+  Plug 'reedes/vim-pencil'                    " Line breaks and wrap
+  Plug 'junegunn/goyo.vim'                    " Distraction free writing
+  Plug 'junegunn/limelight.vim'               " Highlight current paragraph
 
 
   " Others

@@ -74,10 +74,6 @@ set history=1000                                " command line history
 set shell=zsh                                   " Use Zsh for shell commands
 set mouse=a                                     " Make mouse work with neovim
 
-set nospell                                     " Disable spell-checking by default
-set spelllang=en                                " Specify spellcheck language and file
-set spellfile=$HOME/.dotfiles/Vim/spell/en.utf-8.add
-
 
 
 
@@ -302,6 +298,28 @@ let g:closetag_filenames = "*.html,*.xhtml,*.js,*.jsx,*.es6,*.erb,*.eex"
 
 let g:gh_open_command = 'fn() { echo "$@" | pbcopy; }; fn '
                                                 " Copy the links instead of opening them
+
+
+
+
+" Content Writing
+" ---------------
+
+" vim
+set nospell                                     " Disable spell-checking by default
+set spelllang=en                                " Specify spellcheck language and file
+set spellfile=$HOME/.dotfiles/Vim/spell/en.utf-8.add
+
+
+" vim-pencil
+let g:pencil#wrapModeDefault = 'hard'           " Use Hard wrap
+let g:pencil#textwidth = 90                     " Wrap at this column width
+let g:pencil#autoformat = 1                     " Auto format as you type
+let g:airline_section_x = '%{PencilMode()}'     " Show Pencil mode in Airline
+
+
+" goyo.vim
+let g:goyo_width = 95
 
 
 
