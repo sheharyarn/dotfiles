@@ -25,6 +25,9 @@ command FormatJSON %!jq .
 " Mass Search current word
 command RgWord norm :noh<CR>yiw*:Rg <C-R>"<CR>
 
+" Enable/Disable Writing tools
+command WriteMode    set spell   | Goyo  | Limelight  | Pencil
+command WriteModeOff set nospell | Goyo! | Limelight! | NoPencil
 
 
 " THEMES
