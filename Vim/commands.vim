@@ -16,8 +16,9 @@ command Q q
 " Create directory for opened file
 command Mkdir !mkdir -p %:p:h
 
-" Copy file path
-command FilePath !ls %:p | pbcopy
+" Copy relative and absolute file paths
+command FilePath     !ls %   | pbcopy
+command FilePathFull !ls %:p | pbcopy
 
 " Replace buffer with formatted json
 command FormatJSON %!jq .
