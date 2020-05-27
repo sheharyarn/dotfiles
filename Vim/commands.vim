@@ -6,6 +6,7 @@
 
 
 
+
 " HELPERS
 " -------
 
@@ -29,6 +30,12 @@ command RgWord norm :noh<CR>yiw*:Rg <C-R>"<CR>
 " Enable/Disable Writing tools
 command WriteMode    set spell   | Goyo  | Limelight  | Pencil
 command WriteModeOff set nospell | Goyo! | Limelight! | NoPencil
+
+" Update Plugins
+command UpdatePlugins
+  \ PlugUpdate | PlugSnapshot! ~/.dotfiles/Vim/plugin-tools/plug.snapshot
+
+
 
 
 " THEMES
