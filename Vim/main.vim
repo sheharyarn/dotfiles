@@ -217,7 +217,6 @@ nnoremap <Leader>W :ALEPreviousWrap<cr>
 " --------
 
 let g:deoplete#enable_at_startup  = 1
-let g:deoplete#enable_smart_case  = 1           " Consider case during completions
 let g:deoplete#enable_auto_select = 0           " Don't autoselect first option
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
