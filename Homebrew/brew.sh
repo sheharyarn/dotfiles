@@ -52,6 +52,7 @@ brew install python
 brew install z
 brew install jq
 brew install hub
+brew install duti
 
 
 #> External Binaries
