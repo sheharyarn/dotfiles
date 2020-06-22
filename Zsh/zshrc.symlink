@@ -45,6 +45,10 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 
+# Enable Vim mode
+#bindkey -v
+
+
 # Load 'z'
 #source `brew --prefix`/etc/profile.d/z.sh
 
