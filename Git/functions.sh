@@ -53,11 +53,12 @@ gbda() {
 
   echo "This will delete these branches:\n"
   echo $branches
-  echo -n "\nContinue? [Y/n]? "
+  echo -n "\nContinue? [Y/n]: "
   read yn
 
   case $yn in
     [Y]* )
+      echo ""
       echo $branches | xargs git branch -D
       ;;
 
