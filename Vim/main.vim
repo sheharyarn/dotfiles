@@ -242,7 +242,7 @@ let g:netrw_liststyle  = 3                      " Use Tree-View mode in netrw
 let NERDTreeShowHidden = 1                      " Show Hidden files in NerdTree
 let NERDTreeWinPos     = "left"                 " Always open NerdTree on the left
 
-map <C-t> :NERDTreeTabsToggle<CR>
+map <Leader>\| :NERDTreeTabsToggle<CR>
                                                 " Toggle NerdTree (On all Tabs)
 
 
