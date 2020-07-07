@@ -15,7 +15,9 @@
 127.0.0.1   MBP
 127.0.0.1   Air
 127.0.0.1   postgres
+127.0.0.1   shyr.local
 127.0.0.1   hutti.local
+127.0.0.1   teenydev.com
 
 
 # Work
