@@ -13,11 +13,14 @@ defmodule H do
 
 
   @doc """
-  Get deep value in a nested struct or map
+  Get deep value in a nested struct, map or list of struct/maps
   """
-  def get(map, keys) do
-    keys = if is_list(keys), do: keys, else: [keys]
-    keys = Enum.map(keys, &Access.key/1)
+  def get(list, keys) when is_list(list) do
+    Enum.map(list, &get(&1, keys))
+  end
+
+  def get(%{} = map, keys) do
+    keys = keys |> List.wrap() |> Enum.map(&Access.key/1)
     get_in(map, keys)
   end
 
