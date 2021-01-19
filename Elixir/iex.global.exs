@@ -63,4 +63,34 @@ defmodule H do
     :ok
   end
 
+
+  @doc """
+  Finds a loaded module with that name
+
+  ```
+  module(PermissionCache)
+  module(Reporter, :teenymetrics)
+  ```
+  """
+  def module(name, app \\ nil) do
+    name =
+      name
+      |> Module.split()
+      |> List.last()
+
+    name_regex = ~r/^Elixir.*#{name}$/
+
+    all_modules =
+      case app do
+        nil ->
+          Enum.map(:code.all_loaded(), &elem(&1, 0))
+
+        app ->
+          {:ok, mods} = :application.get_key(app, :modules)
+          mods
+      end
+
+    Enum.find(all_modules, & to_string(&1) =~ name_regex)
+  end
+
 end
