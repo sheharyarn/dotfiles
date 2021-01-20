@@ -18,8 +18,8 @@ command Q q
 command Mkdir !mkdir -p %:p:h
 
 " Copy relative and absolute file paths
-command FilePath     !ls %   | pbcopy
-command FilePathFull !ls %:p | pbcopy
+command FilePath     !ls %   | tr -d '\n' | pbcopy
+command FilePathFull !ls %:p | tr -d '\n' | pbcopy
 
 " Replace buffer with formatted json
 command FormatJSON %!jq .
