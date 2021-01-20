@@ -295,7 +295,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.js,*.jsx,*.es6,*.erb,*.eex"
 " vim-gh-line
 " -----------
 
-let g:gh_open_command = 'fn() { echo "$@" | pbcopy; }; fn '
+let g:gh_open_command = 'fn() { echo "$@" | tr -d "\n" | pbcopy; }; fn '
                                                 " Copy the links instead of opening them
 
 
