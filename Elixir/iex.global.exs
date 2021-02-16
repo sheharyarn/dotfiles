@@ -93,4 +93,17 @@ defmodule H do
     Enum.find(all_modules, & to_string(&1) =~ name_regex)
   end
 
+
+  @doc """
+  Finds and aliases a loaded module with that name
+  """
+  defmacro alias(name, app \\ nil) do
+    name = Macro.expand(name, __CALLER__)
+    app = Macro.expand(app, __CALLER__)
+    module = module(name, app)
+
+    quote(do: alias unquote(module))
+  end
+
+
 end
