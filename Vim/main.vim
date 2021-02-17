@@ -73,6 +73,7 @@ set autoread                                    " reload files (no local changes
 set history=1000                                " command line history
 set shell=zsh                                   " Use Zsh for shell commands
 set mouse=a                                     " Make mouse work with neovim
+set foldmethod=manual                           " Manually fold parts of code
 
 
 
