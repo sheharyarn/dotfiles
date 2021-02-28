@@ -40,6 +40,10 @@ main() {
   local exts='mp4 m4a mkv avi 3gp webm'
   set-exts "$app" "$exts"
 
+  local app='Entropy'
+  local exts='zip rar 7z gz tgz tar'
+  set-exts "$app" "$exts"
+
   local app='Visual Studio Code'
   local exts='js css sass elixir md sh xml json yaml srt nfo'
   set-exts "$app" "$exts"
