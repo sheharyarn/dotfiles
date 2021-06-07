@@ -4,5 +4,5 @@ init-author-url   = "https://sheharyar.me/"
 init-license      = "MIT"
 init-version      = "0.1.0"
 
-loglevel          = "info"
+loglevel          = "warn"
 
