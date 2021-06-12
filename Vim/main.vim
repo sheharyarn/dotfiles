@@ -466,6 +466,15 @@ set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/sw
 
 
 
+" Custom Filetypes
+" ----------------
+
+autocmd BufEnter *.slimlive :setlocal filetype=slim
+                                                " Phoenix LiveView with SLIM templates
+
+
+
+
 " Other
 " -----
 
