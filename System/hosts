@@ -14,10 +14,9 @@
 127.0.0.1   arch
 127.0.0.1   MBP
 127.0.0.1   Air
-127.0.0.1   postgres
-127.0.0.1   redis
 127.0.0.1   shyr.local
 127.0.0.1   hutti.local
+127.0.0.1   static.local
 127.0.0.1   teenydev.com
 
 
@@ -25,6 +24,9 @@
 
 127.0.0.1   kuard-local
 127.0.0.1   kubernetes.docker.internal
+127.0.0.1   postgres
+127.0.0.1   redis
+127.0.0.1   pandoc
 127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
 ::1         slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
 
@@ -40,7 +42,7 @@
 192.168.1.1	  router
 192.168.1.70  rig
 192.168.1.100 pi
-192.168.8.1   zong-bolt
+192.168.8.1   nyx
 
 
 # Servers
@@ -61,6 +63,8 @@
 139.59.221.75   wp-sites
 159.89.239.133  btc-testnet
 167.99.30.143   bmc
+143.198.145.103 sfvps
+23.237.136.186  amazon-vps
 
 
 # System Stuff
