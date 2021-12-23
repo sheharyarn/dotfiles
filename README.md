@@ -1,39 +1,63 @@
-sheharyarn's dotfiles
-=====================
+Sheharyar's Dotfiles
+====================
 
-### a.k.a The Ultimate Guide to get started with your own Dotfiles
+> Use this to create and structure your own dotfiles!
+
+<br />
 
 
-`<rant>` I'm all about sharing, but you seriously need to stop using the dotfile configs of others blindly. You don't even know what's happening in most of their files, yet you simply copy them and hope they'd work perfectly for you. You need to understand what's in each file and copy it only if you need it, so that when you plan to add your settings, configs, aliases and other shit, you can easily do so without a giant mess of files.`</rant>`
+
+
+## Prologue
+
+As Zach Holman once wrote:
+
+> Dotfiles are meant to be shared
+
+And I absolutely agree, but at the same time, I'm of the strong belief that one should not copy and use dotfiles of others blindly. Dotfiles are personal, very personal. They help you be more efficient, improve your workflows, and make your life easier. But everyone is unique, and so is everyone's working style. So it does not make any sense in reusing someone else's configs without first understanding what they do, and hoping that they'd work perfectly for you.
+
+It is absolutely critical you understand what's in each file and copy it only if you need it, so that when you customize and extend them with your own settings, configs, aliases and other stuff in the future, you can easily do so without a giant mess of files.
+
+<br />
+
 
 
 
 ## Getting Started
 
-There isn't going to be a script/installer that sets up everything for you. Instead you should clone my dotfiles and go through each section and file and keep only those you find important or useful.
+There is no script or installer that sets up everything for you. Instead you should fork/clone my dotfiles and go through each section and file and keep only those you find important or useful. However, these are the bare minimum, recommended steps you should follow:
+
+#### 1. Install Xcode developer tools
+
+```bash
+xcode-select --install
+```
+
+#### 2. Clone Dotfiles
 
 ```bash
 git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
 ```
 
-I seriously recommend that you install `Zsh` and [`Oh My Zsh`](http://ohmyz.sh) if you haven't already made the switch. To get started, read the [Zsh Section](https://github.com/sheharyarn/dotfiles/tree/master/Zsh).
+#### 3. Set up Homebrew
 
+1. Install Homebrew: https://brew.sh
+2. Install important apps following the instructions in the [Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew) section
 
+#### 4. Set up [System Defaults](https://github.com/sheharyarn/dotfiles/tree/master/System)
 
-## Sections
+#### 5. Set up [Zsh](https://github.com/sheharyarn/dotfiles/tree/master/Zsh)
 
-```bash
-# TODO: Write instructions for each Section
-```
+#### 6. Set up [Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)
 
-- **[Zsh](https://github.com/sheharyarn/dotfiles/tree/master/Zsh)**
-- **[Git](https://github.com/sheharyarn/dotfiles/tree/master/Git)**
-- **[OSX](https://github.com/sheharyarn/dotfiles/tree/master/OSX)**
-- **[Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew)**
-- **[Vim](https://github.com/sheharyarn/dotfiles/tree/master/Vim)**
-- **[Ruby](https://github.com/sheharyarn/dotfiles/tree/master/Ruby)**
-- **[Nano](https://github.com/sheharyarn/dotfiles/tree/master/Nano)**
-- **[Sublime](https://github.com/sheharyarn/dotfiles/tree/master/Sublime)**
+#### 7. Set up [Vim](https://github.com/sheharyarn/dotfiles/tree/master/Vim)
+
+#### 8. Other apps
+
+Now go through other sections relevant to you, and set them up one by one.
+
+<br />
+
 
 
 
@@ -46,7 +70,7 @@ Initially I worked with only a few `Bash` aliases and `.irbrc` customizations, b
 Over time, I've copied and used dotfiles of:
 
 - [Zach Holman](https://github.com/holman/dotfiles)
-- [Ryan Bates](https://github.com/ryanb/dotfiles) 
+- [Ryan Bates](https://github.com/ryanb/dotfiles)
 - [Ryan Tomayko](https://github.com/rtomayko/dotfiles)
 - [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
 
