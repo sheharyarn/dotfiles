@@ -4,36 +4,29 @@
 ## ======================
 
 
-# Uncomment this if you don't have Homebrew installed
-# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# If you haven't already install zsh, then you need to die
-# brew install zsh - see dotfiles/zsh
+# First make sure Homebrew is installed from: https://brew.sh
 
 
 # Set up important taps
 # ---------------------
 
-brew tap homebrew/dupes
-brew tap caskroom/fonts
-brew tap caskroom/versions
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask-versions
 
 
 # Install binaries
 # ----------------
 
-brew install coreutils                      # Use GNU Tools
+brew install zsh
+brew install coreutils
 brew install gnu-sed
-brew install git                            # : dotfiles/git
-brew install nano                           # : dotfiles/nano
-brew install curl --with-openssl
+brew install git
+brew install nano
+brew install curl
 brew install wget
 brew install watch
 brew install httpie
-brew install vim  --with-python3 --with-lua --with-override-system-vi
 brew install vifm
-brew install macvim
-brew install heroku-toolbelt
 brew install tor
 brew install torsocks
 brew install safe-rm
@@ -56,9 +49,8 @@ brew install duti
 
 
 #> External Binaries
-brew install karan/karan/gitignore
-brew install neovim/neovim/neovim --HEAD
-brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
+# brew install neovim/neovim/neovim --HEAD
+# brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 
 
 
@@ -66,82 +58,80 @@ brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
 # ------------
 
 #> Must apps
-brew cask install 1password
-brew cask install 1password-cli
-brew cask install firefoxdeveloperedition
-brew cask install google-chrome
-brew cask install mpv                       # : dotfiles/osx/mpv
-brew cask install utorrent
-brew cask install jumpshare
-brew cask install dropbox
-brew cask install teamviewer
-brew cask install android-file-transfer
-brew cask install little-snitch
-brew cask install nosleep
-brew cask install flash
-brew cask install spotify
+brew install --cask 1password
+brew install --cask 1password-cli
+brew install --cask firefox-developer-edition
+brew install --cask google-chrome
+brew install --cask mpv
+brew install --cask jumpshare
+brew install --cask dropbox
+brew install --cask teamviewer
+brew install --cask android-file-transfer
+brew install --cask little-snitch
+brew install --cask flux
+brew install --cask spotify
 
 #> Dev Apps
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install java
-brew cask install android-studio            # point it to your huge sdk folder
-brew cask install android-platform-tools
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask java
+brew install --cask android-studio
+brew install --cask android-platform-tools
 
 #> Not that important
-brew cask install flux
-brew cask install vlc
-brew cask install couleurs
-brew cask install tunnelbear
-brew cask install rocket
-brew cask install kap
+brew install --cask vlc
+brew install --cask tunnelbear
+brew install --cask rocket
 
 #> Maybe
-# brew cask install firefox
-# brew cask install chromecast
-# brew cask install ps3-media-server
-# brew cask install lastfm
-# brew cask install shiny-groove
-# brew cask install sublime-text              # : dotfiles/sublime/2
-# brew cask install atom
-# brew cask install skype
-
+# brew install --cask firefox
+# brew install --cask chromecast
+# brew install --cask ps3-media-server
+# brew install --cask lastfm
+# brew install --cask sublime-text              # : dotfiles/sublime/2
+# brew install --cask atom
+# brew install --cask skype
+# brew install --cask nosleep
+# brew install --cask flash
+# brew install --cask utorrent
+# brew install --cask couleurs
+# brew install --cask kap
 
 
 # Quick Look Plugins
 # ------------------
 
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install quicklook-csv
-brew cask install qlimagesize
-brew cask install suspicious-package
-brew cask install provisionql
-brew cask install qlcolorcode
-brew cask install qlstephen
+# brew cask install qlmarkdown
+# brew cask install quicklook-json
+# brew cask install quicklook-csv
+# brew cask install qlimagesize
+# brew cask install suspicious-package
+# brew cask install provisionql
+# brew cask install qlcolorcode
+# brew cask install qlstephen
 
 
 
 # Link Apps
 # ---------
 
-brew linkapps macvim
+# brew linkapps macvim
 
 
 
 # Launchd Configuration
 # ---------------------
 
-brew services start tor
-brew services start mysql
-brew services start mongodb
-brew services start postgresql
+# brew services start tor
+# brew services start mysql
+# brew services start mongodb
+# brew services start postgresql
 
 
 
 # Run Installers
 # --------------
 
-open /usr/local/Caskroom/utorrent/latest/uTorrent.app
-open /usr/local/Caskroom/little-snitch/*/Little\ Snitch\ Installer.app
+# open /usr/local/Caskroom/utorrent/latest/uTorrent.app
+# open /usr/local/Caskroom/little-snitch/*/Little\ Snitch\ Installer.app
 
