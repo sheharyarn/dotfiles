@@ -45,6 +45,10 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 
+# Load Homebrew
+export BREW_COMMAND="/opt/homebrew/bin/brew"
+[[ -s "$BREW_COMMAND" ]] && eval "$($BREW_COMMAND shellenv)"
+
 # Enable Vim mode
 #bindkey -v
 
