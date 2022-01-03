@@ -30,12 +30,12 @@ brew install vifm
 brew install tor
 brew install torsocks
 brew install safe-rm
-brew install rmtrash
+brew install trash-cli
 brew install tree
 brew install unrar
 brew install nginx
 brew install mysql
-brew install mongodb
+brew install mongodb/brew/mongodb-community
 brew install postgresql
 brew install imagemagick
 brew install archey
@@ -68,11 +68,14 @@ brew install --cask dropbox
 brew install --cask teamviewer
 brew install --cask android-file-transfer
 brew install --cask little-snitch
+brew install --cask tuxera-ntfs
 brew install --cask flux
 brew install --cask spotify
+brew install --cask unclutter
 
 #> Dev Apps
 brew install --cask iterm2
+brew install --cask insomnia
 brew install --cask visual-studio-code
 brew install --cask java
 brew install --cask android-studio
@@ -82,6 +85,7 @@ brew install --cask android-platform-tools
 brew install --cask vlc
 brew install --cask tunnelbear
 brew install --cask rocket
+brew install --cask videostream
 
 #> Maybe
 # brew install --cask firefox
