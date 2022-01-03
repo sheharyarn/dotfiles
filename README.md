@@ -42,7 +42,7 @@ git clone https://github.com/sheharyarn/dotfiles ~/.dotfiles
 #### 3. Set up Homebrew
 
 1. Install Homebrew: https://brew.sh
-2. Install important apps following the instructions in the [Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew) section
+2. Install important apps and fonts [Homebrew](https://github.com/sheharyarn/dotfiles/tree/master/Homebrew) section
 
 #### 4. Set up [System Defaults](https://github.com/sheharyarn/dotfiles/tree/master/System)
 
