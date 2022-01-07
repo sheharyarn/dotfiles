@@ -37,7 +37,7 @@ main() {
   # Set programs and their extensions
 
   local app='MPV'
-  local exts='mp4 m4a mkv avi 3gp webm mov'
+  local exts='mp4 m4v m4a mkv avi 3gp webm mov'
   set-exts "$app" "$exts"
 
   local app='Entropy'
