@@ -6,18 +6,15 @@
 
 ## Installation
 
-I recommend installation using `Homebrew Cask` instead of simple `Homebrew`. See [homebrew-mpv](https://github.com/mpv-player/homebrew-mpv).
-
 ```bash
-brew install caskroom/cask/brew-cask    # install cask if you don't have it
-brew cask install mpv                   # install mpv .app and binary
+brew install mpv
+brew install --cask mpv
 ```
 
 ## Symlink Config Files
 
 ```bash
-mkdir -p ~/.config
-ln -s ~/.dotfiles/Others/MPV ~/.mpv
+ln -s ~/.dotfiles/MPV ~/.mpv
 ```
 
 
