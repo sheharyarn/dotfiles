@@ -40,7 +40,7 @@ main() {
   local exts='mp4 m4v m4a mkv avi 3gp webm mov'
   set-exts "$app" "$exts"
 
-  local app='Entropy'
+  local app='Bandizip' # Previously Entropy
   local exts='zip rar 7z gz tgz tar'
   set-exts "$app" "$exts"
 
