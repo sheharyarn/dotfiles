@@ -16,12 +16,17 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 # Symlink `.zshrc`
 ln -s ~/.dotfiles/Zsh/zshrc.symlink ~/.zshrc
+
+# Use Aliases/Functions in other apps like Vim:
+ln -s ~/.dotfiles/Zsh/simple-load.sh ~/.zshenv
 ```
 
-Use Aliases/Functions in other apps like Vim:
+Symlink your private files from Dropbox:
 
-```bash
-ln -s ~/.dotfiles/Zsh/simple-load.sh ~/.zshenv
+```
+ln -s ~/Dropbox/System/.ssh ~/.ssh
+ln -s ~/Dropbox/System/.localrc ~/.localrc
+ln -s ~/Dropbox/System/.zsh_history ~/.zsh_history
 ```
 
 
