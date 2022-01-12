@@ -25,6 +25,13 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Hide Icons on Desktop
 defaults write com.apple.finder CreateDesktop -bool false
 
+# Open new folders in windows instead of tabs
+defaults write com.apple.finder FinderSpawnTab 0
+
+# Go to Desktop instead of recent items when opening Finder
+defaults write com.apple.finder NewWindowTarget PfDe
+defaults write com.apple.finder NewWindowTargetPath "file:///Users/Psy/Desktop/"
+
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
