@@ -8,46 +8,19 @@ Vim
 
 ## Installation
 
-### Upgrade Vim
-
-The default `vim` by Apple sucks balls, so we're going to upgrade to the latest Vim.
-First, switch over to the system `ruby` if you're using `rvm`:
+Use Homebrew to upgrade `vim` as backup and `neovim` for main use:
 
 ```bash
-rvm use system
+brew install vim
 ```
-
-Use Homebrew to install `vim`:
-
-```bash
-brew install vim --with-python3 --with-lua --with-override-system-vi
-```
-
-### Install MacVim
-
-```bash
-brew install  macvim
-brew linkapps macvim
-```
-
-### Install [NeoVim](http://neovim.io/)
-
-Let's take advantage of the Dark Features
 
 ```bash
 # Install NeoVim
-brew install neovim/neovim/neovim
+brew install neovim
 
-# And the python modules (or use pip2 / pip3)
-pip install neovim
-```
-
-You can also install the unofficial GUIs ([VimR](https://github.com/qvacua/vimr) /
-[neovim-dot-app](https://github.com/rogual/neovim-dot-app)):
-
-```bash
-brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
-brew linkapps neovim-dot-app
+# And various language modules
+pip3 install neovim
+npm install -g neovim
 ```
 
 <br>
@@ -58,8 +31,7 @@ brew linkapps neovim-dot-app
 Once everything is installed, symlink the vim dotfiles and create the required directories:
 
 ```bash
-mv ~/.config/nvim ~/.config/nvim_backup
-mkdir -p ~/.vim/swap ~/.vim/backups ~/.config/nvim ~/.SpaceVim.d/
+
 
 ln -s ~/.dotfiles/Vim/main.vim      ~/.vimrc
 ln -s ~/.dotfiles/Vim/main.vim      ~/.config/nvim/init.vim
@@ -104,12 +76,22 @@ _(If you're using Spacevim, use its built-in plugin management system)_
     [you'll have to patch it manually](https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher).
 
 
-## Check Helath
+## Check Health
 
 Once you're done installing everything run `:checkhealth` to make sure all other required dependencies are installed correctly and Vim is working correctly
 
 
 <br>
+
+
+## Other Vims
+
+### MacVim
+
+```bash
+brew install  macvim
+brew linkapps macvim
+```
 
 
 ### SpaceVim
