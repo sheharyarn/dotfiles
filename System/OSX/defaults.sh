@@ -75,6 +75,12 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write -g NSAutomaticDashSubstitutionEnabled 0
 defaults write -g NSAutomaticQuoteSubstitutionEnabled 0
 
+# Disable Autocorrect, Period Substitution & Auto-capitalization
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write -g NSAutomaticCapitalizationEnabled -bool false
+
+
 # Restart Finder and other Services
 killall Finder
 killall Dock
