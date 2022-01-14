@@ -41,6 +41,18 @@ ZSH_THEME="geometry/geometry"
 COMPLETION_WAITING_DOTS="true"
 
 
+# Zsh History
+# (Save History to Dropbox if already set up)
+export PSY_HISTORY_FILE="$HOME/Dropbox/System/.zsh_history"
+[[ -f $PSY_HISTORY_FILE ]] && export HISTFILE=$PSY_HISTORY_FILE
+
+export HISTSIZE=50000
+export SAVEHIST=$HISTSIZE
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+
+
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -48,6 +60,7 @@ source $ZSH/oh-my-zsh.sh
 # Load Homebrew
 export BREW_COMMAND="/opt/homebrew/bin/brew"
 [[ -s "$BREW_COMMAND" ]] && eval "$($BREW_COMMAND shellenv)"
+
 
 # Enable Vim mode
 #bindkey -v
