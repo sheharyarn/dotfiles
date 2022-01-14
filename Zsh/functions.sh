@@ -101,7 +101,7 @@ del() {
     rmtrash "$@"
   else
     echo "Did not find 'trash-cli' or 'rmtrash'"
-    exit 1
+    return 1
   fi
 }
 
