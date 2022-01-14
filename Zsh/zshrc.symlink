@@ -75,7 +75,8 @@ export PATH=$PATH:$GOPATH/bin
 
 
 # ASDF Configs
-[[ -s "$HOME/.asdf/asdf.sh" ]] && source "$HOME/.asdf/asdf.sh"
+export ASDF_DIR=/opt/homebrew/opt/asdf/libexec
+[[ -s "$ASDF_DIR/asdf.sh" ]] && source "$ASDF_DIR/asdf.sh"
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
