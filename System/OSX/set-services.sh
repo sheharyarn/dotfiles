@@ -3,7 +3,6 @@
 # OSX Custom Services & Shortcuts
 # ===============================
 
-# More of my shit
 # @ for Command, $ for Shift, ~ for Alt and ^ for Ctrl
 # http://hints.macworld.com/article.php?story=20131123074223584
 
