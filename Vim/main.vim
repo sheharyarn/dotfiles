@@ -63,75 +63,23 @@ execute 'source' path_vim_commands
 
 
 
-" General Settings
-" ----------------
-
-filetype plugin indent on
-syntax enable
-
-set autoread                                    " reload files (no local changes only)
-set history=1000                                " command line history
-set shell=zsh                                   " Use Zsh for shell commands
-set mouse=a                                     " Make mouse work with neovim
-set foldmethod=manual                           " Manually fold parts of code
-
-
-
-
-" Important Key Maps
-" ------------------
-
-let mapleader = '\'                             " Use backslash as the leader key
-
-map <Enter>   o<ESC>
-map <S-Enter> O<ESC>
-                                                " Use Enter & Shift+Enter to create empty
-                                                " lines above and below
-vnoremap . :norm.<CR>
-                                                " enable use of . in visual mode
-" nnoremap daa 0D
-                                                " Clear line without deleting it
-inoremap <Leader>p <ESC>pa
-                                                " Paste items in Insert mode
-
 nmap <Leader>t :NERDTreeFind<CR>
                                                 " Show current file in NERDTree
 nmap <Leader>r :NERDTreeRefreshRoot<CR>
                                                 " Refresh NERDTree cache
 
-noremap <M-a> gg0vG$
-imap    <M-a> <ESC><M-a>
-                                                " Replicate Select-All with ⌘ + A
 
+set ttimeoutlen=50                              " recommended by airline
+set laststatus=2                                " needed for airline to be visible
 
-
+set updatetime=500                              " Time before vim writes to swap and changes
+                                                " like gitgutter are visible
 
 " UI
 " --
 
-
-set ruler                                       " show the cursor position all the time
-set noshowcmd                                   " don't display incomplete commands
-set cursorline                                  " underline the line i'm currently on
-set nostartofline                               " don't jump to the start of line when scrolling
-set report=0                                    " tell us about changes
-set number                                      " show line numbers
-set norelativenumber                            " but not in relative mode
-set ttimeoutlen=50                              " recommended by airline
-set laststatus=2                                " needed for airline to be visible
-set ignorecase                                  " ignore case when searching
-set t_Co=256                                    " set terminal color mode to 256
-set background=dark                             " Set dark mode by default
-set updatetime=500                              " Time before vim writes to swap and changes
-                                                " like gitgutter are visible
-
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set nolist                                      " Use custom characters for whitespace
                                                 " but don't show them by default
 
-nnoremap <esc><esc> :noh<return>
-set hlsearch                                    " Enable search highlights and
-                                                " press ESC twice to clear
 
 hi SignColumn ctermbg=none
 hi LineNr     ctermbg=none ctermfg=darkgray
@@ -363,124 +311,13 @@ autocmd FileChangedShellPost *
 " Splits and Tabs
 " ---------------
 
-set splitbelow                                  " Open Splits to the bottom
-set splitright                                  " and right sides
 
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-nmap <C-S-Left>  <C-H>
-nmap <C-S-Down>  <C-J>
-nmap <C-S-Up>    <C-K>
-nmap <C-S-Right> <C-L>
-                                                " Remap ctrl + direction keys to
-                                                " move between splits
-
-"nnoremap <C-S-H> <C-W><S-H>
-"nnoremap <C-S-J> <C-W><S-J>
-"nnoremap <C-S-K> <C-W><S-K>
-"nnoremap <C-S-L> <C-W><S-L>
-                                                " Use ctrl + shift + direction keys
-                                                " change split positions
-
-
-noremap  <Leader>= :tabnew<CR>
-noremap  <Leader>[ :tabprev<CR>
-noremap  <Leader>] :tabnext<CR>
-inoremap <Leader>[ <ESC>:tabprev<CR>a
-inoremap <Leader>] <ESC>:tabnext<CR>a
-                                                " Create a new tab using Leader + =
-                                                " and move between them using [ / ]
-
-function! PsyVimSetMaps() abort
-  noremap <A-Left>  :tabmove-<cr>
-  noremap <A-Right> :tabmove+<cr>
-endfunction
-autocmd VimEnter * call PsyVimSetMaps()         " Relocate tab position to left/right
-                                                " using Meta (Alt) key
-
-
-
-
-" Text Formatting
-" ---------------
-
-set autoindent                                  " automatic indent new lines
-set smartindent                                 " be smart about it
-set tabstop=2                                   " 2 is awesome
-set shiftwidth=2                                " for automatic indents
-set expandtab                                   " expand tabs to spaces
-
-
-nmap     <Tab>   v<Tab><Esc>
-nmap     <S-Tab> v<S-Tab><Esc>
-vnoremap <Tab>   >gv
-vnoremap <S-Tab> <gv
-                                                " Indent using Tab in visual and
-                                                " normal modes
-
-
-
-
-" Fix Clipboard copy on OSX
-" -------------------------
-
-vnoremap <M-c> "+y
-                                                " First make sure iTerm sends ⌘ C
-                                                " escape code
-
-
-
-
-" Fix Clipboard paste on OSX
-" --------------------------
-
-" if &term =~ "xterm.*"
-"     let &t_ti = &t_ti . "\e[?2004h"
-"     let &t_te = "\e[?2004l" . &t_te
-"     function XTermPasteBegin(ret)
-"         set pastetoggle=<Esc>[201~
-"         set paste
-"         return a:ret
-"     endfunction
-"     map <expr> <Esc>[200~ XTermPasteBegin("i")
-"     imap <expr> <Esc>[200~ XTermPasteBegin("")
-"     cmap <Esc>[200~ <nop>
-"     cmap <Esc>[201~ <nop>
-" endif
-
-
-
-
-" Backups
-" -------
-
-set nobackup                                    " do not keep backups after close
-set backupdir=$HOME/.vim/backups                " store backups under ~/.vim/backup
-set backupcopy=yes                              " keep attributes of original file
-set directory=~/.vim/swap,~/tmp,.               " keep swp files under ~/.vim/swap
-                                                " make sure that `swap` and `backups` dirs exist in ~/.vim
-
-
-
-
-" Custom Filetypes
-" ----------------
-
-autocmd BufEnter *.slimlive :setlocal filetype=slim
-                                                " Phoenix LiveView with SLIM templates
 
 
 
 
 " Other
 " -----
-
-set backspace=indent,eol,start                  " Fix `Delete Key` issue on OSX with Vim 7.4+
-set scrolloff=3                                 " Start scrolling when we're 3 lines away from margins
-set wrap lbr                                    " Wrap lines without breaking words
 let g:jsx_ext_required = 0                      " Allow JSX in normal JS files
 
 
