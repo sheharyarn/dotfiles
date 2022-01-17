@@ -56,6 +56,7 @@ set t_Co=256                                    " Set terminal color mode to 256
 set background=dark                             " Set dark mode by default
 set hlsearch                                    " Enable search highlights
 
+set fillchars=eob:\                             " Hide ~ for empty lines after the file ends
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set nolist                                      " Use custom characters for whitespace
 
