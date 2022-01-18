@@ -17,3 +17,6 @@ source('/core.vim')
 
 -- Set up Plugins
 require('plugins')
+
+-- Configure custom themes/colors
+require('themes')
