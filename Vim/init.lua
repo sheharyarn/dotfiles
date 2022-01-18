@@ -5,9 +5,15 @@
 
 
 -- Define important variables
-HOME    = vim.call('expand', '~/')
-VIM_DIR = vim.call('expand', '~/.dotfiles/Vim')
+HOME    = vim.fn.expand('~/')
+VIM_DIR = vim.fn.expand('~/.dotfiles/Vim')
 
+
+-- Load custom utils for lua-vim interop
+require('utils')
 
 -- Load core vim configs
-vim.cmd('source ' .. VIM_DIR .. '/core.vim')
+source('/core.vim')
+
+-- Set up Plugins
+require('plugins')
