@@ -30,15 +30,24 @@ A personal guide to backup/move everything to a new Macbook.
    - [Private Configs and Files]
 
 
+## Code / Dev Tools
+
+  - Copy private configs for specific projects
+    - Slab: config/dev.exs
+    - Slab: .iex.exs
+
+  - Nginx configs
+
 ## Applications
 
  - iPhotos:         Photos
  - Sabznbd:         Settings
- - Firefox:         Settings, History, Bookmarks
+ - Firefox:         Settings, History, Bookmarks, Tampermonkey scripts
  - Android Studio:  Settings
  - NightEye:        Settings
  - Little Snitch:   Whitelist
  - Insomnia:        Request Collection
+ - Postico:         Database Connections
  - Games (apps):    Gamesaves
  - Games (emu):     Gamesaves
 
