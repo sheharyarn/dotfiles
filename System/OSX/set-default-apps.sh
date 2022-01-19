@@ -45,7 +45,7 @@ main() {
   set-exts "$app" "$exts"
 
   local app='Visual Studio Code'
-  local exts='js css sass elixir md sh xml json yaml srt nfo'
+  local exts='js css sass scss ex exs md sh xml json yaml srt nfo'
   set-exts "$app" "$exts"
 }
 
