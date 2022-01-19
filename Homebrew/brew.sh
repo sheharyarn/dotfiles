@@ -75,6 +75,7 @@ brew install --cask unclutter
 
 #> Dev Apps
 brew install --cask iterm2
+brew install --cask postico
 brew install --cask insomnia
 brew install --cask visual-studio-code
 brew install --cask java
