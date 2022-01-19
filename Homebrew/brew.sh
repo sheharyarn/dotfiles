@@ -24,6 +24,7 @@ brew install git
 brew install nano
 brew install curl
 brew install wget
+brew install asdf
 brew install watch
 brew install httpie
 brew install vifm
