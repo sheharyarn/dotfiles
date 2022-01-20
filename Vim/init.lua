@@ -15,6 +15,9 @@ require('utils')
 -- Load core vim configs
 source('/core.vim')
 
+-- Load custom commands
+source('/commands.vim')
+
 -- Set up Plugins
 require('plugins')
 
