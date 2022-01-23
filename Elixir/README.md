@@ -10,7 +10,7 @@ Install via [`asdf`](https://github.com/asdf-vm/asdf).
 ## Symlink IEx config
 
 ```bash
-$ ln -s ~/.dotfiles/Elixir/iex.symlink ~/.iex.exs
+$ ln -s ~/.dotfiles/Elixir/iex.global.exs ~/.iex.exs
 ```
 
 ## Other Projects
