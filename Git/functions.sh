@@ -104,3 +104,46 @@ gc-time() {
   fi
 }
 
+
+# Change author of all commits that match a specific email
+# https://stackoverflow.com/a/61368365/1533054
+git-update-author() {
+  if ! command -v git-filter-repo >/dev/null ; then
+    echo "Program 'git-filter-repo' not installed"
+    return 1
+  fi
+
+  if [[ (-z "$OLD_EMAIL") || (-z "$NEW_EMAIL") || (-z "$NEW_NAME") ]] ; then
+    echo "A required env variable was not set: \$OLD_EMAIL, \$NEW_EMAIL, \$NEW_NAME"
+    return 1
+  fi
+
+  echo "This will modify Git history, and can potentially corrupt it. It is IMPORTANT that you first clone your repo before running this.\n"
+  echo -n "\nContinue? [Y/n]: "
+  read yn
+
+  case $yn in
+    [Y]* )
+      git filter-repo --commit-callback "
+        old_email = b'$OLD_EMAIL'
+        new_email = b'$NEW_EMAIL'
+        new_name  = b'$NEW_NAME'
+
+        if commit.committer_email == old_email :
+          commit.committer_name  = new_name
+          commit.committer_email = new_email
+
+        if commit.author_email == old_email : 
+          commit.author_name  = new_name
+          commit.author_email = new_email
+      "
+      ;;
+
+    * )
+      echo "Git author update cancelled"
+      return 1
+      ;;
+  esac
+}
+
+
