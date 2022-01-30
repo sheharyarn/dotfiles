@@ -45,7 +45,7 @@ gta() {
 
 # Delete all branches that match passed arg
 gbda() {
-  local branches="$(gb | grep -v '*' | grep -v master)"
+  local branches="$(gb | grep -v '*' | grep -v master | grep -v main)"
 
   if [[ $# -eq 1 ]] ; then
     branches="$(echo $branches | grep -i "$1")"
