@@ -73,10 +73,19 @@ defmodule H do
   ```
   """
   def module(name, app \\ nil) do
+    case modules(name, app) do
+      [mod | _] -> mod
+      _else -> nil
+    end
+  end
+
+  def modules(name, app \\ nil) do
     name =
-      name
-      |> Module.split()
-      |> List.last()
+      cond do
+        Regex.regex?(name) -> Regex.source(name)
+        is_atom(name) -> inspect(name)
+        true -> to_string(name)
+      end
 
     name_regex = ~r/^Elixir.*#{name}$/
 
@@ -90,7 +99,7 @@ defmodule H do
           mods
       end
 
-    Enum.find(all_modules, & to_string(&1) =~ name_regex)
+    Enum.filter(all_modules, & to_string(&1) =~ name_regex)
   end
 
 
