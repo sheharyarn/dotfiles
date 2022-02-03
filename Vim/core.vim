@@ -42,8 +42,8 @@ set directory=~/.vim/swap,~/tmp,.               " Keep swp files under ~/.vim/sw
 " UI
 " --
 
-set nowrap                                      " Do not wrap lines by default
 set wrap lbr                                    " If wrapping, do it without breaking words
+set nowrap                                      " But do not wrap lines by default
 set ruler                                       " Show the cursor position all the time
 set noshowcmd                                   " Don't display incomplete commands
 set cursorline                                  " Underline the line i'm currently on
