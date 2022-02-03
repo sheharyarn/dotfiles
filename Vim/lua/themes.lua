@@ -43,36 +43,46 @@ end
 -- Enable 24-bit RGB color if available
 vim.o.termguicolors = true
 
--- Use 'Deep Ocean' Material Theme
-vim.g.material_style = 'deep ocean'
-vim.cmd('colorscheme material')
+local run_async = function(fun)
+  local async
+  async = vim.loop.new_async(vim.schedule_wrap(function ()
+    fun()
+    async:close()
+  end))
+  async:send()
+end
 
 PsyThemes = {
   material_dark = function()
-    highlight('NvimTreeRootFolder', { fg = MColors.red })
-    highlight('NvimTreeOpenedFolderName', { fg = MColors.blue })
-    highlight('NvimTreeNormal', { bg = Colors.black })
-    highlight('NvimTreeNormalNC', { bg = Colors.black })
-    highlight('NvimTreeVertSplit', { bg = Colors.black, fg = Colors.black })
-    highlight('NvimTreeStatuslineNc', { bg = Colors.black, fg = Colors.black })
+    -- Use 'Deep Ocean' Material Theme
+    vim.o.background = 'dark'
+    vim.g.material_style = 'deep ocean'
+    vim.cmd('colorscheme material')
 
-    -- Custom Overrides
-    highlight('Search', { bg = MColors.darkorange, fg = Colors.black })
-    --highlightWhitespace()
+    run_async(function()
+      highlight('NvimTreeRootFolder', { fg = MColors.red })
+      highlight('NvimTreeOpenedFolderName', { fg = MColors.blue })
+      highlight('NvimTreeNormal', { bg = Colors.black })
+      highlight('NvimTreeNormalNC', { bg = Colors.black })
+      highlight('NvimTreeVertSplit', { bg = Colors.black, fg = Colors.black })
+      highlight('NvimTreeStatusline', { bg = Colors.black, fg = Colors.black })
+      highlight('NvimTreeStatuslineNc', { bg = Colors.black, fg = Colors.black })
+
+      -- input/cmd line at bottom
+      --highlight('MsgArea', { bg = Colors.black, fg = Colors.white })
+
+      -- Custom Overrides
+      highlight('Search', { bg = MColors.darkorange, fg = Colors.black })
+      highlightWhitespace()
+    end)
   end
 }
 
 
 -- Apply the new theme asynchronously as to not get overridden
 -- by material.nvim configs
-local async
-async = vim.loop.new_async(vim.schedule_wrap(function ()
-  PsyThemes.material_dark()
-  async:close()
-end))
-async:send()
+--
 
---vim.api.nvim_command('PsyThemeMaterial', psy_theme, {})
 --
 -- #df7d85
 
