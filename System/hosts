@@ -26,8 +26,8 @@
 127.0.0.1   postgres
 127.0.0.1   redis
 127.0.0.1   pandoc
-127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
-::1         slabdev.com api.slabdev.com shey.slabdev.com storybook.slabdev.com
+127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com
+::1         slabdev.com api.slabdev.com shey.slabdev.com
 
 
 # DBFS
