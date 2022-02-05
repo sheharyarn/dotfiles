@@ -3,6 +3,15 @@
 -- Psy's Vim Plugins --
 -----------------------
 
+split_util = function(source, delimiters)
+  local elements = {}
+  local pattern = '([^'..delimiters..']+)'
+  string.gsub(source, pattern, function(value)
+    elements[#elements + 1] = value
+  end)
+  return elements
+end
+
 
 -- Bootstrap / Auto-install Packer if not installed
 local PACKER_GIT_URL = 'https://github.com/wbthomason/packer.nvim'
@@ -59,11 +68,24 @@ return require('packer').startup(function()
     end
   }
 
+  use 'tpope/vim-surround'
+  use 'tpope/vim-repeat'
   use 'glepnir/dashboard-nvim'
 
   use 'wakatime/vim-wakatime'
 
   use 'marko-cerovac/material.nvim'
+
+  use 'sheharyarn/werewolf.nvim'
+  -- use '~/code/lua/werewolf.nvim'
+
+  use {
+    'ruanyl/vim-gh-line',   -- Github blob/blame link shortcuts
+    config = function()
+      -- Copy the links instead of opening them
+      vim.g.gh_open_command = 'fn() { echo "$@" | tr -d "\n" | pbcopy; }; fn '
+    end,
+  }
 
   use {
     'lewis6991/gitsigns.nvim',
@@ -81,16 +103,51 @@ return require('packer').startup(function()
 
   use {
     'feline-nvim/feline.nvim',
-    config = function() require('feline').setup() end
+    config = function()
+      require('feline').setup({
+        disable = {
+          filetypes = {
+            'NvimTree',
+          },
+        },
+      })
+    end
+  }
+
+  -- Syntax highlighting
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+    config = function()
+      require('nvim-treesitter.configs').setup({
+        -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+        ensure_installed = "maintained",
+
+        -- Install languages synchronously (only applied to `ensure_installed`)
+        sync_install = false,
+
+        -- List of parsers to ignore installing
+        ignore_install = { },
+
+        highlight = {
+          enable = true,
+
+          -- list of language that will be disabled
+          disable = { },
+        }
+      })
+    end,
   }
   
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  --use 'nvim-telescope/telescope-fzy-native.nvim'
+  use 'nvim-telescope/telescope-fzy-native.nvim'
 
   use {
     'nvim-telescope/telescope.nvim',
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
+      ignored_dirs_str = os.getenv('IGNORED_DIRS')
+      ignored_dirs_lua = split_util(ignored_dirs_str, '{},')
       local actions = require("telescope.actions")
       require('telescope').setup({
         defaults = {
@@ -100,6 +157,8 @@ return require('packer').startup(function()
               ["<esc>"] = actions.close,
             }
           },
+          --file_ignore_patterns = ignored_dirs_lua,
+          --file_ignore_patterns = ignored_dirs_lua,
           vimgrep_arguments = {
             "rg",
             "--color=never",
@@ -111,10 +170,24 @@ return require('packer').startup(function()
             "--no-ignore-vcs",
             "--hidden",
             "--follow",
-            --"--glob '!**/".. os.getenv("IGNORED_DIRS") .."/*'",
+              '--glob',
+              '!**/'..ignored_dirs_str..'/*',
           },
           file_sorter = require("telescope.sorters").get_fuzzy_file,
           set_env = { ["COLORTERM"] = "truecolor" },
+        },
+        pickers = {
+          find_files = {
+            find_command = {
+              'rg', '--files', '--no-ignore-vcs', '--hidden', '--follow',
+              '--glob',
+              '!**/'..ignored_dirs_str..'/*',
+            },
+            debounce = 150,
+          },
+          live_grep = {
+            debounce = 150,
+          },
         },
         extensions = {
           fzf = {
@@ -178,16 +251,37 @@ return require('packer').startup(function()
         },
       }
 
-      require('nvim-tree').setup()
+      require('nvim-tree').setup({
+        git = {
+          enable = true,
+          ignore = false,
+        },
+      })
 
       nmap('<Leader>|', ':NvimTreeToggle<CR>')
       nmap('<Leader>t', ':NvimTreeFindFile<CR>')
     end
   }
 
+  --- LSP Config
+
+  use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+  use 'ray-x/lsp_signature.nvim' -- Show fun signatures as you type
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'onsails/lspkind-nvim' -- Show icons in cmp
+
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+
+
   -- Configure Packer to sync plugins if auto-installed
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
+
 end)
 
