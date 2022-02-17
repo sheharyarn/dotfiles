@@ -21,7 +21,7 @@ if vim.fn.empty(vim.fn.glob(INSTALL_PATH)) > 0 then
   PACKER_BOOTSTRAP = vim.fn.system({'git', 'clone', '--depth', '1', PACKER_GIT_URL, INSTALL_PATH})
 end
 
-vim.g.dashboard_custom_header = {
+local intro_header = {
    "",
    "",
    "",
@@ -59,6 +59,7 @@ return require('packer').startup(function()
           'help',
           'terminal',
           'packer',
+          'alpha',
           'dashboard',
           'NvimTree',
           'markdown',
@@ -70,7 +71,6 @@ return require('packer').startup(function()
 
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
-  use 'glepnir/dashboard-nvim'
 
   use 'wakatime/vim-wakatime'
 
@@ -120,8 +120,14 @@ return require('packer').startup(function()
     run = ':TSUpdate',
     config = function()
       require('nvim-treesitter.configs').setup({
-        -- One of "all", "maintained" (parsers with maintainers), or a list of languages
-        ensure_installed = "maintained",
+        -- Languages to support
+        ensure_installed = {
+          'elixir', 'eex', 'heex', 'erlang', 'gleam',
+          'python', 'ruby', 'kotlin', 'java', 'rust', 'dart', 'zig',
+          'javascript', 'typescript', 'jsdoc',
+          'html', 'css', 'scss', 'vue', 'json', 'markdown',
+          'bash', 'dockerfile', 'toml', 'yaml', 'graphql', 'vim',
+        },
 
         -- Install languages synchronously (only applied to `ensure_installed`)
         sync_install = false,
@@ -219,9 +225,6 @@ return require('packer').startup(function()
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function()
-      vim.g.nvim_tree_disable_window_picker = 1
-      vim.g.nvim_tree_indent_markers = 1
-
       vim.g.nvim_tree_show_icons = {
         folder_arrows = 0,
         folders = 1,
@@ -255,6 +258,14 @@ return require('packer').startup(function()
         git = {
           enable = true,
           ignore = false,
+        },
+        actions = {
+          open_file = {
+            window_picker = { enable = false }
+          },
+        },
+        renderer = {
+          indent_markers = { enable = true }
         },
       })
 
