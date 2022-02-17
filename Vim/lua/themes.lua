@@ -36,7 +36,8 @@ highlightWhitespace = function(enable)
   enable = enable or true
   opts = enable and { bg = MColors.darkred } or {}
 
-  vim.cmd([[match ExtraWhitespace /\s\+$\| \+\ze\t/]])
+  --vim.cmd([[match ExtraWhitespace /\s\+$\| \+\ze\t/]])
+  vim.cmd([[autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/]])
   highlight('ExtraWhitespace', opts)
 end
 
