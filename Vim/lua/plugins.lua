@@ -21,28 +21,6 @@ if vim.fn.empty(vim.fn.glob(INSTALL_PATH)) > 0 then
   PACKER_BOOTSTRAP = vim.fn.system({'git', 'clone', '--depth', '1', PACKER_GIT_URL, INSTALL_PATH})
 end
 
-local intro_header = {
-   "",
-   "",
-   "",
-   "",
-   "",
-   "   ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣿⣶⣿⣦⣼⣆",
-   "    ⠉⠻⢿⣿⠿⣿⣿⣶⣦⠤⠄⡠⢾⣿⣿⡿⠋⠉⠉⠻⣿⣿⡛⣦",
-   "          ⠈⢿⣿⣟⠦ ⣾⣿⣿⣷    ⠻⠿⢿⣿⣧⣄",
-   "           ⣸⣿⣿⢧ ⢻⠻⣿⣿⣷⣄⣀⠄⠢⣀⡀⠈⠙⠿⠄",
-   "          ⢠⣿⣿⣿⠈    ⣻⣿⣿⣿⣿⣿⣿⣿⣛⣳⣤⣀⣀",
-   "   ⢠⣧⣶⣥⡤⢄ ⣸⣿⣿⠘  ⢀⣴⣿⣿⡿⠛⣿⣿⣧⠈⢿⠿⠟⠛⠻⠿⠄",
-   "  ⣰⣿⣿⠛⠻⣿⣿⡦⢹⣿⣷   ⢊⣿⣿⡏  ⢸⣿⣿⡇ ⢀⣠⣄⣾⠄",
-   " ⣠⣿⠿⠛ ⢀⣿⣿⣷⠘⢿⣿⣦⡀ ⢸⢿⣿⣿⣄ ⣸⣿⣿⡇⣪⣿⡿⠿⣿⣷⡄",
-   " ⠙⠃   ⣼⣿⡟  ⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿ ⣿⣿⡇ ⠛⠻⢷⣄",
-   "      ⢻⣿⣿⣄   ⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟ ⠫⢿⣿⡆",
-   "       ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⣀⣤⣾⡿⠃",
-   "",
-   "",
-   "",
-}
-
 
 
 -- Set up plugins through Packer
@@ -78,6 +56,11 @@ return require('packer').startup(function()
 
   use 'sheharyarn/werewolf.nvim'
   -- use '~/code/lua/werewolf.nvim'
+
+  use {
+   'goolord/alpha-nvim',
+   requires = { 'kyazdani42/nvim-web-devicons' },
+  }
 
   use {
     'ruanyl/vim-gh-line',   -- Github blob/blame link shortcuts
@@ -144,7 +127,7 @@ return require('packer').startup(function()
       })
     end,
   }
-  
+
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'nvim-telescope/telescope-fzy-native.nvim'
 
