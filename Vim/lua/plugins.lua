@@ -84,14 +84,30 @@ return require('packer').startup(function()
     config = function() require('nvim_comment').setup() end
   }
 
+  -- use {
+  --   'feline-nvim/feline.nvim',
+  --   config = function()
+  --     require('feline').setup({
+  --       disable = {
+  --         filetypes = {
+  --           'NvimTree',
+  --         },
+  --       },
+  --     })
+  --   end
+  -- }
+
   use {
-    'feline-nvim/feline.nvim',
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
     config = function()
-      require('feline').setup({
-        disable = {
-          filetypes = {
-            'NvimTree',
-          },
+      require('lualine').setup({
+        options = {
+          icons_enabled = true,
+          theme = 'nightfly',
+          disabled_filetypes = {'NvimTree'},
+          section_separators = '',
+          component_separators = '',
         },
       })
     end
