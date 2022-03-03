@@ -16,8 +16,8 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 # Turn the display off after 5 minutes. Sleep after 20 minutes
 # on battery and 60 minutes when connected to power.
-sudo pmset -b displaysleep 5 sleep 20
-sudo pmset -c displaysleep 5 sleep 60
+sudo pmset -b displaysleep 10 sleep 20
+sudo pmset -c displaysleep 20 sleep 60
 
 # Always show Hidden files
 defaults write com.apple.finder AppleShowAllFiles -bool true
