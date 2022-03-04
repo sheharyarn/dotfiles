@@ -32,6 +32,9 @@ defaults write com.apple.finder FinderSpawnTab 0
 defaults write com.apple.finder NewWindowTarget PfDe
 defaults write com.apple.finder NewWindowTargetPath "file:///Users/Psy/Desktop/"
 
+# Always search within the current folder in Finder
+defaults write com.apple.finder FXDefaultSearchScope 'SCcf'
+
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
