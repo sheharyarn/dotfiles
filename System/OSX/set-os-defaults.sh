@@ -19,6 +19,9 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 sudo pmset -b displaysleep 10 sleep 20
 sudo pmset -c displaysleep 20 sleep 60
 
+# Always show file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
 # Always show Hidden files
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
