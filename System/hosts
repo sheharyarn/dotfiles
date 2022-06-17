@@ -26,8 +26,8 @@
 127.0.0.1   postgres
 127.0.0.1   redis
 127.0.0.1   pandoc
-127.0.0.1   slabdev.com api.slabdev.com shey.slabdev.com
-::1         slabdev.com api.slabdev.com shey.slabdev.com
+127.0.0.1   slabdev.com api.slabdev.com cdn.slabdev.com shey.slabdev.com
+::1         slabdev.com api.slabdev.com cdn.slabdev.com shey.slabdev.com
 
 
 # DBFS
@@ -40,6 +40,8 @@
 # Private Network
 192.168.1.100 pi
 192.168.8.1   nyx
+
+192.168.0.1   router.psy.sh
 
 
 # Servers
