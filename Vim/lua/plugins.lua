@@ -49,6 +49,7 @@ return require('packer').startup(function()
 
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
+  use 'tpope/vim-fugitive'                  --  Git Tools for Vim
 
   use 'wakatime/vim-wakatime'
 
@@ -123,7 +124,7 @@ return require('packer').startup(function()
         ensure_installed = {
           'elixir', 'eex', 'heex', 'erlang', 'gleam',
           'python', 'ruby', 'kotlin', 'java', 'rust', 'dart', 'zig',
-          'javascript', 'typescript', 'jsdoc',
+          'javascript', 'typescript', 'jsdoc', 'comment',
           'html', 'css', 'scss', 'vue', 'json', 'markdown',
           'bash', 'dockerfile', 'toml', 'yaml', 'graphql', 'vim',
         },
@@ -215,6 +216,7 @@ return require('packer').startup(function()
 
       nmap('ff', ':Telescope find_files<CR>')
       nmap('fg', ':Telescope live_grep<CR>')
+      nmap('fr', ':Telescope oldfiles<CR>')
       nmap('fb', ':Telescope buffers<CR>')
       nmap('fh', ':Telescope help_tags<CR>')
     end

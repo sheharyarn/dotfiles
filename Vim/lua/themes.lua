@@ -65,7 +65,7 @@ PsyThemes = {
       highlight('NvimTreeOpenedFolderName', { fg = MColors.blue })
       highlight('NvimTreeNormal', { bg = Colors.black })
       highlight('NvimTreeNormalNC', { bg = Colors.black })
-      highlight('NvimTreeVertSplit', { bg = Colors.black, fg = Colors.black })
+      highlight('NvimTreeWinSeparator', { bg = Colors.black, fg = Colors.black })
       highlight('NvimTreeStatusline', { bg = Colors.black, fg = Colors.black })
       highlight('NvimTreeStatuslineNc', { bg = Colors.black, fg = Colors.black })
 
