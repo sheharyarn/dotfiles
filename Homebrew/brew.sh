@@ -70,7 +70,7 @@ brew install --cask teamviewer
 brew install --cask android-file-transfer
 brew install --cask little-snitch
 brew install --cask tuxera-ntfs
-brew install --cask flux
+brew install --cask rocket
 brew install --cask spotify
 brew install --cask unclutter
 
@@ -84,10 +84,10 @@ brew install --cask android-studio
 brew install --cask android-platform-tools
 
 #> Not that important
-brew install --cask vlc
+brew install --cask flux
 brew install --cask tunnelbear
-brew install --cask rocket
 brew install --cask videostream
+brew install --cask vlc
 
 #> Maybe
 # brew install --cask firefox
