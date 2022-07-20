@@ -226,35 +226,6 @@ return require('packer').startup(function()
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function()
-      vim.g.nvim_tree_show_icons = {
-        folder_arrows = 0,
-        folders = 1,
-        files = 1,
-        git = 1,
-      }
-
-      vim.g.nvim_tree_icons = {
-        default = "",
-        symlink = "",
-        git = {
-          deleted = "",
-          ignored = "◌",
-          renamed = "➜",
-          staged = "✓",
-          unmerged = "",
-          unstaged = "✗",
-          untracked = "★",
-        },
-        folder = {
-          default = "",
-          empty = "",
-          empty_open = "",
-          open = "",
-          symlink = "",
-          symlink_open = "",
-        },
-      }
-
       require('nvim-tree').setup({
         git = {
           enable = true,
@@ -262,11 +233,40 @@ return require('packer').startup(function()
         },
         actions = {
           open_file = {
-            window_picker = { enable = false }
+            window_picker = { enable = false },
           },
         },
         renderer = {
-          indent_markers = { enable = true }
+          indent_markers = { enable = true },
+          icons = {
+            show = {
+              folder_arrow = false,
+              folder = true,
+              file = true,
+              git = true,
+            },
+            glyphs = {
+              default = "",
+              symlink = "",
+              git = {
+                deleted = "",
+                ignored = "◌",
+                renamed = "➜",
+                staged = "✓",
+                unmerged = "",
+                unstaged = "✗",
+                untracked = "★",
+              },
+              folder = {
+                default = "",
+                empty = "",
+                empty_open = "",
+                open = "",
+                symlink = "",
+                symlink_open = "",
+              },
+            },
+          },
         },
       })
 
