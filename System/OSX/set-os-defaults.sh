@@ -19,6 +19,9 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 sudo pmset -b displaysleep 10 sleep 20
 sudo pmset -c displaysleep 20 sleep 60
 
+# Use Caps-Lock as ESC key
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
+
 # Always show file extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
