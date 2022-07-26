@@ -73,7 +73,7 @@ PsyThemes = {
       --highlight('MsgArea', { bg = Colors.black, fg = Colors.white })
 
       -- Custom Overrides
-      highlight('Search', { bg = MColors.darkorange, fg = Colors.black })
+      highlight('Search', { bg = MColors.darkyellow, fg = Colors.black })
       highlightWhitespace()
     end)
   end
