@@ -106,6 +106,7 @@ gc-time() {
 
 
 # Change author of all commits that match a specific email
+# https://github.com/newren/git-filter-repo
 # https://stackoverflow.com/a/61368365/1533054
 git-update-author() {
   if ! command -v git-filter-repo >/dev/null ; then
@@ -124,7 +125,7 @@ git-update-author() {
 
   case $yn in
     [Y]* )
-      git filter-repo --commit-callback "
+      git filter-repo --force --commit-callback "
         old_email = b'$OLD_EMAIL'
         new_email = b'$NEW_EMAIL'
         new_name  = b'$NEW_NAME'
@@ -133,7 +134,7 @@ git-update-author() {
           commit.committer_name  = new_name
           commit.committer_email = new_email
 
-        if commit.author_email == old_email : 
+        if commit.author_email == old_email :
           commit.author_name  = new_name
           commit.author_email = new_email
       "
