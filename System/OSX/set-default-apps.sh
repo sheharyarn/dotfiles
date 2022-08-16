@@ -47,6 +47,10 @@ main() {
   local app='Visual Studio Code'
   local exts='txt js css sass scss ex exs md sh xml json yaml srt nfo svg'
   set-exts "$app" "$exts"
+
+  local app='Microsoft Excel'
+  local exts='csv'
+  set-exts "$app" "$exts"
 }
 
 
