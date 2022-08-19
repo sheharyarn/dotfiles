@@ -46,11 +46,6 @@ alias psytree-dirs='grep -e "\/$" | sed "s/^|--/|\n|--/g"'
 # Applications
 alias vsc='open -a "Visual Studio Code"'
 
-# Deluge Terminal Shortcuts
-alias deluge-list="deluge-console info --sort=state | grep -E 'Name:.*$|$' --color=always | less -R"
-alias deluge-pause="deluge-console pause '*'"
-alias deluge-resume="deluge-console resume '*'"
-
 # Make sudo work with aliases
 alias sudo='sudo '
 
