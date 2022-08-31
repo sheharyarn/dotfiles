@@ -31,6 +31,9 @@ There is no script or installer that sets up everything for you. Instead you sho
 
 ```bash
 xcode-select --install
+
+# Optional: Set HostName
+sudo scutil --set HostName PsyMBP
 ```
 
 #### 2. Clone Dotfiles
