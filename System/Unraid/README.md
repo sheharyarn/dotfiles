@@ -1,7 +1,7 @@
 Unraid Configs
 ==============
 
-## Set Up
+## Set Up - NAS
 
 Make sure the following lines are added to your `/boot/config/go` file:
 
@@ -13,3 +13,11 @@ if [ -d "$DOTFILES_PATH" ]; then
 fi
 ```
 
+
+## Set Up - Client
+
+Symlink hidden shares:
+
+```bash
+ln -s ~/.dotfiles/System/Unraid/PsyNAS ~/PsyNAS
+```
