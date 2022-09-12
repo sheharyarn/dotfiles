@@ -10,7 +10,7 @@ DOCK_APPS=(
   "Firefox Developer Edition"
   "Google Chrome"
   "Safari"
-  "1Password 7"
+  "1Password"
   "Spotify"
   "MPV"
   "Postico"
