@@ -22,6 +22,8 @@ brew install coreutils
 brew install gnu-sed
 brew install git
 brew install git-filter-repo
+brew install svn
+brew install gpg
 brew install nano
 brew install curl
 brew install wget
