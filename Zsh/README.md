@@ -15,6 +15,7 @@ brew install zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Symlink `.zshrc`
+mv ~/.zshrc ~/.zshrc.old
 ln -s ~/.dotfiles/Zsh/zshrc.symlink ~/.zshrc
 
 # Use Aliases/Functions in other apps like Vim:

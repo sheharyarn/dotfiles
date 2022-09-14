@@ -70,25 +70,14 @@ export BREW_COMMAND="/opt/homebrew/bin/brew"
 #source `brew --prefix`/etc/profile.d/z.sh
 
 
-# Heroku Toolbelt Path
-export PATH="/usr/local/heroku/bin:$PATH"
-
-
-# Rust Path
-export PATH="/Users/Psy/.asdf/installs/rust/1.28.0/bin:$PATH"
-
-
 # Go Configs
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 
-# Kiex Configs
-[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
-
-
 # ASDF Configs
-export ASDF_DIR=/usr/local/opt/asdf/libexec
+# export ASDF_DIR=/usr/local/opt/asdf/libexec   # (manual install)
+export ASDF_DIR=/opt/homebrew/opt/asdf/libexec  # (homebrew install)
 [[ -s "$ASDF_DIR/asdf.sh" ]] && source "$ASDF_DIR/asdf.sh"
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
@@ -111,16 +100,11 @@ my_aliases=($DOTFILES/**/aliases.sh)
 my_functions=($DOTFILES/**/functions.sh)
 my_files=($my_aliases $my_functions)
 
-for file in ${my_files}
-do
+for file in ${my_files} ; do
 	source $file
 done
 
 
-# Load .localrc for SUPER SECRET SHIT (at the end)
-if [[ -a ~/.localrc ]]
-then
-	source ~/.localrc
-fi
-
+# Load .localrc for SUPER SECRET STUFF (at the end)
+[[ -a ~/.localrc ]] && source ~/.localrc
 
