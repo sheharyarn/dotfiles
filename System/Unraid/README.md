@@ -20,4 +20,5 @@ Symlink hidden shares:
 
 ```bash
 ln -s ~/.dotfiles/System/Unraid/PsyNAS ~/PsyNAS
+source ~/.dotfiles/System/Unraid/set-smb-symlinks.sh
 ```
