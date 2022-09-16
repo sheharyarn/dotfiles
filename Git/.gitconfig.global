@@ -4,6 +4,7 @@
 [user]
 	name = Sheharyar Naseer
 	email = hello@sheharyar.me
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO2FWh8rGe1WZqct8PLZDltLeTwE5IKo+ZNqEnZQzrLQ
 
 [push]
 	default = simple
@@ -17,3 +18,13 @@
 
 [hub]
 	protocol = ssh
+
+[commit]
+	gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = ~/.ssh/allowed_signers
