@@ -21,9 +21,9 @@ alias       gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
 alias        gl='git log --decorate --color         --oneline'
 alias       glg='git log --decorate --color --graph --oneline'
-alias      glga='git log --decorate --color --graph --oneline        --all'
+alias      glga='git log --decorate --color --graph --oneline --all'
 alias       gla='git log --decorate --color --graph'
-alias      glaa='git log --decorate --color --graph           --stat --all'
+alias      glaa='git log --decorate --color --graph           --all --stat --show-signature'
 
   # gl="git log --graph --pretty=format:'%C(red)%h - %Creset%s'"
   ## https://coderwall.com/p/euwpig/a-better-git-log
