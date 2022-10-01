@@ -18,7 +18,6 @@ readonly ARG_COUNT="$#"
 
 
 
-
 main() {
   # Exit if args were passed
   if [[ $ARG_COUNT -ne 0 ]] ; then
@@ -55,7 +54,6 @@ main() {
 
 
 
-
 set-exts() {
   local app="$1"
   local exts=($2)
@@ -64,7 +62,7 @@ set-exts() {
 
   if [ -z "$app_id" ] ; then
     # Ignore app if does not exist
-    echo -e "$(bold $app:) App does not exist. Ignoring."
+    echo -e "$(red $app:) App does not exist. Ignoring."
 
   else
     # Loop through extensions and set default
@@ -72,17 +70,14 @@ set-exts() {
       $DUTI -s $app_id $ext all
     done
 
-    echo -e "$(bold $app:) Set extension defaults."
+    echo -e "$(blue $app:) Set extension defaults."
   fi
 }
 
 
 
-
-bold() {
-  echo "\033[1;31m$@\033[0m"
-}
-
+red()  { echo "\033[1;31m$@\033[0m"; }
+blue() { echo "\033[1;34m$@\033[0m"; }
 
 
 
