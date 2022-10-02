@@ -50,6 +50,8 @@ brew install z
 brew install jq
 brew install hub
 brew install duti
+brew install k9s
+brew install docker-compose
 
 
 #> External Binaries
@@ -85,6 +87,7 @@ brew install --cask visual-studio-code
 brew install --cask java
 brew install --cask android-studio
 brew install --cask android-platform-tools
+brew install --cask docker
 
 #> Not that important
 brew install --cask flux
