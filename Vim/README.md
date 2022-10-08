@@ -61,4 +61,5 @@ At this point, run `:checkhealth` to make sure required dependencies are install
 # Various language modules that usually need to be installed
 pip3 install neovim
 npm install -g neovim
+gem install neovim
 ```
