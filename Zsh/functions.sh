@@ -7,23 +7,23 @@
 # Get current Platform
 get-platform() {
   case "$(uname -s)" in
-     Darwin)
-       echo 'apple'
-       ;;
+    Darwin)
+      echo 'apple'
+      ;;
 
-     Linux)
-       echo 'linux'
-       ;;
+    Linux)
+      echo 'linux'
+      ;;
 
-     CYGWIN*|MINGW32*|MSYS*)
-       echo 'windows'
-       ;;
+    CYGWIN*|MINGW32*|MSYS*)
+      echo 'windows'
+      ;;
 
-     *)
-       echo 'unknown'
-       exit 1
-       ;;
-   esac
+    *)
+      echo 'unknown'
+      exit 1
+      ;;
+  esac
 }
 
 
