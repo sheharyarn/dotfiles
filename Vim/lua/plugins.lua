@@ -59,6 +59,12 @@ return require('packer').startup(function()
   -- use '~/code/lua/werewolf.nvim'
 
   use {
+    'akinsho/bufferline.nvim',
+    tag = "v3.*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
+
+  use {
    'goolord/alpha-nvim',
    requires = { 'kyazdani42/nvim-web-devicons' },
   }

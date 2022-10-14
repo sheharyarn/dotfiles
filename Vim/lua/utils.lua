@@ -20,3 +20,15 @@ end
 function imap(shortcut, command)
   map('i', shortcut, command)
 end
+
+
+-- Check if table contains a key
+function table_contains(table, element)
+  for _, value in pairs(table) do
+    if value == element then
+      return true
+    end
+  end
+
+  return false
+end

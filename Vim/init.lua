@@ -81,6 +81,47 @@ require('werewolf').setup({
 --   end
 -- end,
 
+
+
+-- TODO: Use this for other plugins as well (e.g. indent-blankline)
+EXCLUDED_FILETYPES = {
+  'help',
+  'terminal',
+  'packer',
+  'alpha',
+  'dashboard',
+  'NvimTree',
+  'TelescopePrompt'
+  --'markdown',
+}
+
+
+require('bufferline').setup({
+  options = {
+    -- Use as a tabline instead of with buffers
+    mode = 'tabs',
+    -- Offset bufferline when NvimTree is open
+    offsets = {
+      {
+        filetype = 'NvimTree',
+        separator = false,
+        text = nil,
+        highlight = nil,
+        padding = 1,
+      }
+    },
+    -- Don't show excluded buffer names in tabline
+    custom_filter = function(buf_number, buf_numbers)
+      local type = vim.bo[buf_number].filetype 
+      return not table_contains(EXCLUDED_FILETYPES, type)
+    end,
+  },
+})
+-- Don't show tabline on start
+vim.o.showtabline = 1
+
+
+
 -- Custom formatter
 nmap('<Leader>f', ':lua Psy.format()<CR>')
 
