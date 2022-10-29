@@ -55,6 +55,16 @@ end
 
 PsyThemes = {
   material_dark = function()
+    require('material').setup({
+      plugins = {
+        'indent-blankline',
+        'telescope',
+        'gitsigns',
+        'nvim-tree',
+        'nvim-cmp',
+      },
+    })
+
     -- Use 'Deep Ocean' Material Theme
     vim.o.background = 'dark'
     vim.g.material_style = 'deep ocean'

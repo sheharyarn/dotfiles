@@ -53,10 +53,7 @@ return require('packer').startup(function()
 
   use 'wakatime/vim-wakatime'
 
-  use {
-    'marko-cerovac/material.nvim',
-    commit = 'de33236e23cab880a1ab3d1cfdc828d3eedbddf8',
-  }
+  use 'marko-cerovac/material.nvim'
 
   use 'sheharyarn/werewolf.nvim'
   -- use '~/code/lua/werewolf.nvim'
