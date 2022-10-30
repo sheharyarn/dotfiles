@@ -8,7 +8,7 @@ local Colors = {
   red = '#df7d85',
 }
 
-local MColors = require('material.colors')
+local MColors = require('material.colors').main
 
 --highlight = function(name, opts)
 --  local args = 'highlight ' .. name
