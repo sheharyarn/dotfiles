@@ -1,2 +1,8 @@
 .DS_Store
+
+# Ignore Vim Plugin files
 /Vim/plugin/
+
+# Ignore Jellyfin-MPV-Shim credentials and artifacts
+/MPV/cred.json
+/MPV/raw_images.bin
