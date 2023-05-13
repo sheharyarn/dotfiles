@@ -113,6 +113,4 @@ defmodule H do
 
     quote(do: alias unquote(module))
   end
-
-
 end
