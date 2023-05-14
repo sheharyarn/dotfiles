@@ -8,26 +8,14 @@
 ::1         localhost
 
 127.0.0.1   psy
-127.0.0.1   utorrent
-127.0.0.1   ubuntu
-127.0.0.1   debian
-127.0.0.1   arch
-127.0.0.1   MBP
-127.0.0.1   Air
+127.0.0.1   mbp
 127.0.0.1   shyr.local
 127.0.0.1   static.local
-127.0.0.1   teenydev.com
 
 
 # Work
-
+127.0.0.1   teenydev.com
 127.0.0.1   kuard-local
-127.0.0.1   kubernetes.docker.internal
-127.0.0.1   postgres
-127.0.0.1   redis
-127.0.0.1   pandoc
-127.0.0.1   slabdev.com api.slabdev.com cdn.slabdev.com shey.slabdev.com
-::1         slabdev.com api.slabdev.com cdn.slabdev.com shey.slabdev.com
 
 
 # DBFS
@@ -37,12 +25,6 @@
 127.0.0.1 dbfs.cairo
 
 
-# Private Network
-192.168.1.100 pi
-192.168.8.1   nyx
-192.168.0.1   router.psy.sh
-
-
 # Servers
 159.203.91.233  devfiles
 188.166.44.216  kholopk
@@ -50,16 +32,18 @@
 167.99.30.143   bmc
 
 
-# System Stuff
+# System
 255.255.255.255	broadcasthost
 fe80::1%lo0	localhost
+127.0.0.1   kubernetes.docker.internal
 
 
 # Absolutely avoid without a VPN
 127.0.0.1 thepiratebay.org
 127.0.0.1 theproxybay.pw
-127.0.0.1 psa.me
 127.0.0.1 psarips.com
+127.0.0.1 psa.me
+127.0.0.1 psa.re
 127.0.0.1 1337x.to
 127.0.0.1 zooqle.com
 127.0.0.1 skytorrents.lol
@@ -67,8 +51,3 @@ fe80::1%lo0	localhost
 127.0.0.1 rmz.cr
 127.0.0.1 shaanig.org
 127.0.0.1 nyaa.si
-
-# Added by Docker Desktop
-# To allow the same kube context to work on the host and the container:
-127.0.0.1 kubernetes.docker.internal
-# End of section
