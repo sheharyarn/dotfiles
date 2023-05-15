@@ -32,6 +32,7 @@ alias sshproxy='echo "Starting proxy server on port 5555..."; ssh -qTnN -D 5555'
 alias pubip='curl ipv4.icanhazip.com'
 alias myip="ifconfig | grep inet | grep -vE '(inet6|127.0.0.1)' | awk '{print $2}' | awk -F ':' '{print $2}'"
 alias mymac='ifconfig en0 | grep ether'
+alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # Random
 alias fsize='du -hs'
