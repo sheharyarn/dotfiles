@@ -25,4 +25,4 @@ alias  v='vim'
 alias vi='vim'
 
 source "$DOTFILES/Git/aliases.sh"
-#source "$DOTFILES/Git/functions.sh"
+source "$DOTFILES/Git/functions.sh"
