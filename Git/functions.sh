@@ -9,12 +9,19 @@ unalias gbda 2>/dev/null
 
 
 # Fetch and checkout
-gfco() { gfo "$@" && gco "$@" }
+gfco() {
+  gfo "$@" && gco "$@"
+}
 
 
 # Git log all commits (or PR commits) since specified tag
-gl-since()     { gl "$1"..HEAD }
-gl-since-prs() { gl-since "$@" | grep -i "#" }
+gl-since() {
+  gl "$1"..HEAD
+}
+
+gl-since-prs() {
+  gl-since "$@" | grep -i "#"
+}
 
 
 # Commits - Either inline or in vim
@@ -146,5 +153,3 @@ git-update-author() {
       ;;
   esac
 }
-
-
