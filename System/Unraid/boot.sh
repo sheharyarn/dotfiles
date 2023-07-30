@@ -1,12 +1,15 @@
 #!/bin/bash
 
 # Unraid boot script
-# ------------------
-
+# ==================
+#
 # This file should be executed as part of /boot/config/go
 
 
+
 # Load dotfiles
+# -------------
+
 DOTFILES_PATH="/boot/config/dotfiles"
 
 if [ -d "$DOTFILES_PATH" ]; then
@@ -19,7 +22,10 @@ if [ -d "$DOTFILES_PATH" ]; then
   ln -s /root/.dotfiles/System/Unraid/.bash_profile /root/.bash_profile
 fi
 
+
 # Create Share Links
+# ------------------
+
 if [ ! -d "/unraid" ]; then
   mkdir -p /unraid
 
@@ -29,6 +35,9 @@ if [ ! -d "/unraid" ]; then
   ln -s /mnt/remotes /unraid/remotes
 fi
 
-# Set Git Config
+
+# Set Git Defaults
+# ----------------
+
 git config --global user.name "Sheharyar Naseer"
 git config --global user.email "hello@sheharyar.me"
