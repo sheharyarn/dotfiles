@@ -34,10 +34,3 @@ if [ ! -d "/unraid" ]; then
   ln -s /mnt/disks   /unraid/disks
   ln -s /mnt/remotes /unraid/remotes
 fi
-
-
-# Set Git Defaults
-# ----------------
-
-git config --global user.name "Sheharyar Naseer"
-git config --global user.email "hello@sheharyar.me"
