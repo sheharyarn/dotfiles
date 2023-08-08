@@ -20,7 +20,7 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Search Configs (fzf/rg)
-export IGNORED_DIRS="{.git,.bzr,.svn,.hg,CVS,node_modules,dist,deps,_build,.backstop,.elixir_ls,.cache}"
+export IGNORED_DIRS="{.git,.bzr,.svn,.hg,CVS,node_modules,dist,deps,_build,.backstop,.elixir_ls,.cache,.next,out}"
 export RG_DEFAULT_FLAGS=(--no-ignore-vcs --hidden --follow --max-columns 150)
 export RG_DEFAULT_ARGS=($RG_DEFAULT_FLAGS --glob "!**/$IGNORED_DIRS/*")
 export FZF_DEFAULT_COMMAND="rg --files $RG_DEFAULT_FLAGS --glob '!**/$IGNORED_DIRS/*'"
