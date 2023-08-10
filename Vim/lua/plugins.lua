@@ -3,16 +3,6 @@
 -- Psy's Vim Plugins --
 -----------------------
 
-split_util = function(source, delimiters)
-  local elements = {}
-  local pattern = '([^'..delimiters..']+)'
-  string.gsub(source, pattern, function(value)
-    elements[#elements + 1] = value
-  end)
-  return elements
-end
-
-
 -- Bootstrap / Auto-install Packer if not installed
 local PACKER_GIT_URL = 'https://github.com/wbthomason/packer.nvim'
 local INSTALL_PATH = vim.fn.expand('~/.local/share/nvim/site/pack/packer/start/packer.nvim')
@@ -20,7 +10,6 @@ local INSTALL_PATH = vim.fn.expand('~/.local/share/nvim/site/pack/packer/start/p
 if vim.fn.empty(vim.fn.glob(INSTALL_PATH)) > 0 then
   PACKER_BOOTSTRAP = vim.fn.system({'git', 'clone', '--depth', '1', PACKER_GIT_URL, INSTALL_PATH})
 end
-
 
 
 -- Set up plugins through Packer
@@ -159,7 +148,7 @@ return require('packer').startup(function()
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
       ignored_dirs_str = os.getenv('IGNORED_DIRS')
-      ignored_dirs_lua = split_util(ignored_dirs_str, '{},')
+      ignored_dirs_lua = split_string(ignored_dirs_str, '{},')
       local actions = require("telescope.actions")
       require('telescope').setup({
         defaults = {
