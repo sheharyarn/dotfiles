@@ -27,3 +27,19 @@ To use with Jellyfin, first install the shim [from here](https://github.com/jell
 ```bash
 ln -s ~/.dotfiles/MPV ~/Library/Application\ Support/jellyfin-mpv-shim
 ```
+
+To make it run automatically as a background process, symlink the plist:
+
+```bash
+ln -s ~/.dotfiles/MPV/jellyfin-mpv-shim.plist ~/Library/LaunchAgents
+```
+
+You can then enable or disable it:
+
+```bash
+# Enable
+launchctl load -w ~/Library/LaunchAgents/jellyfin-mpv-shim.plist
+
+# Disable
+launchctl unload -w ~/Library/LaunchAgents/jellyfin-mpv-shim.plist
+```
