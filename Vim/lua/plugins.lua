@@ -20,17 +20,22 @@ return require('packer').startup(function()
   use {
     'lukas-reineke/indent-blankline.nvim',
     config = function()
-      require("indent_blankline").setup({
-        buftype_exclude = { 'terminal' },
-        filetype_exclude = {
-          'help',
-          'terminal',
-          'packer',
-          'alpha',
-          'dashboard',
-          'NvimTree',
-          'markdown',
-          'TelescopePrompt'
+      require('ibl').setup({
+        indent = {
+          char = '│',
+        },
+        exclude = {
+          buftypes = { 'terminal' },
+          filetypes = {
+            'help',
+            'terminal',
+            'packer',
+            'alpha',
+            'dashboard',
+            'NvimTree',
+            'markdown',
+            'TelescopePrompt'
+          },
         },
       })
     end
