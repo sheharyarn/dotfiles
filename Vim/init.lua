@@ -232,7 +232,7 @@ cmp.setup.cmdline('/', {
 })
 
 local path_to_elixirls = vim.fn.expand('~/.tools/elixir-ls/release/language_server.sh')
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities.textDocument.completion.completionItem.resolveSupport = {
   properties = { 'documentation', 'detail', 'additionalTextEdits' },
@@ -245,8 +245,6 @@ local on_attach = function()
   --vim.cmd [[inoremap <silent><expr> <C-f> compe#scroll({ 'delta': +4 })]]
   --vim.cmd [[inoremap <silent><expr> <C-d> compe#scroll({ 'delta': -4 })]]
 end
-
-require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 require('lspconfig').elixirls.setup({
   cmd = {path_to_elixirls},
