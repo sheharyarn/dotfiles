@@ -112,7 +112,7 @@ require('bufferline').setup({
     },
     -- Don't show excluded buffer names in tabline
     custom_filter = function(buf_number, buf_numbers)
-      local type = vim.bo[buf_number].filetype 
+      local type = vim.bo[buf_number].filetype
       return not table_contains(EXCLUDED_FILETYPES, type)
     end,
   },
