@@ -52,6 +52,7 @@ brew install hub
 brew install duti
 brew install k9s
 brew install docker-compose
+brew install tailscale
 
 
 #> External Binaries
@@ -78,6 +79,7 @@ brew install --cask tuxera-ntfs
 brew install --cask rocket
 brew install --cask spotify
 brew install --cask unclutter
+brew install --cask tailscale
 
 #> Dev Apps
 brew install --cask iterm2
@@ -90,12 +92,12 @@ brew install --cask android-platform-tools
 brew install --cask docker
 
 #> Not that important
-brew install --cask flux
-brew install --cask tunnelbear
-brew install --cask videostream
-brew install --cask vlc
 
 #> Maybe
+# brew install --cask flux
+# brew install --cask tunnelbear
+# brew install --cask videostream
+# brew install --cask vlc
 # brew install --cask firefox
 # brew install --cask chromecast
 # brew install --cask ps3-media-server
