@@ -69,10 +69,9 @@ brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask firefox-developer-edition
 brew install --cask google-chrome
+brew install --cask zoom
 brew install --cask mpv
-brew install --cask jumpshare
 brew install --cask dropbox
-brew install --cask teamviewer
 brew install --cask android-file-transfer
 brew install --cask little-snitch
 brew install --cask tuxera-ntfs
@@ -94,6 +93,8 @@ brew install --cask docker
 #> Not that important
 
 #> Maybe
+# brew install --cask jumpshare
+# brew install --cask teamviewer
 # brew install --cask flux
 # brew install --cask tunnelbear
 # brew install --cask videostream
