@@ -20,7 +20,7 @@
 	protocol = ssh
 
 [commit]
-	gpgsign = false
+	gpgsign = true
 
 [gpg]
   format = ssh
