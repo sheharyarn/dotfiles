@@ -13,14 +13,14 @@ DOCK_APPS=(
   "1Password"
   "Spotify"
   "MPV"
-  "Postico"
-  "Messages"
+  "Jellyfin Media Player"
+  "Postico 2"
   "TweetDeck"
   "iTerm"
   "Alacritty"
   "Activity Monitor"
   "App Store"
-  "System Preferences"
+  "System Settings"
 )
 
 # Paths to search for apps
