@@ -11,7 +11,7 @@
 # ---------------------
 
 brew tap homebrew/cask-fonts
-brew tap homebrew/cask-versions
+#brew tap homebrew/cask-versions
 
 
 # Install binaries
@@ -55,9 +55,9 @@ brew install docker-compose
 brew install tailscale
 
 
-#> External Binaries
-# brew install neovim/neovim/neovim --HEAD
-# brew install rogual/neovim-dot-app/neovim-dot-app --HEAD
+#> Vim
+# brew install vim
+# brew install neovim
 
 
 
@@ -147,6 +147,5 @@ brew install --cask docker
 # Run Installers
 # --------------
 
-# open /usr/local/Caskroom/utorrent/latest/uTorrent.app
 # open /usr/local/Caskroom/little-snitch/*/Little\ Snitch\ Installer.app
 
