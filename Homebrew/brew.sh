@@ -71,6 +71,7 @@ brew install --cask firefox-developer-edition
 brew install --cask google-chrome
 brew install --cask zoom
 brew install --cask mpv
+brew install --cask jellyfin-media-player
 brew install --cask dropbox
 brew install --cask android-file-transfer
 brew install --cask little-snitch
