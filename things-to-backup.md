@@ -8,50 +8,53 @@ A personal guide to backup/move everything to a new Macbook.
 
  - Psy/
    - Desktop/
-     - [Screenshots]
    - Downloads/
-     - [Everything]
    - Documents/
    - Pictures/
    - Movies/
-
-   - code/
-   - crap/
 
    - Library/
    - Library/Application Support/
      - [Backup important apps]
 
+   - code/
+   - crap/
+
    - .dotfiles/
      - [Ensure committed & pushed]
    - .ssh/
+   - .config/
    - .localrc
+
    - [Shell History]
    - [Private Configs and Files]
+   - [Keychain Important Items]
 
 
 ## Code / Dev Tools
 
   - Copy private configs for specific projects
-    - Slab: config/dev.exs
-    - Slab: .iex.exs
+    - Elixir: config/dev.exs
+    - Elixir: .iex.exs
 
+  - Postgres DB dumps
   - Nginx configs
 
-## Applications
+
+## Other Applications
 
  - iPhotos:         Photos
+ - Unclutter:       Settings
  - Sabznbd:         Settings
- - Firefox:         Settings, History, Bookmarks, Tampermonkey scripts
  - Android Studio:  Settings
- - NightEye:        Settings
  - Little Snitch:   Whitelist
  - Insomnia:        Request Collection
- - Postico:         Database Connections
+ - Postico:         DB Connections, SQL Queries
  - Games (apps):    Gamesaves
  - Games (emu):     Gamesaves
 
 
 ## System
 
+ - Menubar Config
  - Dock Config
