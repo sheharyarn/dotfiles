@@ -103,9 +103,14 @@ return require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function()
       require('lualine').setup({
+        sections = {
+          lualine_c = {
+            {'filename', path = 1},
+          },
+        },
         options = {
+          -- theme = 'nightfly',  -- customize lualine colors in themes.lua
           icons_enabled = true,
-          theme = 'nightfly',
           disabled_filetypes = {'NvimTree'},
           section_separators = '',
           component_separators = '',

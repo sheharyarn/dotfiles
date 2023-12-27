@@ -94,6 +94,9 @@ PsyThemes = {
     vim.g.material_style = 'deep ocean'
     vim.cmd('colorscheme material')
 
+    -- Use a matching Lualine theme
+    require('lualine').setup { options = { theme = 'nightfly' } }
+
     run_async(function()
       highlight('NvimTreeRootFolder', { fg = MColors.red })
       highlight('NvimTreeOpenedFolderName', { fg = MColors.blue })
