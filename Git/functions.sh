@@ -5,6 +5,7 @@
 
 # avoid collisions with zsh git plugin
 unalias gc 2>/dev/null
+unalias gta 2>/dev/null
 unalias gbda 2>/dev/null
 
 
