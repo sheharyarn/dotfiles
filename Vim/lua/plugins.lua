@@ -129,7 +129,7 @@ return require('packer').startup(function()
         ensure_installed = {
           'elixir', 'eex', 'heex', 'erlang', 'gleam',
           'python', 'ruby', 'kotlin', 'java', 'rust', 'dart', 'zig',
-          'javascript', 'typescript', 'jsdoc', 'comment',
+          'javascript', 'typescript', 'jsdoc', 'comment', 'lua',
           'html', 'css', 'scss', 'vue', 'json', 'markdown',
           'bash', 'dockerfile', 'toml', 'yaml', 'graphql', 'vim',
         },
