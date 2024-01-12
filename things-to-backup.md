@@ -41,6 +41,19 @@ A personal guide to backup/move everything to a new Macbook.
   - Nginx configs
 
 
+## Browsers
+
+  - Firefox:
+    - Manual: Settings, History, Bookmarks
+    - Simple Tab Groups
+    - Tampermonkey Scripts
+    - NightEye
+
+  - Chrome:
+    - Remote Torrent Adder
+    - Tampermonkey Scripts
+
+
 ## Other Applications
 
  - iPhotos:         Photos
