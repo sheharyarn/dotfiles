@@ -77,6 +77,7 @@ end
 PsyThemes = {
   -- Set default dark and light themes
   dark  = function() PsyThemes.material_dark()   end,
+  light = function() PsyThemes.solarized_light() end,
 
   material_dark = function()
     require('material').setup({
@@ -112,6 +113,40 @@ PsyThemes = {
       -- Custom Overrides
       highlight('Search', { bg = MColors.darkyellow, fg = Colors.black })
       highlightWhitespace()
+    end)
+  end,
+
+  solarized_light = function()
+    vim.o.background = 'light'
+
+    local config = require('solarized.config').load()
+    local colors = require('solarized.palette').get_colors()
+    require('solarized').setup(config)
+
+    -- Use 'Light' Solarized Theme
+    vim.cmd('colorscheme solarized')
+
+    -- Use a matching Lualine theme
+    require('lualine').setup { options = { theme = require('lualine.themes.solarized') } }
+
+    -- Custom Overrides
+    run_async(function()
+      -- Remove background from GitSigns
+      highlight('GitSignsAdd', { fg = colors.add })
+      highlight('GitSignsChange', { fg = colors.change })
+      highlight('GitSignsDelete', { fg = colors.delete })
+
+      -- Make indent lines lighter
+      highlight('IblScope', { fg = colors.base01 })
+      highlight('IblIndent', { fg = colors.base02 })
+
+      highlight('SignColumn', { fg = colors.base0 })
+      highlight('LineNr', { fg = colors.base01 })
+      highlight('Search', { bg = MColors.darkyellow, fg = Colors.black })
+      highlightWhitespace()
+
+      -- Reload indent-blankline with updated highlights
+      require('ibl').update({})
     end)
   end,
 }

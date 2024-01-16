@@ -48,6 +48,7 @@ return require('packer').startup(function()
   use 'wakatime/vim-wakatime'
 
   use 'marko-cerovac/material.nvim'
+  use 'maxmx03/solarized.nvim'
 
   use 'sheharyarn/werewolf.nvim'
   -- use '~/code/lua/werewolf.nvim'
