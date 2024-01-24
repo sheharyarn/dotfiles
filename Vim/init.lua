@@ -53,11 +53,10 @@ require('werewolf').setup({
   system_theme = {
     on_change = function(theme)
       if theme == 'Dark' then
-        PsyThemes.material_dark()
+        PsyThemes.dark()
+        --PsyThemes.light()
       else
-        vim.o.background = 'light'
-        vim.g.material_style = 'lighter'
-        vim.cmd('colorscheme material')
+        PsyThemes.light()
       end
     end,
 
