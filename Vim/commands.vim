@@ -47,20 +47,7 @@ command PsyHighlightWhitespace
   \ | match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 
-" Material Theme
-"command PsyThemeMaterial
-"  \ colorscheme material
-"  \ | set background=dark
-"  \ | AirlineTheme material
-"  \ | let g:material_theme_style = 'default'
-"  \ | hi VertSplit guibg=#2c3a41 guifg=#2c3a41
-"
-"
-"" Smyck Theme
-"command PsyThemeSmyck
-"  \ colorscheme smyck
-"  \ | set background=dark
-"  \ | AirlineTheme minimalist
-"  \ | hi VertSplit guifg=#424242 guibg=#424242
-
+" Default Dark/Light Theme
+command ThemeDark lua PsyThemes.dark()
+command ThemeLight lua PsyThemes.light()
 
