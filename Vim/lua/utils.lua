@@ -1,29 +1,70 @@
 
---------------------
--- Meta Vim Utils --
---------------------
+------------------
+-- Custom Utils --
+------------------
 
 
--- Wrap the `source` vim command
+
+-- Load and run a .vim file
+-- -----------------------------
+-- This wraps the `source` vim command in lua, which
+-- can load/run other vimscript files.
+--
+-- Example:
+--   source('./core.vim')
+--
+-- @param path - Local path of file to load/source
 function source(path)
   vim.cmd('source ' .. VIM_DIR .. path)
 end
 
+
+
+-- Create a Vim keymap
+-- -------------------
+-- Custom keymap helper with sane defaults. You
+-- should probably use the `nmap` or `imap` helpers
+-- below.
 function map(mode, shortcut, command)
   vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
 end
 
+
+
+-- Create a Vim keymap in NORMAL mode
+-- ----------------------------------
+--
+-- Example:
+--   nmap('ff', ':Telescope find_files<CR>')
+--
+-- @param shortcut - Keys to trigger command
+-- @param command  - Command to run
 function nmap(shortcut, command)
   map('n', shortcut, command)
 end
 
+
+
+-- Create a Vim keymap in INSERT mode
+-- ----------------------------------
+--
+-- Example:
+--   imap('<Leader>p', '<ESC>pa')
+--
+-- @param shortcut - Keys to trigger command
+-- @param command  - Command to run
 function imap(shortcut, command)
   map('i', shortcut, command)
 end
 
 
--- Check if table contains a key
-function table_contains(table, element)
+
+-- Check if a table contains a value
+-- ---------------------------------
+-- @param table
+-- @param element - Value to check
+-- @return boolean
+function table_contains_value(table, element)
   for _, value in pairs(table) do
     if value == element then
       return true
@@ -34,6 +75,10 @@ function table_contains(table, element)
 end
 
 
+
+-- Sleep for x seconds
+-- -------------------
+-- @param seconds
 function sleep(seconds)
   local ntime = os.time() + seconds
   repeat until os.time() > ntime
@@ -41,6 +86,12 @@ end
 
 
 -- Check if module exists
+-- ----------------------
+--
+-- Example:
+--   is_module_available('lualine')
+--
+-- @param name - Name of the module
 function is_module_available(name)
   if package.loaded[name] then
     return true
@@ -58,7 +109,36 @@ end
 
 
 
+-- Split a string into an array
+-- ----------------------------
+-- Takes an input string and a set of delimiters.
+-- Splits that string returning an array/table.
+--
+-- Example:
+--   split_string('abc,123|456,def|90', ',|')
+--   => {'abc', '123', '456', 'def', '90'}
+--
+-- @param source - Input string
+-- @param delimiters - A string containing all delimiters
+-- @return table - Array of strings
+split_string = function(source, delimiters)
+  local elements = {}
+  local pattern = '([^'..delimiters..']+)'
+
+  string.gsub(source, pattern, function(value)
+    elements[#elements + 1] = value
+  end)
+
+  return elements
+end
+
+
+
 -- Generate Plugin Snapshot
+-- ------------------------
+-- Creates a snapshot of all Packer plugins installed
+-- and their version numbers, and saves them to a
+-- default location at ~/.dotfiles/Vim/plugins.snapshot
 create_snapshot = function()
   local SNAPSHOT_PATH = VIM_DIR .. '/plugins.snapshot';
 
@@ -93,14 +173,4 @@ create_snapshot = function()
   else
     print('Packer Unavailable')
   end
-end
-
--- Split string into an array
-split_string = function(source, delimiters)
-  local elements = {}
-  local pattern = '([^'..delimiters..']+)'
-  string.gsub(source, pattern, function(value)
-    elements[#elements + 1] = value
-  end)
-  return elements
 end
