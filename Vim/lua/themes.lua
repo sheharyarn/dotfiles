@@ -60,15 +60,6 @@ highlightWhitespace = function(enable)
   highlight('ExtraWhitespace', opts)
 end
 
-local run_async = function(fun)
-  local async
-  async = vim.loop.new_async(vim.schedule_wrap(function ()
-    fun()
-    async:close()
-  end))
-  async:send()
-end
-
 
 
 -- Define Custom Themes

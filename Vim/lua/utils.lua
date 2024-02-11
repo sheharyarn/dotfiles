@@ -85,29 +85,6 @@ function sleep(seconds)
 end
 
 
--- Check if module exists
--- ----------------------
---
--- Example:
---   is_module_available('lualine')
---
--- @param name - Name of the module
-function is_module_available(name)
-  if package.loaded[name] then
-    return true
-  else
-    for _, searcher in ipairs(package.searchers or package.loaders) do
-      local loader = searcher(name)
-      if type(loader) == 'function' then
-        package.preload[name] = loader
-        return true
-      end
-    end
-    return false
-  end
-end
-
-
 
 -- Split a string into an array
 -- ----------------------------
@@ -130,6 +107,55 @@ split_string = function(source, delimiters)
   end)
 
   return elements
+end
+
+
+
+-- Asynchronusly run Vim code
+-- --------------------------
+-- Start a new async vim loop to run various Vim/Neovim
+-- specific commands, such as highlights.
+--
+-- Example:
+--   run_async(function()
+--     vim.cmd('set nowrap')
+--     highlight('LineNr', { fg = 'red', bg = 'black' })
+--   end)
+--
+-- @param fun - Function to run asynchronusly
+run_async = function(fun)
+  local async
+
+  async = vim.loop.new_async(vim.schedule_wrap(function ()
+    fun()
+    async:close()
+  end))
+
+  async:send()
+end
+
+
+
+-- Check if module exists
+-- ----------------------
+--
+-- Example:
+--   is_module_available('lualine')
+--
+-- @param name - Name of the module
+function is_module_available(name)
+  if package.loaded[name] then
+    return true
+  else
+    for _, searcher in ipairs(package.searchers or package.loaders) do
+      local loader = searcher(name)
+      if type(loader) == 'function' then
+        package.preload[name] = loader
+        return true
+      end
+    end
+    return false
+  end
 end
 
 
