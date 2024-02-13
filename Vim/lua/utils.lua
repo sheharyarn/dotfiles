@@ -136,8 +136,8 @@ end
 
 
 
--- Check if module exists
--- ----------------------
+-- Check if a module exists
+-- ------------------------
 --
 -- Example:
 --   is_module_available('lualine')

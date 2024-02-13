@@ -48,6 +48,6 @@ command PsyHighlightWhitespace
 
 
 " Default Dark/Light Theme
-command ThemeDark lua PsyThemes.dark()
-command ThemeLight lua PsyThemes.light()
+command ThemeDark  lua Psy.Themes.dark()
+command ThemeLight lua Psy.Themes.light()
 

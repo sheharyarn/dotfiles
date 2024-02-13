@@ -9,6 +9,9 @@ HOME    = vim.fn.expand('~/')
 VIM_DIR = vim.fn.expand('~/.dotfiles/Vim')
 
 
+-- Set Psy namespace
+Psy = Psy or {}
+
 -- Load custom utils for lua-vim interop
 require('utils')
 
@@ -53,10 +56,10 @@ require('werewolf').setup({
   system_theme = {
     on_change = function(theme)
       if theme == 'Dark' then
-        PsyThemes.dark()
-        --PsyThemes.light()
+        Psy.Themes.dark()
+        --Psy.Themes.light()
       else
-        PsyThemes.light()
+        Psy.Themes.light()
       end
     end,
 
@@ -124,7 +127,6 @@ vim.o.showtabline = 1
 -- Custom formatter
 nmap('<Leader>f', ':lua Psy.format()<CR>')
 
-Psy = Psy or {}
 Psy.format = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
 

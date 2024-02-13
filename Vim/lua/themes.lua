@@ -4,12 +4,17 @@
 ----------------------------
 
 
+-- Set the Namespace
+Psy = Psy or {}
+
+
 -- Define or load Special Colors
 local MColors = require('material.colors').main
 local Colors = {
   black = '#090b10',
   red = '#df7d85',
 }
+
 
 -- Enable 24-bit RGB color if available
 vim.o.termguicolors = true
@@ -27,7 +32,7 @@ vim.o.termguicolors = true
 --  * link
 --
 --  Example:
---  highlight('LineNr', { fg='red' bg='black' })
+--    highlight('LineNr', { fg = 'red' bg = 'black' })
 --
 -- @param group Highlight Group Name
 -- @param opts Table of options/arguments
@@ -64,12 +69,21 @@ end
 
 -- Define Custom Themes
 -- --------------------
--- This sets a Global 'PsyThemes' object in NeoVim
-PsyThemes = {
-  -- Set default dark and light themes
-  dark  = function() PsyThemes.material_dark()   end,
-  light = function() PsyThemes.solarized_light() end,
+--
+-- This sets a Global 'Psy.Themes' object in NeoVim
+-- which defines one function each for a custom theme
+-- implementation.
+--
+Psy.Themes = {
 
+  -- Default Dark/Light themes
+  -- -------------------------
+  dark  = function() Psy.Themes.material_dark()   end,
+  light = function() Psy.Themes.solarized_light() end,
+
+
+  -- Material Dark Theme
+  -- -------------------
   material_dark = function()
     require('material').setup({
       plugins = {
@@ -107,6 +121,9 @@ PsyThemes = {
     end)
   end,
 
+
+  -- Solarized Light Theme
+  -- ---------------------
   solarized_light = function()
     vim.o.background = 'light'
 
@@ -141,12 +158,3 @@ PsyThemes = {
     end)
   end,
 }
-
-
--- Apply the new theme asynchronously as to not get overridden
--- by material.nvim configs
---
-
---
--- #df7d85
-
