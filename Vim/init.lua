@@ -123,6 +123,10 @@ require('bufferline').setup({
 vim.o.showtabline = 1
 
 
+-- Disable Perl provider and hide warnings in checkhealth()
+vim.g.loaded_perl_provider = 0
+
+
 
 -- Custom formatter
 nmap('<Leader>f', ':lua Psy.format()<CR>')
