@@ -84,16 +84,11 @@ gi() {
 }
 
 
-# Commits in a specific instance in time
 # See: http://stackoverflow.com/a/3896112/1533054
-gc-time() {
+gct() {
   if [[ $# -ne 2 ]] ; then
     echo "invalid arguments"
-    echo "usage: gc-time DATETIME COMMIT_MESSAGE"
-    echo "examples:"
-    echo "   gc-time \"5 days ago\" \"Commit 5 days in the past\""
-    echo "   gc-time \"4 hours\" \"Commit 4 hours in the future\""
-    echo "   gc-time \"Fri Jul 26 19:32:10 2013 -0400\" \"Commit in specific instance in time\""
+    echo "usage: gct DATETIME COMMIT_MESSAGE"
     echo ""
   else
 
