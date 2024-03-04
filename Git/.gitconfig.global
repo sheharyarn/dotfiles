@@ -1,26 +1,26 @@
 [core]
-	excludesfile = ~/.dotfiles/Git/.gitignore.global
+  excludesfile = ~/.dotfiles/Git/.gitignore.global
 
 [user]
-	name = Sheharyar Naseer
-	email = hello@sheharyar.me
+  name = Sheharyar Naseer
+  email = hello@sheharyar.me
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO2FWh8rGe1WZqct8PLZDltLeTwE5IKo+ZNqEnZQzrLQ
 
 [push]
-	default = simple
-	followTags = true
+  default = simple
+  followTags = true
 
 [pull]
-	rebase = true
+  rebase = true
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [hub]
-	protocol = ssh
+  protocol = ssh
 
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [gpg]
   format = ssh
@@ -28,3 +28,8 @@
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
   allowedSignersFile = ~/.ssh/allowed_signers
+
+
+# Company/Project Specific Configs
+[includeIf "gitdir:~/code/apple/"]
+  path = ~/code/apple/.gitconfig
