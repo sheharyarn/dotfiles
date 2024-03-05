@@ -47,7 +47,7 @@ brew install fzf
 brew install fd
 brew install ripgrep
 brew install python
-brew install z
+brew install zoxide
 brew install jq
 brew install hub
 brew install duti

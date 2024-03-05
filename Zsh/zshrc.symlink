@@ -89,6 +89,12 @@ if command -v direnv >/dev/null ; then
 fi
 
 
+# Initialize `zoxide` if available
+if command -v zoxide >/dev/null ; then
+  eval "$(zoxide init zsh)"
+fi
+
+
 # NVM Configs
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
