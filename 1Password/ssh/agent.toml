@@ -1,0 +1,10 @@
+# 1Password SSH Agent
+# ===================
+
+# Allow using all SSH Keys from `Personal` and `Work` vaults.
+
+[[ssh-keys]]
+vault = "Personal"
+
+[[ssh-keys]]
+vault = "Work"
