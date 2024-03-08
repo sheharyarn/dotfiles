@@ -148,6 +148,10 @@ Psy.Themes = {
       highlight('IblScope', { fg = colors.base01 })
       highlight('IblIndent', { fg = colors.base02 })
 
+      -- Telescope prompt
+      highlight('TelescopeNormal', { bg = colors.base03 })
+
+      highlight('WinSeparator', { fg = colors.base02, bg = colors.base03 })
       highlight('SignColumn', { fg = colors.base0 })
       highlight('LineNr', { fg = colors.base01 })
       highlight('Search', { bg = MColors.darkyellow, fg = Colors.black })
