@@ -4,6 +4,16 @@
 # =========
 
 
+# Create and cd to a directory in one go.
+# Only takes one argument
+mkcd() {
+  if [ $# -eq 1 ] ; then
+    mkdir -vp "$1" && cd "$1"
+  else
+    echo "'$@' is not a valid directory name"
+  fi
+}
+
 # Get current Platform
 get-platform() {
   case "$(uname -s)" in
