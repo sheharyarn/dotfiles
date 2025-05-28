@@ -48,6 +48,7 @@ A personal guide to backup/move everything to a new Macbook.
     - Simple Tab Groups
     - Tampermonkey Scripts
     - NightEye
+    - Excalidraw drawings
 
   - Chrome:
     - Remote Torrent Adder
@@ -57,6 +58,7 @@ A personal guide to backup/move everything to a new Macbook.
 ## Other Applications
 
  - iPhotos:         Photos
+ - Raycast:         Configs
  - Unclutter:       Settings
  - Sabznbd:         Settings
  - Android Studio:  Settings
