@@ -10,11 +10,14 @@ brew install --cask font-roboto-mono-nerd-font
 brew install --cask font-jetbrains-mono
 brew install --cask font-jetbrains-mono-nerd-font
 
-# Other Dev/NERD Fonts
+# Dev/NERD Fonts
 brew install --cask font-noto-sans
 brew install --cask font-fira-code
 brew install --cask font-hack-nerd-font
 brew install --cask font-fura-nerd-font
+
+# Other Fonts
+brew install --cask font-open-sans
 
 # Font Awesome 4
 brew install --cask https://raw.githubusercontent.com/Homebrew/homebrew-cask-fonts/7a6038460ea23b2eb21e0cabf1adfab33553fcdc/Casks/font-fontawesome.rb
