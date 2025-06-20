@@ -82,7 +82,7 @@ defmodule H do
   def modules(name, app \\ nil) do
     name =
       cond do
-        Regex.regex?(name) -> Regex.source(name)
+        is_struct(name, Regex) -> Regex.source(name)
         is_atom(name) -> inspect(name)
         true -> to_string(name)
       end
