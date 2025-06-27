@@ -65,6 +65,15 @@ defaults write com.apple.screensaver askForPasswordDelay 15
 # Use tab to change focus between buttons on dialogs, etc.
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Change default date format to 2024-12-31
+defaults write NSGlobalDomain AppleICUDateFormatStrings '{ 1 = "y-MM-dd"; }'
+
+# Set first day of the week to Monday
+defaults write NSGlobalDomain AppleFirstWeekday '{ gregorian = 2; }'
+
+# Set default temperature unit to Celsius
+defaults write NSGlobalDomain AppleTemperatureUnit 'Celsius'
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
