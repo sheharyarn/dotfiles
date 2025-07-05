@@ -19,8 +19,10 @@ brew tap homebrew/cask-fonts
 
 brew install zsh
 brew install coreutils
+brew install gcc
 brew install gnu-sed
 brew install git
+brew install git-delta
 brew install git-filter-repo
 brew install svn
 brew install gpg
@@ -49,6 +51,7 @@ brew install ripgrep
 brew install python
 brew install zoxide
 brew install jq
+brew install gh
 brew install hub
 brew install duti
 brew install k9s
