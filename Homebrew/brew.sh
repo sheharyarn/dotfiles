@@ -80,10 +80,14 @@ brew install --cask dropbox
 brew install --cask android-file-transfer
 brew install --cask little-snitch
 brew install --cask tuxera-ntfs
+brew install --cask raycast
 brew install --cask rocket
 brew install --cask spotify
 brew install --cask unclutter
 brew install --cask tailscale
+brew install --cask betterdisplay
+brew install --cask bartender
+brew install --cask vnc-viewer
 
 #> Dev Apps
 brew install --cask iterm2
@@ -94,6 +98,7 @@ brew install --cask java
 brew install --cask android-studio
 brew install --cask android-platform-tools
 brew install --cask docker
+brew install --cask google-cloud-sdk
 
 #> Not that important
 
