@@ -52,3 +52,6 @@
 
 [includeIf "gitdir:~/code/apple/"]
   path = ~/code/apple/.gitconfig
+
+[includeIf "gitdir:~/code/private/"]
+  path = ~/code/private/.gitconfig
