@@ -3,8 +3,17 @@
 # Unraid boot script
 # ==================
 #
-# This file should be executed as part of /boot/config/go
-
+# This file should be executed as part of `/boot/config/go`
+# by adding these lines:
+# 
+# ```sh
+# # Load dotfiles
+# DOTFILES_PATH="/boot/config/dotfiles"
+#
+# if [ -d "$DOTFILES_PATH" ]; then
+#   source "$DOTFILES_PATH/System/Unraid/boot.sh"
+# fi
+# ```
 
 
 # Load dotfiles
@@ -29,8 +38,8 @@ fi
 if [ ! -d "/unraid" ]; then
   mkdir -p /unraid
 
-  ln -s /unraid      /root/unraid
-  ln -s /mnt/shares  /unraid/shares
-  ln -s /mnt/disks   /unraid/disks
-  ln -s /mnt/remotes /unraid/remotes
+  ln -s /unraid       /root/unraid
+  ln -s /mnt/user     /unraid/shares
+  ln -s /mnt/disks    /unraid/disks
+  ln -s /mnt/remotes  /unraid/remotes
 fi
