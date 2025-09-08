@@ -46,6 +46,21 @@ defmodule H do
 
 
   @doc """
+  Print a term to console
+  """
+  def print(term) do
+    term
+    |> List.wrap()
+    |> Enum.flat_map(&prepare_print/1)
+    |> Enum.each(&IO.puts/1)
+  end
+
+  defp prepare_print(term) when is_list(term), do: Enum.map(term, &prepare_print/1)
+  defp prepare_print(term) when is_binary(term), do: [term]
+  defp prepare_print(term), do: [inspect(term)]
+
+
+  @doc """
   Copy to clipboard
   """
   def copy(term) do
