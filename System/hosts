@@ -48,24 +48,25 @@ fe80::1%lo0	localhost
 
 
 # Absolutely avoid without a VPN
-127.0.0.1 psarips.com
+127.0.0.1 1337x.to
+127.0.0.1 digitalcore.club
+127.0.0.1 fora.snahp.eu
+127.0.0.1 forum.snahp.it
+127.0.0.1 ianon.app
+127.0.0.1 macbb.org
+127.0.0.1 milkie.cc
+127.0.0.1 nyaa.si
+127.0.0.1 nzbgeek.info
 127.0.0.1 psa.me
 127.0.0.1 psa.re
 127.0.0.1 psa.wf
-127.0.0.1 torrentleech.org
-127.0.0.1 digitalcore.club
-127.0.0.1 ianon.app
-127.0.0.1 milkie.cc
+127.0.0.1 psarips.com
+127.0.0.1 rmz.cr
+127.0.0.1 shaanig.org
+127.0.0.1 skytorrents.in
+127.0.0.1 skytorrents.lol
 127.0.0.1 speed.cd
-127.0.0.1 forum.snahp.it
-127.0.0.1 fora.snahp.eu
-127.0.0.1 nzbgeek.info
-127.0.0.1 nyaa.si
-127.0.0.1 1337x.to
 127.0.0.1 thepiratebay.org
 127.0.0.1 theproxybay.pw
+127.0.0.1 torrentleech.org
 127.0.0.1 zooqle.com
-127.0.0.1 skytorrents.lol
-127.0.0.1 skytorrents.in
-127.0.0.1 shaanig.org
-127.0.0.1 rmz.cr
