@@ -77,7 +77,13 @@ return require('packer').startup(function()
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
       require('gitsigns').setup()
+
+      -- Enable the sign column
       vim.o.signcolumn = 'yes'
+
+      -- Mappings to jump to prev/next hunk
+      nmap('[h', ':Gitsigns prev_hunk<CR>')
+      nmap(']h', ':Gitsigns next_hunk<CR>')
     end
   }
 
