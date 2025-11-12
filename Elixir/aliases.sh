@@ -17,3 +17,6 @@ alias ex.reset.test='ex.reset && mix test'
 # Enable Persistent Shell History (OTP 20+)
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# Concurrent compilation in Elixir 1.9+
+# Ideal value = (physical cores / 2)
+export MIX_OS_DEPS_COMPILE_PARTITION_COUNT=5
