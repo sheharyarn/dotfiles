@@ -53,9 +53,9 @@ alias      grap='gr set-url --add --push'
 
 # Pushing, Pulling and Deploying
 alias        gp='git push'
-alias       gpp='git push origin $(current_branch)'
+alias       gpp='git push origin $(git_current_branch)'
 alias       gpt='gpp --tags'
-alias     gpull='git pull origin $(current_branch)'
+alias     gpull='git pull origin $(git_current_branch)'
 alias     gpdep='gpdeploy'
 alias     gpher='gpheroku'
 alias  gpdeploy='gp && cap production deploy'
